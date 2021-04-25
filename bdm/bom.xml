@@ -19,7 +19,11 @@
                 <field type="STRING" length="255" name="rejectionComments" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="findLatest" content="SELECT i &#10;FROM Item i &#10;ORDER BY i.persistenceId DESC" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Meeting">
