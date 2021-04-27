@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Activityinit",
   "name" : "Activityinit",
-  "lastUpdate" : 1619514602944,
+  "lastUpdate" : 1619527156382,
   "rows" : [
     [
       {
@@ -712,49 +712,6 @@
                       },
                       "title" : {
                         "type" : "interpolation",
-                        "value" : "My Activities"
-                      }
-                    },
-                    "reference" : "7e3b8cd8-ae1c-4ca9-9a84-de5481be64dd",
-                    "hasValidationError" : false,
-                    "id" : "pbTabContainer",
-                    "container" : {
-                      "type" : "container",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : { },
-                      "reference" : "ec73f7b9-d069-43e8-807c-5f1077fa3b72",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [ ]
-                      ]
-                    }
-                  },
-                  {
-                    "type" : "tabContainer",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 12,
-                      "lg" : 12
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "disabled" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "title" : {
-                        "type" : "interpolation",
                         "value" : "New Activity"
                       }
                     },
@@ -1169,6 +1126,106 @@
                                   "id" : "pbInput",
                                   "description" : ""
                                 }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "removeItem" : {
+                                      "type" : "variable"
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "buttonStyle" : {
+                                      "type" : "constant",
+                                      "value" : "primary"
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Submit"
+                                    },
+                                    "dataToSend" : {
+                                      "type" : "expression",
+                                      "value" : "formOutput"
+                                    },
+                                    "dataFromError" : {
+                                      "type" : "variable",
+                                      "value" : "formOutput._submitError"
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "collectionPosition" : {
+                                      "type" : "constant"
+                                    },
+                                    "targetUrlOnSuccess" : {
+                                      "type" : "interpolation",
+                                      "value" : "/bonita"
+                                    },
+                                    "action" : {
+                                      "type" : "constant",
+                                      "value" : "Start process"
+                                    },
+                                    "collectionToModify" : {
+                                      "type" : "variable"
+                                    },
+                                    "valueToAdd" : {
+                                      "type" : "expression"
+                                    },
+                                    "disabled" : {
+                                      "type" : "expression",
+                                      "value" : "$form.$invalid"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "center"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "assign" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "url" : {
+                                      "type" : "interpolation"
+                                    },
+                                    "responseStatusCode" : {
+                                      "type" : "variable",
+                                      "value" : ""
+                                    },
+                                    "dataFromSuccess" : {
+                                      "type" : "variable",
+                                      "value" : ""
+                                    },
+                                    "closeOnSuccess" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "modalId" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    }
+                                  },
+                                  "reference" : "d0208e9c-568a-4ea0-8dfb-c14208d3db17",
+                                  "hasValidationError" : false,
+                                  "id" : "pbButton",
+                                  "description" : ""
+                                }
                               ]
                             ]
                           }
@@ -1206,106 +1263,6 @@
                 "rows" : [
                   [ ]
                 ]
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "removeItem" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "buttonStyle" : {
-                    "type" : "constant",
-                    "value" : "primary"
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Submit"
-                  },
-                  "dataToSend" : {
-                    "type" : "expression",
-                    "value" : "formOutput"
-                  },
-                  "dataFromError" : {
-                    "type" : "variable",
-                    "value" : "formOutput._submitError"
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "collectionPosition" : {
-                    "type" : "constant"
-                  },
-                  "targetUrlOnSuccess" : {
-                    "type" : "interpolation",
-                    "value" : "/bonita"
-                  },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "Start process"
-                  },
-                  "collectionToModify" : {
-                    "type" : "variable"
-                  },
-                  "valueToAdd" : {
-                    "type" : "expression"
-                  },
-                  "disabled" : {
-                    "type" : "expression",
-                    "value" : "$form.$invalid"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "center"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
-                  }
-                },
-                "reference" : "d0208e9c-568a-4ea0-8dfb-c14208d3db17",
-                "hasValidationError" : false,
-                "id" : "pbButton",
-                "description" : ""
               }
             ],
             [
@@ -1433,7 +1390,7 @@
     "Statuses" : {
       "type" : "json",
       "value" : [
-        "[\"upcoming\", \"delayed\", \"conducted\", \"cancelled\"]"
+        "[\"New\", \"Not Started\", \"In Progress\", \"Overdue\", \"Completed\"]"
       ],
       "exposed" : false
     },
