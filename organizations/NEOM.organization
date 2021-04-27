@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="NEOM">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="CEO">
+      <firstName>John</firstName>
+      <lastName>Doe</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">CEO</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="User1">
+      <firstName>Analyst</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">User1</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="CEO">
+      <displayName>CEO</displayName>
+    </role>
+    <role name="Analyst ">
+      <displayName>Analyst </displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="CEO">
+      <displayName>CEO</displayName>
+    </group>
+    <group name="User1">
+      <displayName>User1</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>CEO</userName>
+      <roleName>CEO</roleName>
+      <groupName>CEO</groupName>
+    </membership>
+    <membership>
+      <userName>User1</userName>
+      <roleName>Analyst </roleName>
+      <groupName>User1</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
