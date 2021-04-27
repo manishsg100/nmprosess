@@ -10,7 +10,13 @@
                 <field type="STRING" length="255" name="owner" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="query" content="SELECT a &#13;&#10;FROM Activitiy a &#13;&#10;WHERE a.name LIKE :text&#13;&#10;OR a.status LIKE :text&#13;&#10;OR a.stream LIKE :text&#13;&#10;OR a.owner LIKE :text&#13;&#10;ORDER BY a.persistenceId DESC" returnType="com.company.model.Activitiy">
+                    <queryParameters>
+                        <queryParameter name="text" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Item">
