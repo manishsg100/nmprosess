@@ -16,6 +16,11 @@
                         <queryParameter name="text" className="java.lang.String"/>
                     </queryParameters>
                 </query>
+                <query name="filterMyActivities" content="SELECT a &#10;FROM Activitiy a &#10;WHERE  a.owner = :owner&#10;ORDER BY a.persistenceId DESC" returnType="com.company.model.Activitiy">
+                    <queryParameters>
+                        <queryParameter name="owner" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
             </queries>
             <indexes/>
         </businessObject>

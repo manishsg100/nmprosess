@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_oGKUMKccEeuv1YekLvNwQQ" name="CEO_WatchlistUpdate" author="manis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_oGKUMaccEeuv1YekLvNwQQ" name="UpdateCEOWatchlist">
+    <elements xmi:type="process:Pool" xmi:id="_oGKUMaccEeuv1YekLvNwQQ" name="Update CEO Watchlist">
       <elements xmi:type="process:Lane" xmi:id="_oGKUMqccEeuv1YekLvNwQQ" name="Employee lane" actor="_oGKUdaccEeuv1YekLvNwQQ">
         <elements xmi:type="process:StartEvent" xmi:id="_oGKUM6ccEeuv1YekLvNwQQ" name="Home Page" outgoing="_oGKUaaccEeuv1YekLvNwQQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_oGKUNKccEeuv1YekLvNwQQ" name="" content="" returnTypeFixed="true"/>
@@ -101,10 +101,10 @@
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_oGKUfaccEeuv1YekLvNwQQ">
         <name xmi:type="expression:Expression" xmi:id="_oGKUfqccEeuv1YekLvNwQQ" content="" returnTypeFixed="true"/>
-        <value xmi:type="expression:Expression" xmi:id="_oGKUf6ccEeuv1YekLvNwQQ" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_oGKUf6ccEeuv1YekLvNwQQ" name="" content="" returnTypeFixed="true"/>
       </searchIndexes>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_oGKUgKccEeuv1YekLvNwQQ">
-        <name xmi:type="expression:Expression" xmi:id="_oGKUgaccEeuv1YekLvNwQQ" content="" returnTypeFixed="true"/>
+        <name xmi:type="expression:Expression" xmi:id="_oGKUgaccEeuv1YekLvNwQQ" name="" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_oGKUgqccEeuv1YekLvNwQQ" content="" returnTypeFixed="true"/>
       </searchIndexes>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_oGKUg6ccEeuv1YekLvNwQQ">

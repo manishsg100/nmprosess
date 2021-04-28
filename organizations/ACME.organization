@@ -84,6 +84,7 @@
       <title>Mr</title>
       <jobTitle>Human resources benefits</jobTitle>
       <manager>helen.kelly</manager>
+      <personalData/>
       <professionalData>
         <email>walter.bates@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -136,6 +137,7 @@
       <title>Mr</title>
       <jobTitle>Financial controller</jobTitle>
       <manager>zachary.williamson</manager>
+      <personalData/>
       <professionalData>
         <email>patrick.gardenier@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -213,6 +215,7 @@
       <title>Mr</title>
       <jobTitle>Infrastucture specialist</jobTitle>
       <manager>favio.riviera</manager>
+      <personalData/>
       <professionalData>
         <email>jan.fisher@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -542,6 +545,9 @@
       <displayName>Member</displayName>
       <description></description>
     </role>
+    <role name="ceo_secretary">
+      <displayName>CEO Secretary</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -722,6 +728,11 @@
       <roleName>member</roleName>
       <groupName>north_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>ceo_secretary</roleName>
+      <groupName>acme</groupName>
     </membership>
   </memberships>
 </organization:Organization>
