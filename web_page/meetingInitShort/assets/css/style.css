@@ -36,6 +36,32 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 }
 
 .neom-logo {
-    height: 80px;
-    width: 80px;
+    height: 125px;
+    width: 125px;
+    margin-top: 25px;
+}
+
+body {background-color: rgb(235, 192, 63);}
+
+body {color: black;}
+
+.btn-primary {
+    color: #fff;
+    background-color: #001936;
+    border-color: #333;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    font-weight: 500;
+    background-color: #001936;
+    border: 1px solid #333;
+    border-bottom-color: transparent;
+}
+
+.text-center {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
 }
