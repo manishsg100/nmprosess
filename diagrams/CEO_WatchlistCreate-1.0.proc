@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_vTIwAKWiEeuRXN916z5Hog" name="CEO_WatchlistCreate" author="manis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_vTIwAaWiEeuRXN916z5Hog" name="Create CEO Watchlist">
       <elements xmi:type="process:Lane" xmi:id="_vTIwAqWiEeuRXN916z5Hog" name="Employee lane" actor="_vTIwG6WiEeuRXN916z5Hog">
@@ -13,7 +13,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_o0cF0aZ0Eeuv1YekLvNwQQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_o0cF06Z0Eeuv1YekLvNwQQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_g9AXIKhDEeuN1OtbxzompA" name="Updates by Owner" outgoing="_lrbOEKhDEeuN1OtbxzompA" incoming="_aIpwIKcfEeuv1YekLvNwQQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_g9AXIKhDEeuN1OtbxzompA" name="Updates by Owner" outgoing="_lrbOEKhDEeuN1OtbxzompA" incoming="_aIpwIKcfEeuv1YekLvNwQQ" actor="_I6vnoKipEeuN1OtbxzompA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_g9Hr4ahDEeuN1OtbxzompA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_g9Hr4KhDEeuN1OtbxzompA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_g9Hr4qhDEeuN1OtbxzompA" name="" content="" returnTypeFixed="true"/>
@@ -58,6 +58,16 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_g9IS8ahDEeuN1OtbxzompA">
             <targetForm xmi:type="expression:Expression" xmi:id="_g9IS8qhDEeuN1OtbxzompA" name="editActivity" content="49d19754-e8db-44ca-b0ea-11b76754922e" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_tzjicKipEeuN1OtbxzompA" name="ReturnActivityOwner" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_tzkJgKipEeuN1OtbxzompA" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tzkJgaipEeuN1OtbxzompA" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_tzkJgqipEeuN1OtbxzompA" name="userId()" content="import org.bonitasoft.engine.api.IdentityAPI;&#xA;import org.bonitasoft.engine.identity.User;&#xA;&#xA;IdentityAPI identity = apiAccessor.getIdentityAPI();&#xA;User user = identity.getUserByUserName(processinit.owner);&#xA;&#xA;return user.getId();&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_tzkJg6ipEeuN1OtbxzompA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tzkJhKipEeuN1OtbxzompA" name="processinit" dataType="_vTIwNKWiEeuRXN916z5Hog" className="com.company.model.Activitiy"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_g9IS8KhDEeuN1OtbxzompA">
             <inputs xmi:type="process:ContractInput" xmi:id="_3AxJQKhDEeuN1OtbxzompA" name="processinitInput" type="COMPLEX" dataReference="processinit" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_3AxJQahDEeuN1OtbxzompA" name="status" createMode="false"/>
@@ -88,6 +98,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_lrb1IKhDEeuN1OtbxzompA" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_vTIwG6WiEeuRXN916z5Hog" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_I6vnoKipEeuN1OtbxzompA" name="Owner"/>
       <contract xmi:type="process:Contract" xmi:id="_vTIwHKWiEeuRXN916z5Hog">
         <inputs xmi:type="process:ContractInput" xmi:id="_R7tVcKXCEeuRXN916z5Hog" name="processinitInput" type="COMPLEX" dataReference="processinit">
           <inputs xmi:type="process:ContractInput" xmi:id="_R7tVcaXCEeuRXN916z5Hog" name="name"/>
