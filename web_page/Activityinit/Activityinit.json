@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Activityinit",
   "name" : "Activityinit",
-  "lastUpdate" : 1619633305624,
+  "lastUpdate" : 1619699599175,
   "rows" : [
     [
       {
@@ -61,7 +61,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "left"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -80,7 +80,7 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 2,
+                  "md" : 1,
                   "lg" : 4
                 },
                 "propertyValues" : {
@@ -97,7 +97,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "2d29ead0-3fb5-4dde-b5fd-9e627622e0a0",
+                "reference" : "438953a8-d06e-4126-88c9-c397fc8ab9ff",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -109,7 +109,7 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 8,
+                  "md" : 9,
                   "lg" : 4
                 },
                 "propertyValues" : {
@@ -1334,7 +1334,7 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 7,
+                        "md" : 6,
                         "lg" : 12
                       },
                       "propertyValues" : {

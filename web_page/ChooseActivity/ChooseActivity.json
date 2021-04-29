@@ -2,13 +2,66 @@
   "modelVersion" : "2.0",
   "id" : "ChooseActivity",
   "name" : "ChooseActivity",
-  "lastUpdate" : 1619625967031,
+  "lastUpdate" : 1619699801652,
   "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Activities"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "9a52927a-3e75-4c00-844e-cfd867336e8b",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
     [
       {
         "type" : "formContainer",
         "dimension" : {
-          "xs" : 12
+          "xs" : 12,
+          "md" : 12
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -35,12 +88,41 @@
           "rows" : [
             [
               {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 1,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "d81c4ecc-1831-4e25-aec1-912f79841393",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
+              },
+              {
                 "type" : "tabsContainer",
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
+                  "md" : 9,
+                  "lg" : 4
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -134,7 +216,7 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 12,
+                                    "md" : 11,
                                     "sm" : 12,
                                     "xs" : 12,
                                     "lg" : 12
@@ -158,7 +240,7 @@
                                     },
                                     "alignment" : {
                                       "type" : "constant",
-                                      "value" : "left"
+                                      "value" : "center"
                                     },
                                     "dimension" : {
                                       "type" : "constant",
@@ -177,7 +259,7 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 12,
+                                    "md" : 11,
                                     "lg" : 12
                                   },
                                   "propertyValues" : {
@@ -252,7 +334,7 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 12,
+                                    "md" : 11,
                                     "sm" : 12,
                                     "xs" : 12,
                                     "lg" : 12
@@ -459,7 +541,7 @@
                                           },
                                           "alignment" : {
                                             "type" : "constant",
-                                            "value" : "left"
+                                            "value" : "center"
                                           },
                                           "dimension" : {
                                             "type" : "constant",
@@ -614,6 +696,72 @@
                       ]
                     }
                   }
+                ]
+              },
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 2,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "2d2374b5-ab8f-4c6e-a33c-93a356608237",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 7,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : "neom-logo"
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "srcType" : {
+                          "type" : "constant",
+                          "value" : "URL"
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "https://www.neom.com/etc.clientlibs/neom/clientlibs/clientlib-site/resources/asset/image/logo-neom.da169c7.png"
+                        },
+                        "assetName" : {
+                          "type" : "constant"
+                        },
+                        "alt" : {
+                          "type" : "interpolation"
+                        }
+                      },
+                      "reference" : "5f425dfe-a9da-48d5-9d8f-e34965dc4ff7",
+                      "hasValidationError" : false,
+                      "id" : "pbImage"
+                    }
+                  ]
                 ]
               }
             ],

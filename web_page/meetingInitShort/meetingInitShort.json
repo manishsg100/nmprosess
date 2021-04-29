@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingInitShort",
   "name" : "meetingInitShort",
-  "lastUpdate" : 1619517246861,
+  "lastUpdate" : 1619696196685,
   "rows" : [
     [
       {
@@ -102,35 +102,6 @@
               }
             ],
             [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 1,
-                  "lg" : 4
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
-                  }
-                },
-                "reference" : "20750f56-1648-4a9f-8a97-b7b716bdc755",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [ ]
-                ]
-              },
               {
                 "type" : "tabsContainer",
                 "dimension" : {

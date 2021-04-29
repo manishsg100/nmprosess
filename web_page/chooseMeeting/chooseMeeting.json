@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "chooseMeeting",
   "name" : "chooseMeeting",
-  "lastUpdate" : 1619522526806,
+  "lastUpdate" : 1619696320256,
   "rows" : [
     [
       {
@@ -109,7 +109,7 @@
                               },
                               "alignment" : {
                                 "type" : "constant",
-                                "value" : "left"
+                                "value" : "center"
                               },
                               "dimension" : {
                                 "type" : "constant",
