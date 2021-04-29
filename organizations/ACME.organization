@@ -86,7 +86,7 @@
       <manager>helen.kelly</manager>
       <personalData/>
       <professionalData>
-        <email>walter.bates@acme.com</email>
+        <email>nituryanskiy@deloitte.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -103,6 +103,7 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
     </user>
     <user userName="zachary.williamson">
       <firstName>Zachary</firstName>
