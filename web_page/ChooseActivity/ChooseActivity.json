@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "ChooseActivity",
   "name" : "ChooseActivity",
-  "lastUpdate" : 1619699801652,
+  "lastUpdate" : 1619875024524,
   "rows" : [
     [
       {
@@ -146,6 +146,235 @@
                 "hasValidationError" : false,
                 "id" : "pbTabsContainer",
                 "tabList" : [
+                  {
+                    "type" : "tabContainer",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "disabled" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "title" : {
+                        "type" : "interpolation",
+                        "value" : "My Activities"
+                      }
+                    },
+                    "reference" : "41101256-4065-4e74-8faf-0bd7f66b7ad3",
+                    "hasValidationError" : false,
+                    "id" : "pbTabContainer",
+                    "container" : {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "f7185429-dec6-463a-ac31-24eb412dd67b",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "f038cad9-1805-4bd6-8de8-21ce11391b9a",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "description" : "Auto generate ui for business object \"com.company.model.Activitiy\"",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable",
+                                      "value" : ""
+                                    }
+                                  },
+                                  "reference" : "85ff8a3e-fc16-4e32-9d7c-2a105753a4fe",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "description" : "\"com.company.model.Activitiy\" object from \"activitiy_MY\" variable",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "md" : 12,
+                                          "sm" : 12,
+                                          "xs" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 4"
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "Activities assigned to {{owner}}"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "center"
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 12
+                                          }
+                                        },
+                                        "reference" : "a221f833-2789-4fa7-ae29-278269dc05d1",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle",
+                                        "description" : ""
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "md" : 12,
+                                          "sm" : 12,
+                                          "xs" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "headers" : {
+                                            "type" : "constant",
+                                            "value" : [
+                                              "Name",
+                                              "Status",
+                                              "Planneddate",
+                                              "Stream",
+                                              "Owner",
+                                              "Initiator"
+                                            ]
+                                          },
+                                          "allowHtml" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "condensed" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "bordered" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "selectedRow" : {
+                                            "type" : "variable",
+                                            "value" : "activitiy_selected"
+                                          },
+                                          "columnsKey" : {
+                                            "type" : "constant",
+                                            "value" : [
+                                              "name",
+                                              "status",
+                                              "planneddate",
+                                              "stream",
+                                              "owner",
+                                              "initiator"
+                                            ]
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 12
+                                          },
+                                          "content" : {
+                                            "type" : "expression",
+                                            "value" : "activitiy_MY"
+                                          },
+                                          "zebraStriping" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "striped" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          }
+                                        },
+                                        "reference" : "722640fe-0c84-450c-bec9-d5e545a7a869",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTable",
+                                        "description" : ""
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  },
                   {
                     "type" : "tabContainer",
                     "dimension" : {
@@ -416,285 +645,6 @@
                         ]
                       ]
                     }
-                  },
-                  {
-                    "type" : "tabContainer",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 12,
-                      "lg" : 12
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "disabled" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "title" : {
-                        "type" : "interpolation",
-                        "value" : "My Activities"
-                      }
-                    },
-                    "reference" : "41101256-4065-4e74-8faf-0bd7f66b7ad3",
-                    "hasValidationError" : false,
-                    "id" : "pbTabContainer",
-                    "container" : {
-                      "type" : "container",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : { },
-                      "reference" : "f7185429-dec6-463a-ac31-24eb412dd67b",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "container",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "repeatedCollection" : {
-                                "type" : "variable",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "f038cad9-1805-4bd6-8de8-21ce11391b9a",
-                            "hasValidationError" : false,
-                            "id" : "pbContainer",
-                            "description" : "Auto generate ui for business object \"com.company.model.Activitiy\"",
-                            "rows" : [
-                              [
-                                {
-                                  "type" : "container",
-                                  "dimension" : {
-                                    "xs" : 12
-                                  },
-                                  "propertyValues" : {
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "hidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "repeatedCollection" : {
-                                      "type" : "variable",
-                                      "value" : ""
-                                    }
-                                  },
-                                  "reference" : "85ff8a3e-fc16-4e32-9d7c-2a105753a4fe",
-                                  "hasValidationError" : false,
-                                  "id" : "pbContainer",
-                                  "description" : "\"com.company.model.Activitiy\" object from \"activitiy_MY\" variable",
-                                  "rows" : [
-                                    [
-                                      {
-                                        "type" : "component",
-                                        "dimension" : {
-                                          "md" : 12,
-                                          "sm" : 12,
-                                          "xs" : 12,
-                                          "lg" : 12
-                                        },
-                                        "propertyValues" : {
-                                          "hidden" : {
-                                            "type" : "constant",
-                                            "value" : false
-                                          },
-                                          "level" : {
-                                            "type" : "constant",
-                                            "value" : "Level 4"
-                                          },
-                                          "cssClasses" : {
-                                            "type" : "constant",
-                                            "value" : ""
-                                          },
-                                          "text" : {
-                                            "type" : "interpolation",
-                                            "value" : "Activities assigned to {{owner}}"
-                                          },
-                                          "alignment" : {
-                                            "type" : "constant",
-                                            "value" : "center"
-                                          },
-                                          "dimension" : {
-                                            "type" : "constant",
-                                            "value" : 12
-                                          }
-                                        },
-                                        "reference" : "a221f833-2789-4fa7-ae29-278269dc05d1",
-                                        "hasValidationError" : false,
-                                        "id" : "pbTitle",
-                                        "description" : ""
-                                      }
-                                    ],
-                                    [
-                                      {
-                                        "type" : "component",
-                                        "dimension" : {
-                                          "xs" : 12,
-                                          "sm" : 12,
-                                          "md" : 12,
-                                          "lg" : 12
-                                        },
-                                        "propertyValues" : {
-                                          "cssClasses" : {
-                                            "type" : "constant",
-                                            "value" : ""
-                                          },
-                                          "hidden" : {
-                                            "type" : "constant",
-                                            "value" : false
-                                          },
-                                          "labelHidden" : {
-                                            "type" : "constant",
-                                            "value" : true
-                                          },
-                                          "label" : {
-                                            "type" : "interpolation",
-                                            "value" : "Default label"
-                                          },
-                                          "labelPosition" : {
-                                            "type" : "constant",
-                                            "value" : "top"
-                                          },
-                                          "labelWidth" : {
-                                            "type" : "constant",
-                                            "value" : 4
-                                          },
-                                          "allowHTML" : {
-                                            "type" : "constant",
-                                            "value" : true
-                                          },
-                                          "text" : {
-                                            "type" : "interpolation",
-                                            "value" : "{{is_ceo_secretary}}"
-                                          },
-                                          "alignment" : {
-                                            "type" : "constant",
-                                            "value" : "left"
-                                          }
-                                        },
-                                        "reference" : "29f6f403-7cd5-40e4-875e-0b1e1917f61e",
-                                        "hasValidationError" : false,
-                                        "id" : "pbText"
-                                      }
-                                    ],
-                                    [
-                                      {
-                                        "type" : "component",
-                                        "dimension" : {
-                                          "md" : 12,
-                                          "sm" : 12,
-                                          "xs" : 12,
-                                          "lg" : 12
-                                        },
-                                        "propertyValues" : {
-                                          "headers" : {
-                                            "type" : "constant",
-                                            "value" : [
-                                              "Name",
-                                              "Status",
-                                              "Planneddate",
-                                              "Stream",
-                                              "Owner"
-                                            ]
-                                          },
-                                          "allowHtml" : {
-                                            "type" : "constant",
-                                            "value" : true
-                                          },
-                                          "hidden" : {
-                                            "type" : "constant",
-                                            "value" : false
-                                          },
-                                          "cssClasses" : {
-                                            "type" : "constant",
-                                            "value" : ""
-                                          },
-                                          "condensed" : {
-                                            "type" : "constant",
-                                            "value" : false
-                                          },
-                                          "bordered" : {
-                                            "type" : "constant",
-                                            "value" : false
-                                          },
-                                          "selectedRow" : {
-                                            "type" : "variable",
-                                            "value" : "activitiy_selected"
-                                          },
-                                          "columnsKey" : {
-                                            "type" : "constant",
-                                            "value" : [
-                                              "name",
-                                              "status",
-                                              "planneddate",
-                                              "stream",
-                                              "owner"
-                                            ]
-                                          },
-                                          "dimension" : {
-                                            "type" : "constant",
-                                            "value" : 12
-                                          },
-                                          "content" : {
-                                            "type" : "expression",
-                                            "value" : "activitiy_MY"
-                                          },
-                                          "zebraStriping" : {
-                                            "type" : "constant",
-                                            "value" : true
-                                          },
-                                          "allowHTML" : {
-                                            "type" : "constant",
-                                            "value" : true
-                                          },
-                                          "striped" : {
-                                            "type" : "constant",
-                                            "value" : true
-                                          }
-                                        },
-                                        "reference" : "722640fe-0c84-450c-bec9-d5e545a7a869",
-                                        "hasValidationError" : false,
-                                        "id" : "pbTable",
-                                        "description" : ""
-                                      }
-                                    ]
-                                  ]
-                                }
-                              ]
-                            ]
-                          }
-                        ]
-                      ]
-                    }
                   }
                 ]
               },
@@ -792,7 +742,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Proceed to Update"
                   },
                   "dataToSend" : {
                     "type" : "expression",

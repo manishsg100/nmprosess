@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Activityinit",
   "name" : "Activityinit",
-  "lastUpdate" : 1619699599175,
+  "lastUpdate" : 1619870758785,
   "rows" : [
     [
       {
@@ -1453,17 +1453,18 @@
   "inactiveAssets" : [ ],
   "variables" : {
     "formInput" : {
-      "type" : "json",
+      "type" : "expression",
       "value" : [
-        "{\r",
+        "return {\r",
         "  \"processinitInput\" : {\r",
         "    \"name\" : \"\",\r",
         "    \"status\" : \"\",\r",
         "    \"planneddate\" : null,\r",
         "    \"stream\" : \"\",\r",
-        "    \"owner\" : \"\"\r",
+        "    \"owner\" : \"\",\r",
+        "    \"initiator\": \"walter.bates\"\r",
         "  }\r",
-        "}"
+        "};"
       ],
       "exposed" : false
     },

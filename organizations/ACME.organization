@@ -7,8 +7,10 @@
       <lastName>Jobs</lastName>
       <title>Mr</title>
       <jobTitle>Chief Executive Officer</jobTitle>
+      <manager></manager>
+      <personalData/>
       <professionalData>
-        <email>william.jobs@acme.com</email>
+        <email>william.jobs@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -32,8 +34,9 @@
       <title>Mrs</title>
       <jobTitle>Compensation specialist</jobTitle>
       <manager>helen.kelly</manager>
+      <personalData/>
       <professionalData>
-        <email>april.sanchez@acme.com</email>
+        <email>april.sanchez@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -59,7 +62,7 @@
       <manager>william.jobs</manager>
       <personalData/>
       <professionalData>
-        <email>helen.kelly@acme.com</email>
+        <email>helen.kelly@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -86,7 +89,7 @@
       <manager>helen.kelly</manager>
       <personalData/>
       <professionalData>
-        <email>nituryanskiy@deloitte.com</email>
+        <email>walter.bates@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -113,7 +116,7 @@
       <manager>william.jobs</manager>
       <personalData/>
       <professionalData>
-        <email>zachary.williamson@acme.com</email>
+        <email>zachary.williamson@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -140,7 +143,7 @@
       <manager>zachary.williamson</manager>
       <personalData/>
       <professionalData>
-        <email>patrick.gardenier@acme.com</email>
+        <email>patrick.gardenier@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -164,8 +167,9 @@
       <title>Mrs</title>
       <jobTitle>Accountant</jobTitle>
       <manager>zachary.williamson</manager>
+      <personalData/>
       <professionalData>
-        <email>virginie.jomphe@acme.com</email>
+        <email>virginie.jomphe@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -191,7 +195,7 @@
       <manager>zachary.williamson</manager>
       <personalData/>
       <professionalData>
-        <email>thorsten.hartmann@acme.com</email>
+        <email>thorsten.hartmann@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -218,7 +222,7 @@
       <manager>favio.riviera</manager>
       <personalData/>
       <professionalData>
-        <email>jan.fisher@acme.com</email>
+        <email>jan.fisher@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -242,8 +246,9 @@
       <title>Mrs</title>
       <jobTitle>Product marketing manager</jobTitle>
       <manager>favio.riviera</manager>
+      <personalData/>
       <professionalData>
-        <email>isabel.bleasdale@acme.com</email>
+        <email>isabel.bleasdale@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -267,8 +272,9 @@
       <title>Mr</title>
       <jobTitle>Vice President of Marketing</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
-        <email>favio.riviera@acme.com</email>
+        <email>favio.riviera@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -292,8 +298,9 @@
       <title>Mr</title>
       <jobTitle>Chief Technical Officer</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
-        <email>michael.morrison@acme.com</email>
+        <email>michael.morrison@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -317,8 +324,9 @@
       <title>Mr</title>
       <jobTitle>Engineer</jobTitle>
       <manager>michael.morrison</manager>
+      <personalData/>
       <professionalData>
-        <email>marc.marseau@acme.com</email>
+        <email>marc.marseau@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -342,8 +350,9 @@
       <title>Mr</title>
       <jobTitle>Engineer</jobTitle>
       <manager>michael.morrison</manager>
+      <personalData/>
       <professionalData>
-        <email>joseph.hovell@acme.com</email>
+        <email>joseph.hovell@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -367,8 +376,9 @@
       <title>Mr</title>
       <jobTitle>Consultant</jobTitle>
       <manager>michael.morrison</manager>
+      <personalData/>
       <professionalData>
-        <email>mauro.zetticci@acme.com</email>
+        <email>mauro.zetticci@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -394,7 +404,7 @@
       <manager>michael.morrison</manager>
       <personalData/>
       <professionalData>
-        <email>thomas.wallis@acme.com</email>
+        <email>thomas.wallis@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -419,8 +429,9 @@
       <title>Mrs</title>
       <jobTitle>Vice President of Sales</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
-        <email>daniela.angelo@acme.com</email>
+        <email>daniela.angelo@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -444,8 +455,9 @@
       <title>Mr</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
-        <email>anthony.nichols@acme.com</email>
+        <email>anthony.nichols@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -471,7 +483,7 @@
       <manager>daniela.angelo</manager>
       <personalData/>
       <professionalData>
-        <email>misa.kumagai@acme.com</email>
+        <email>misa.kumagai@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -496,8 +508,9 @@
       <title>Mr</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
-        <email>norio.yamazaki@acme.com</email>
+        <email>norio.yamazaki@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -521,8 +534,9 @@
       <title>Mrs</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
-        <email>giovanna.almeida@acme.com</email>
+        <email>giovanna.almeida@mailinator.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
