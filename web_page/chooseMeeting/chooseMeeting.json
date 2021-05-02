@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "chooseMeeting",
   "name" : "chooseMeeting",
-  "lastUpdate" : 1619696320256,
+  "lastUpdate" : 1619700395814,
   "rows" : [
     [
       {
@@ -10,7 +10,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "410b45fc-47f3-4579-a551-f537fc03ea14",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -28,10 +37,39 @@
               {
                 "type" : "container",
                 "dimension" : {
-                  "md" : 12,
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 1,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "81dba632-5f17-4fea-9ed6-99769d60c60f",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
+              },
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 10,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 4
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
@@ -287,6 +325,72 @@
                           }
                         ]
                       ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 1,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "948e8189-3580-4b80-8604-f34817706cef",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : "neom-logo"
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "srcType" : {
+                          "type" : "constant",
+                          "value" : "URL"
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "https://www.neom.com/etc.clientlibs/neom/clientlibs/clientlib-site/resources/asset/image/logo-neom.da169c7.png"
+                        },
+                        "assetName" : {
+                          "type" : "constant"
+                        },
+                        "alt" : {
+                          "type" : "interpolation"
+                        }
+                      },
+                      "reference" : "c96d5048-d310-4d81-a0e8-a43ef1159bea",
+                      "hasValidationError" : false,
+                      "id" : "pbImage"
                     }
                   ]
                 ]
