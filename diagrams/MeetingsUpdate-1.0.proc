@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_4i_RcKa4EeuxiOmIo7HRwA" name="MeetingsUpdate" author="n1k" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_4i_Rcaa4EeuxiOmIo7HRwA" name="Update a Meeting">
+    <elements xmi:type="process:Pool" xmi:id="_4i_Rcaa4EeuxiOmIo7HRwA" name="Update a Meeting" displayName="Meetings: Update">
       <elements xmi:type="process:Lane" xmi:id="_4i_Rcqa4EeuxiOmIo7HRwA" name="Employee lane" actor="_4jAflKa4EeuxiOmIo7HRwA">
         <elements xmi:type="process:StartEvent" xmi:id="_4i_Rc6a4EeuxiOmIo7HRwA" name="Start1" outgoing="_4jAfkaa4EeuxiOmIo7HRwA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_4i_4gKa4EeuxiOmIo7HRwA" name="" content="" returnTypeFixed="true"/>

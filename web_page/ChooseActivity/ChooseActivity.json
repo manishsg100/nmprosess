@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "ChooseActivity",
   "name" : "ChooseActivity",
-  "lastUpdate" : 1619950676663,
+  "lastUpdate" : 1619955469587,
   "rows" : [
     [
       {
@@ -287,6 +287,212 @@
                                       {
                                         "type" : "component",
                                         "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 4,
+                                          "lg" : 4
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "minLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "maxLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Activity name..."
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation",
+                                            "value" : "Start to type"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "fMyName"
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "text"
+                                          },
+                                          "min" : {
+                                            "type" : "constant"
+                                          },
+                                          "max" : {
+                                            "type" : "constant"
+                                          },
+                                          "step" : {
+                                            "type" : "constant",
+                                            "value" : 1
+                                          }
+                                        },
+                                        "reference" : "5cc2fa6c-cf59-4690-931e-a284bfe1ac40",
+                                        "hasValidationError" : false,
+                                        "id" : "pbInput"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 4,
+                                          "lg" : 4
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "disabled" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Status"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation",
+                                            "value" : "Select an option"
+                                          },
+                                          "availableValues" : {
+                                            "type" : "expression",
+                                            "value" : "statuses"
+                                          },
+                                          "displayedKey" : {
+                                            "type" : "constant"
+                                          },
+                                          "returnedKey" : {
+                                            "type" : "constant"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "fMyStatus"
+                                          }
+                                        },
+                                        "reference" : "540e5f73-5b1c-47c4-9eec-fc30e2c3f754",
+                                        "hasValidationError" : false,
+                                        "id" : "pbSelect"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 4,
+                                          "lg" : 4
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "disabled" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Stream"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation",
+                                            "value" : "Select an option"
+                                          },
+                                          "availableValues" : {
+                                            "type" : "expression",
+                                            "value" : "streams"
+                                          },
+                                          "displayedKey" : {
+                                            "type" : "constant"
+                                          },
+                                          "returnedKey" : {
+                                            "type" : "constant"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "fMyStream"
+                                          }
+                                        },
+                                        "reference" : "127324fb-f916-4af4-99f5-151c58aa3f0f",
+                                        "hasValidationError" : false,
+                                        "id" : "pbSelect"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
                                           "md" : 12,
                                           "sm" : 12,
                                           "xs" : 12,
@@ -389,8 +595,8 @@
                         "value" : ""
                       },
                       "hidden" : {
-                        "type" : "expression",
-                        "value" : "!is_ceo_secretary"
+                        "type" : "constant",
+                        "value" : false
                       },
                       "disabled" : {
                         "type" : "constant",
@@ -445,7 +651,7 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 11,
+                                    "md" : 12,
                                     "sm" : 12,
                                     "xs" : 12,
                                     "lg" : 12
@@ -488,8 +694,8 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 11,
-                                    "lg" : 12
+                                    "md" : 6,
+                                    "lg" : 4
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -522,7 +728,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Search for Activity"
+                                      "value" : "Filter by Activity"
                                     },
                                     "labelPosition" : {
                                       "type" : "constant",
@@ -533,11 +739,12 @@
                                       "value" : 4
                                     },
                                     "placeholder" : {
-                                      "type" : "interpolation"
+                                      "type" : "interpolation",
+                                      "value" : "Activity name..."
                                     },
                                     "value" : {
                                       "type" : "variable",
-                                      "value" : "filteredValue"
+                                      "value" : "fName"
                                     },
                                     "type" : {
                                       "type" : "constant",
@@ -557,13 +764,208 @@
                                   "reference" : "7f8fddaa-b068-4721-853f-6cf28f92b873",
                                   "hasValidationError" : false,
                                   "id" : "pbInput"
+                                },
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 8
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "disabled" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Filter by Status"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "placeholder" : {
+                                      "type" : "interpolation",
+                                      "value" : "Select an option"
+                                    },
+                                    "availableValues" : {
+                                      "type" : "expression",
+                                      "value" : "statuses"
+                                    },
+                                    "displayedKey" : {
+                                      "type" : "constant"
+                                    },
+                                    "returnedKey" : {
+                                      "type" : "constant"
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fStatus"
+                                    }
+                                  },
+                                  "reference" : "f507aa50-3211-4877-b10f-22718c4fe532",
+                                  "hasValidationError" : false,
+                                  "id" : "pbSelect"
                                 }
                               ],
                               [
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 11,
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 6
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "disabled" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Filter by Stream"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "placeholder" : {
+                                      "type" : "interpolation",
+                                      "value" : "Select an option"
+                                    },
+                                    "availableValues" : {
+                                      "type" : "expression",
+                                      "value" : "streams"
+                                    },
+                                    "displayedKey" : {
+                                      "type" : "constant"
+                                    },
+                                    "returnedKey" : {
+                                      "type" : "constant"
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fStream"
+                                    }
+                                  },
+                                  "reference" : "0ee94a95-7127-47c5-ac86-c613b670a01e",
+                                  "hasValidationError" : false,
+                                  "id" : "pbSelect"
+                                },
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 6
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Filter by Owner"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "placeholder" : {
+                                      "type" : "interpolation"
+                                    },
+                                    "availableValues" : {
+                                      "type" : "expression",
+                                      "value" : "usersSuggestions"
+                                    },
+                                    "displayedKey" : {
+                                      "type" : "constant",
+                                      "value" : "userName"
+                                    },
+                                    "returnedKey" : {
+                                      "type" : "constant",
+                                      "value" : "userName"
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fOwner"
+                                    }
+                                  },
+                                  "reference" : "80ab0001-e9e6-4b73-a1be-1b22d0c92a5a",
+                                  "hasValidationError" : false,
+                                  "id" : "pbAutocomplete"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
                                     "sm" : 12,
                                     "xs" : 12,
                                     "lg" : 12
@@ -934,7 +1336,7 @@
     "activitiy" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"query [com.company.model.Activitiy]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"query\",\"displayName\":\"query\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"text\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{filterText}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"200\"}}"
+        "{\"displayValue\":\"filterAllActivities [com.company.model.Activitiy]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"filterAllActivities\",\"displayName\":\"filterAllActivities\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"name\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pName}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pStatus}}\"},{\"name\":\"stream\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pStream}}\"},{\"name\":\"owner\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pOwner}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
       ],
       "exposed" : false
     },
@@ -959,7 +1361,7 @@
     "activitiy_MY" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"filterMyActivities [com.company.model.Activitiy]\",\"businessObjectName\":\"Activitiy\",\"query\":{\"name\":\"filterMyActivities\",\"displayName\":\"filterMyActivities\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"owner\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{owner}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
+        "{\"displayValue\":\"filterAllActivities [com.company.model.Activitiy]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"filterAllActivities\",\"displayName\":\"filterAllActivities\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"name\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyName}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyStatus}}\"},{\"name\":\"stream\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyStream}}\"},{\"name\":\"owner\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{owner}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
       ],
       "exposed" : false
     },
@@ -1004,6 +1406,104 @@
         "return !!$data.membership.filter((role) => {",
         "    return role.role_id.name === 'ceo_secretary';",
         "}).length;"
+      ],
+      "exposed" : false
+    },
+    "fName" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fStatus" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fStream" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fOwner" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "pName" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fName || '') + '%25';"
+      ],
+      "exposed" : false
+    },
+    "pStatus" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fStatus || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "pStream" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fStream || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "pOwner" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fOwner || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "streams" : {
+      "type" : "json",
+      "value" : [
+        "[\"Energy\", \"Water\", \"Mobility\", \"Technology and Digital\", \"Media\", \"Entertainment and Culture\", \"Services\", \"Tourism\", \"Sport\", \"Health, Well-Being amd Biotech\", \"Desgin and Construction\", \"Manufacturing\", \"Education\", \"Food\"]"
+      ],
+      "exposed" : false
+    },
+    "statuses" : {
+      "type" : "json",
+      "value" : [
+        "[\"New\", \"Not Started\", \"In Progress\", \"Overdue\", \"Completed\"]"
+      ],
+      "exposed" : false
+    },
+    "usersSuggestions" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=100&s={{fOwner || ''}}"
+      ],
+      "exposed" : false
+    },
+    "fMyName" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fMyStream" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fMyStatus" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "pMyName" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fMyName || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "pMyStatus" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fMyStatus || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "pMyStream" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fMyStream || '') + '%25';\t"
       ],
       "exposed" : false
     }

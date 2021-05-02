@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_vTIwAKWiEeuRXN916z5Hog" name="CEO_WatchlistCreate" author="manis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_vTIwAaWiEeuRXN916z5Hog" name="Create CEO Watchlist">
+    <elements xmi:type="process:Pool" xmi:id="_vTIwAaWiEeuRXN916z5Hog" name="Create CEO Watchlist" displayName="CEO WatchList: Create Activities">
       <elements xmi:type="process:Lane" xmi:id="_vTIwAqWiEeuRXN916z5Hog" name="Employee lane" actor="_vTIwG6WiEeuRXN916z5Hog">
         <elements xmi:type="process:StartEvent" xmi:id="_vTIwA6WiEeuRXN916z5Hog" name="Home Page" outgoing="_aIpwIKcfEeuv1YekLvNwQQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_vTIwBKWiEeuRXN916z5Hog" name="" content="" returnTypeFixed="true"/>
