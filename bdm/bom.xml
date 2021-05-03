@@ -125,6 +125,16 @@ AND m.participants = :participants</description>
                         <queryParameter name="text" className="java.lang.String"/>
                     </queryParameters>
                 </query>
+                <query name="searchMeetings" content="SELECT m &#10;FROM Meeting m &#10;WHERE m.meetingType LIKE :meetingType&#10;AND m.meetingSubject LIKE :meetingSubject&#10;AND m.meetingDate &gt;= :meetingStartDate&#10;AND m.meetingDate &lt;= :meetingEndDate&#10;AND m.meetingStatus LIKE :meetingStatus&#10;AND m.participants LIKE :participants&#10;ORDER BY m.persistenceId DESC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="meetingType" className="java.lang.String"/>
+                        <queryParameter name="meetingSubject" className="java.lang.String"/>
+                        <queryParameter name="meetingEndDate" className="java.time.LocalDate"/>
+                        <queryParameter name="meetingStatus" className="java.lang.String"/>
+                        <queryParameter name="participants" className="java.lang.String"/>
+                        <queryParameter name="meetingStartDate" className="java.time.LocalDate"/>
+                    </queryParameters>
+                </query>
             </queries>
             <indexes/>
         </businessObject>

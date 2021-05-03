@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "chooseMeeting",
   "name" : "chooseMeeting",
-  "lastUpdate" : 1619961975512,
+  "lastUpdate" : 1620073010987,
   "rows" : [
     [
       {
@@ -107,6 +107,147 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Subject"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "fSubject"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "f17b5acc-fd32-4dd6-bcdd-d0004f621dbe",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Status"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Select an option"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "statuses"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "fStatus"
+                        }
+                      },
+                      "reference" : "bb350463-4a66-4dc7-b392-e75257372627",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
                         "md" : 12,
                         "lg" : 12
                       },
@@ -141,7 +282,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Start to type a part of subject, type, status, descriptions or participants"
+                          "value" : "Status"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -156,7 +297,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "filteredValue"
+                          "value" : "fStatus"
                         },
                         "type" : {
                           "type" : "constant",
@@ -173,9 +314,284 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "9fd48014-292d-4788-bfb0-58b41ec8afd1",
+                      "reference" : "00a3a4f3-7637-4062-b14f-427b7f6af07f",
                       "hasValidationError" : false,
                       "id" : "pbInput"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Meeting Type"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Select an option"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "types"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "fType"
+                        }
+                      },
+                      "reference" : "3a5aa6f2-fbe6-4771-b94f-3cb581382d9a",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Participants"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "fParticipants"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "5a18118d-57b0-4255-8698-8a659f08a2f5",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Date From"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "fStartDate"
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "yyyy-MM-dd"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a date (yyyy-MM-dd)"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
+                        }
+                      },
+                      "reference" : "f6b3e34e-4b91-4e11-a58b-66a404518107",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Date To"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "fEndDate"
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "yyyy-MM-dd"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a date (yyyy-MM-dd)"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
+                        }
+                      },
+                      "reference" : "adc7d3ea-7dfd-4f27-bf21-ccce734c5f9b",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker"
                     }
                   ],
                   [
@@ -412,6 +828,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "05ad7cb2-10b9-417b-8d7b-80d51abe3508",
@@ -477,7 +901,7 @@
     "meeting" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"textSearch [com.company.model.Meeting]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"textSearch\",\"displayName\":\"textSearch\"},\"id\":\"com.company.model.Meeting\",\"filters\":[{\"name\":\"text\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{filterText}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"200\"}}"
+        "{\"displayValue\":\"searchMeetings [com.company.model.Meeting]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"searchMeetings\",\"displayName\":\"searchMeetings\"},\"id\":\"com.company.model.Meeting\",\"filters\":[{\"name\":\"meetingType\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMeetingType}}\"},{\"name\":\"meetingSubject\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMeetingSubject}}\"},{\"name\":\"meetingEndDate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"{{pEndDate}}\"},{\"name\":\"meetingStatus\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMeetingStatus}}\"},{\"name\":\"participants\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pParticipants}}\"},{\"name\":\"meetingStartDate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"{{pStartDate}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"200\"}}"
       ],
       "exposed" : false
     },
@@ -495,15 +919,84 @@
       ],
       "exposed" : false
     },
-    "filterText" : {
+    "pMeetingType" : {
       "type" : "expression",
       "value" : [
-        "return '%25' + ($data.filteredValue || '') + '%25';"
+        "return '%25' + ($data.fType || '') + '%25';\t"
       ],
       "exposed" : false
     },
-    "filteredValue" : {
+    "pMeetingSubject" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fSubject || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "fType" : {
       "type" : "constant",
+      "exposed" : false
+    },
+    "fSubject" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fEndDate" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fStartDate" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fStatus" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fParticipants" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "pMeetingStatus" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fStatus || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "pParticipants" : {
+      "type" : "expression",
+      "value" : [
+        "return '%25' + ($data.fParticipants || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "pStartDate" : {
+      "type" : "expression",
+      "value" : [
+        "return ($data.fStartDate && $data.fStartDate.toISOString().substring(0,10) || `${(new Date()).getFullYear()-5}${(new Date()).toISOString().substring(4,10)}`);\t"
+      ],
+      "exposed" : false
+    },
+    "pEndDate" : {
+      "type" : "expression",
+      "value" : [
+        "return ($data.fEndDate && $data.fEndDate.toISOString().substring(0,10) || `${(new Date()).getFullYear()+20}${(new Date()).toISOString().substring(4,10)}`);\t"
+      ],
+      "exposed" : false
+    },
+    "statuses" : {
+      "type" : "json",
+      "value" : [
+        "[\"Upcoming\", \"Delayed\",\"Conducted\",\"Cancelled\"]\t"
+      ],
+      "exposed" : false
+    },
+    "types" : {
+      "type" : "json",
+      "value" : [
+        " [\"Board\", \"Founding Board\",\"NRC\",\"GRC\",\"Audit Commitee\",\"Investment and Funding Committee\"]"
+      ],
       "exposed" : false
     }
   },

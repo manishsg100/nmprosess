@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingInitShort",
   "name" : "meetingInitShort",
-  "lastUpdate" : 1619961734411,
+  "lastUpdate" : 1620073116234,
   "rows" : [
     [
       {
@@ -408,7 +408,7 @@
                                     },
                                     "availableValues" : {
                                       "type" : "expression",
-                                      "value" : "types"
+                                      "value" : "statuses"
                                     },
                                     "displayedKey" : {
                                       "type" : "constant"
@@ -472,7 +472,7 @@
                                     },
                                     "availableValues" : {
                                       "type" : "expression",
-                                      "value" : "statuses"
+                                      "value" : "types"
                                     },
                                     "displayedKey" : {
                                       "type" : "constant"
