@@ -33,6 +33,47 @@
             </queries>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Construction">
+            <fields>
+                <field type="STRING" length="255" name="project" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="region" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="targetDate" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="percentCompletion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="latestUpdate" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Happening">
+            <fields>
+                <field type="LOCALDATE" length="255" name="happeningDate" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="stream" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="happeningName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="createdAt" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Investment">
+            <fields>
+                <field type="STRING" length="255" name="target" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="investmentSize" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="stage" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="investmentType" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="sector" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Item">
             <fields>
                 <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
@@ -87,13 +128,13 @@ AND m.participants = :participants</description>
             </queries>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.company.model.MyActivities">
+        <businessObject qualifiedName="com.company.model.RegionDevelopment">
             <fields>
-                <field type="STRING" length="255" name="activityName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="region" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="stage" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
-                <field type="LOCALDATE" length="255" name="plannedDate" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="stream" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="owner" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
