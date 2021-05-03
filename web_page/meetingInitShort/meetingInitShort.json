@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingInitShort",
   "name" : "meetingInitShort",
-  "lastUpdate" : 1619950967887,
+  "lastUpdate" : 1619961734411,
   "rows" : [
     [
       {
@@ -103,41 +103,12 @@
             ],
             [
               {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 1,
-                  "lg" : 4
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
-                  }
-                },
-                "reference" : "5c6e09b5-f050-4df0-96f0-2c2c7d5f8800",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [ ]
-                ]
-              },
-              {
                 "type" : "tabsContainer",
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 10,
-                  "lg" : 4
+                  "md" : 12,
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -1330,72 +1301,6 @@
                       ]
                     }
                   }
-                ]
-              },
-              {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 1,
-                  "lg" : 4
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
-                  }
-                },
-                "reference" : "c7b9b9a5-b3bb-4e1a-9533-0efaa2f6d524",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : "neom-logo"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "srcType" : {
-                          "type" : "constant",
-                          "value" : "URL"
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "https://www.neom.com/etc.clientlibs/neom/clientlibs/clientlib-site/resources/asset/image/logo-neom.da169c7.png"
-                        },
-                        "assetName" : {
-                          "type" : "constant"
-                        },
-                        "alt" : {
-                          "type" : "interpolation"
-                        }
-                      },
-                      "reference" : "0320d14a-f304-4b87-b577-3c7a0defa406",
-                      "hasValidationError" : false,
-                      "id" : "pbImage"
-                    }
-                  ]
                 ]
               }
             ],

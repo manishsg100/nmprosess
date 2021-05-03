@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "ChooseActivity",
   "name" : "ChooseActivity",
-  "lastUpdate" : 1619955469587,
+  "lastUpdate" : 1619961494237,
   "rows" : [
     [
       {
@@ -88,41 +88,12 @@
           "rows" : [
             [
               {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 1,
-                  "lg" : 4
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
-                  }
-                },
-                "reference" : "d81c4ecc-1831-4e25-aec1-912f79841393",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [ ]
-                ]
-              },
-              {
                 "type" : "tabsContainer",
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 9,
-                  "lg" : 4
+                  "md" : 12,
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -695,7 +666,7 @@
                                     "xs" : 12,
                                     "sm" : 12,
                                     "md" : 6,
-                                    "lg" : 4
+                                    "lg" : 6
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -771,7 +742,7 @@
                                     "xs" : 12,
                                     "sm" : 12,
                                     "md" : 6,
-                                    "lg" : 8
+                                    "lg" : 6
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -1048,72 +1019,6 @@
                       ]
                     }
                   }
-                ]
-              },
-              {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 2,
-                  "lg" : 4
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
-                  }
-                },
-                "reference" : "2d2374b5-ab8f-4c6e-a33c-93a356608237",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 7,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : "neom-logo"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "srcType" : {
-                          "type" : "constant",
-                          "value" : "URL"
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "https://www.neom.com/etc.clientlibs/neom/clientlibs/clientlib-site/resources/asset/image/logo-neom.da169c7.png"
-                        },
-                        "assetName" : {
-                          "type" : "constant"
-                        },
-                        "alt" : {
-                          "type" : "interpolation"
-                        }
-                      },
-                      "reference" : "5f425dfe-a9da-48d5-9d8f-e34965dc4ff7",
-                      "hasValidationError" : false,
-                      "id" : "pbImage"
-                    }
-                  ]
                 ]
               }
             ],
