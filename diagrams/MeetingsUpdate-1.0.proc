@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_4i_RcKa4EeuxiOmIo7HRwA" name="MeetingsUpdate" author="n1k" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_4i_Rcaa4EeuxiOmIo7HRwA" name="Update a Meeting" displayName="Meetings: View/Update">
       <elements xmi:type="process:Lane" xmi:id="_4i_Rcqa4EeuxiOmIo7HRwA" name="Employee lane" actor="_4jAflKa4EeuxiOmIo7HRwA">
@@ -174,6 +174,24 @@
         <condition xmi:type="expression:Expression" xmi:id="_joRKAabDEeuxiOmIo7HRwA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_4jAflKa4EeuxiOmIo7HRwA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_fhPxIKzgEeuLm4pt6qXrTA" name="Production" version="7.12.0-004" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_fhPxJ6zgEeuLm4pt6qXrTA">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_fhPxKKzgEeuLm4pt6qXrTA" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_fhPxKazgEeuLm4pt6qXrTA"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_fhPxKqzgEeuLm4pt6qXrTA"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_fhPxK6zgEeuLm4pt6qXrTA">
+              <role>ceo_secretary</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_fhPxLKzgEeuLm4pt6qXrTA"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_fhPxIazgEeuLm4pt6qXrTA" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_fhPxIqzgEeuLm4pt6qXrTA" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_fhPxI6zgEeuLm4pt6qXrTA" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_fhPxJKzgEeuLm4pt6qXrTA" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_fhPxJazgEeuLm4pt6qXrTA" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_fhPxJqzgEeuLm4pt6qXrTA" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_4jAflaa4EeuxiOmIo7HRwA">
         <inputs xmi:type="process:ContractInput" xmi:id="_6b7WwKa9EeuxiOmIo7HRwA" name="objectIdInput" type="LONG">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_6b7Wwaa9EeuxiOmIo7HRwA"/>

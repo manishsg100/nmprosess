@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_oGKUMKccEeuv1YekLvNwQQ" name="CEO_WatchlistUpdate" author="manis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_oGKUMaccEeuv1YekLvNwQQ" name="Update CEO Watchlist" displayName="CEO WatchList: View/Update Activities">
       <elements xmi:type="process:Lane" xmi:id="_oGKUMqccEeuv1YekLvNwQQ" name="Employee lane" actor="_oGKUdaccEeuv1YekLvNwQQ">
@@ -221,6 +221,34 @@
         <condition xmi:type="expression:Expression" xmi:id="_sKGDsqccEeuv1YekLvNwQQ" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_oGKUdaccEeuv1YekLvNwQQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_ZgGHAKzgEeuLm4pt6qXrTA" name="Production" version="7.12.0-004" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_ZgGHDKzgEeuLm4pt6qXrTA">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_ZgGHDazgEeuLm4pt6qXrTA" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_ZgGHDqzgEeuLm4pt6qXrTA">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_ZgGHD6zgEeuLm4pt6qXrTA"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_ZgGHEKzgEeuLm4pt6qXrTA">
+              <role>ceo_secretary</role>
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_ZgGHEazgEeuLm4pt6qXrTA"/>
+          </actorMapping>
+        </actorMappings>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_ZgGHAazgEeuLm4pt6qXrTA" type="CONNECTOR" definitionId="email" definitionVersion="1.2.0" implementationId="email-impl" implementationVersion="1.3.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ZgGHAqzgEeuLm4pt6qXrTA" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ZgGHA6zgEeuLm4pt6qXrTA" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_ZgGHBKzgEeuLm4pt6qXrTA" id="email-impl-1.3.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_ZgGHBazgEeuLm4pt6qXrTA" key="email-impl -- 1.3.0" value="bonita-connector-email-1.3.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_ZgGHBqzgEeuLm4pt6qXrTA" key="email-impl -- 1.3.0" value="javax.mail-1.6.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_ZgGHB6zgEeuLm4pt6qXrTA" key="email-impl -- 1.3.0" value="javax.mail-api-1.6.2.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ZgGHCKzgEeuLm4pt6qXrTA" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ZgGHCazgEeuLm4pt6qXrTA" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ZgGHCqzgEeuLm4pt6qXrTA" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ZgGHC6zgEeuLm4pt6qXrTA" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_oGKUdqccEeuv1YekLvNwQQ">
         <inputs xmi:type="process:ContractInput" xmi:id="_9xNEUKccEeuv1YekLvNwQQ" name="objectIdInput" type="LONG">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_9xNEUaccEeuv1YekLvNwQQ"/>
