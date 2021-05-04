@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "ChooseActivity",
   "name" : "ChooseActivity",
-  "lastUpdate" : 1619961494237,
+  "lastUpdate" : 1620109216204,
   "rows" : [
     [
       {
@@ -458,6 +458,140 @@
                                         "reference" : "127324fb-f916-4af4-99f5-151c58aa3f0f",
                                         "hasValidationError" : false,
                                         "id" : "pbSelect"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Planned Date From"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "fMyStartDate"
+                                          },
+                                          "dateFormat" : {
+                                            "type" : "constant",
+                                            "value" : "yyyy-MM-dd"
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation",
+                                            "value" : "Enter a date (mm/dd/yyyy)"
+                                          },
+                                          "showToday" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "todayLabel" : {
+                                            "type" : "interpolation",
+                                            "value" : "Today"
+                                          }
+                                        },
+                                        "reference" : "23ddd963-9248-4e97-95b9-550a24396a84",
+                                        "hasValidationError" : false,
+                                        "id" : "pbDatePicker"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Planned Date To"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "fMyEndDate"
+                                          },
+                                          "dateFormat" : {
+                                            "type" : "constant",
+                                            "value" : "yyyy-MM-dd"
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation",
+                                            "value" : "Enter a date (mm/dd/yyyy)"
+                                          },
+                                          "showToday" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "todayLabel" : {
+                                            "type" : "interpolation",
+                                            "value" : "Today"
+                                          }
+                                        },
+                                        "reference" : "0b50b8d3-0eed-4718-adac-84a03734b590",
+                                        "hasValidationError" : false,
+                                        "id" : "pbDatePicker"
                                       }
                                     ],
                                     [
@@ -936,6 +1070,140 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 6
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Planned Date From"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fStartDate"
+                                    },
+                                    "dateFormat" : {
+                                      "type" : "constant",
+                                      "value" : "yyyy-MM-dd"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "interpolation",
+                                      "value" : "Enter a date (yyyy-MM-dd)"
+                                    },
+                                    "showToday" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "todayLabel" : {
+                                      "type" : "interpolation",
+                                      "value" : "Today"
+                                    }
+                                  },
+                                  "reference" : "b69d33f7-9ba5-4a16-8dcd-681a80badf27",
+                                  "hasValidationError" : false,
+                                  "id" : "pbDatePicker"
+                                },
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 6
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Planned Date To"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fEndDate"
+                                    },
+                                    "dateFormat" : {
+                                      "type" : "constant",
+                                      "value" : "yyyy-MM-dd"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "interpolation",
+                                      "value" : "Enter a date (yyyy-MM-dd)"
+                                    },
+                                    "showToday" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "todayLabel" : {
+                                      "type" : "interpolation",
+                                      "value" : "Today"
+                                    }
+                                  },
+                                  "reference" : "8e83ef24-20c4-4233-b192-30ee7e1082f0",
+                                  "hasValidationError" : false,
+                                  "id" : "pbDatePicker"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
                                     "md" : 12,
                                     "sm" : 12,
                                     "xs" : 12,
@@ -1241,7 +1509,7 @@
     "activitiy" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"filterAllActivities [com.company.model.Activitiy]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"filterAllActivities\",\"displayName\":\"filterAllActivities\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"name\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pName}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pStatus}}\"},{\"name\":\"stream\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pStream}}\"},{\"name\":\"owner\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pOwner}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
+        "{\"displayValue\":\"filterAllActivities [com.company.model.Activitiy]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"filterAllActivities\",\"displayName\":\"filterAllActivities\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"name\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pName}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pStatus}}\"},{\"name\":\"stream\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pStream}}\"},{\"name\":\"owner\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pOwner}}\"},{\"name\":\"startdate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"{{pStartDate}}\"},{\"name\":\"enddate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"{{pEndDate}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
       ],
       "exposed" : false
     },
@@ -1266,7 +1534,7 @@
     "activitiy_MY" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"filterAllActivities [com.company.model.Activitiy]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"filterAllActivities\",\"displayName\":\"filterAllActivities\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"name\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyName}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyStatus}}\"},{\"name\":\"stream\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyStream}}\"},{\"name\":\"owner\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{owner}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
+        "{\"displayValue\":\"filterAllActivities [com.company.model.Activitiy]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"filterAllActivities\",\"displayName\":\"filterAllActivities\"},\"id\":\"com.company.model.Activitiy\",\"filters\":[{\"name\":\"name\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyName}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyStatus}}\"},{\"name\":\"stream\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{pMyStream}}\"},{\"name\":\"owner\",\"type\":\"STRING\",\"collection\":false,\"value\":\"{{owner}}\"},{\"name\":\"startdate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"{{pMyStartDate}}\"},{\"name\":\"enddate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"{{pMyEndDate}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
       ],
       "exposed" : false
     },
@@ -1409,6 +1677,50 @@
       "type" : "expression",
       "value" : [
         "return '%25' + ($data.fMyStream || '') + '%25';\t"
+      ],
+      "exposed" : false
+    },
+    "fStartDate" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fEndDate" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "pStartDate" : {
+      "type" : "expression",
+      "value" : [
+        "return ($data.fStartDate && $data.fStartDate.toISOString().substring(0,10) || `${(new Date()).getFullYear()-5}${(new Date()).toISOString().substring(4,10)}`);\t"
+      ],
+      "exposed" : false
+    },
+    "pEndDate" : {
+      "type" : "expression",
+      "value" : [
+        "return ($data.fEndDate && $data.fEndDate.toISOString().substring(0,10) || `${(new Date()).getFullYear()+20}${(new Date()).toISOString().substring(4,10)}`);\t"
+      ],
+      "exposed" : false
+    },
+    "fMyStartDate" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "fMyEndDate" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "pMyStartDate" : {
+      "type" : "expression",
+      "value" : [
+        "return ($data.fMyStartDate && $data.fMyStartDate.toISOString().substring(0,10) || `${(new Date()).getFullYear()-5}${(new Date()).toISOString().substring(4,10)}`);\t"
+      ],
+      "exposed" : false
+    },
+    "pMyEndDate" : {
+      "type" : "expression",
+      "value" : [
+        "return ($data.fMyEndDate && $data.fMyEndDate.toISOString().substring(0,10) || `${(new Date()).getFullYear()+20}${(new Date()).toISOString().substring(4,10)}`);\t"
       ],
       "exposed" : false
     }
