@@ -53,35 +53,14 @@
     <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
   </parameters>
   <parameters key="message">
-    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="Dear user,&#xA;Please check CEO Watchlist Activities that require update:&#xA;&#xA;Activity: ${processinit.name}&#xA;Status: ${processinit.status}&#xA;Stream: ${processinit.stream}&#xA;Planned date: ${processinit.planneddate.toString()}" type="TYPE_PATTERN" returnTypeFixed="true">
-      <referencedElements xsi:type="expression:Expression" name="processinit.name" content="processinit.name" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-        <referencedElements xsi:type="expression:Expression" name="processinit" content="processinit" type="TYPE_VARIABLE" returnType="com.company.model.Activitiy">
-          <referencedElements xsi:type="process:BusinessObjectData" name="processinit" className="com.company.model.Activitiy">
-            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/CEO_WatchlistCreate-1.0.proc#_vTIwNKWiEeuRXN916z5Hog"/>
-          </referencedElements>
-        </referencedElements>
-      </referencedElements>
-      <referencedElements xsi:type="expression:Expression" name="processinit.status" content="processinit.status" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-        <referencedElements xsi:type="expression:Expression" name="processinit" content="processinit" type="TYPE_VARIABLE" returnType="com.company.model.Activitiy">
-          <referencedElements xsi:type="process:BusinessObjectData" name="processinit" className="com.company.model.Activitiy">
-            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/CEO_WatchlistCreate-1.0.proc#_vTIwNKWiEeuRXN916z5Hog"/>
-          </referencedElements>
-        </referencedElements>
-      </referencedElements>
-      <referencedElements xsi:type="expression:Expression" name="processinit.stream" content="processinit.stream" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-        <referencedElements xsi:type="expression:Expression" name="processinit" content="processinit" type="TYPE_VARIABLE" returnType="com.company.model.Activitiy">
-          <referencedElements xsi:type="process:BusinessObjectData" name="processinit" className="com.company.model.Activitiy">
-            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/CEO_WatchlistCreate-1.0.proc#_vTIwNKWiEeuRXN916z5Hog"/>
-          </referencedElements>
-        </referencedElements>
-      </referencedElements>
-      <referencedElements xsi:type="expression:Expression" name="processinit.planneddate.toString()" content="processinit.planneddate.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-        <referencedElements xsi:type="expression:Expression" name="processinit" content="processinit" type="TYPE_VARIABLE" returnType="com.company.model.Activitiy">
-          <referencedElements xsi:type="process:BusinessObjectData" name="processinit" className="com.company.model.Activitiy">
-            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/CEO_WatchlistCreate-1.0.proc#_vTIwNKWiEeuRXN916z5Hog"/>
-          </referencedElements>
-        </referencedElements>
-      </referencedElements>
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="Dear user,&#xA;Please check CEO Watchlist Activities that require update:&#xA;&#xA;Activity: ${processinit.name}&#xA;Status: ${processinit.status}&#xA;Stream: ${processinit.stream}&#xA;&#xA;Planned date: ${processinit.planneddate.toString()}&#xA;Follow Up date: ${processinit.followupdate.toString()}&#xA;Expected date: ${processinit.expecteddate.toString()}&#xA;&#xA;Remark: ${processinit.remark}" type="TYPE_PATTERN" returnTypeFixed="true">
+      <referencedElements xsi:type="expression:Expression" name="processinit.name" content="processinit.name" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      <referencedElements xsi:type="expression:Expression" name="processinit.status" content="processinit.status" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      <referencedElements xsi:type="expression:Expression" name="processinit.stream" content="processinit.stream" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      <referencedElements xsi:type="expression:Expression" name="processinit.planneddate.toString()" content="processinit.planneddate.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      <referencedElements xsi:type="expression:Expression" name="processinit.followupdate.toString()" content="processinit.followupdate.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      <referencedElements xsi:type="expression:Expression" name="processinit.expecteddate.toString()" content="processinit.expecteddate.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      <referencedElements xsi:type="expression:Expression" name="processinit.remark" content="processinit.remark" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
     </expression>
   </parameters>
   <parameters key="headers">

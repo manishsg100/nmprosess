@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "chooseMeeting",
   "name" : "chooseMeeting",
-  "lastUpdate" : 1620073010987,
+  "lastUpdate" : 1620124906135,
   "rows" : [
     [
       {
@@ -192,7 +192,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "disabled" : {
                           "type" : "constant",
@@ -240,83 +240,6 @@
                       "reference" : "bb350463-4a66-4dc7-b392-e75257372627",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Status"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "fStatus"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "00a3a4f3-7637-4062-b14f-427b7f6af07f",
-                      "hasValidationError" : false,
-                      "id" : "pbInput"
                     }
                   ],
                   [
@@ -613,8 +536,7 @@
                             "Meeting Date",
                             "Meeting Status",
                             "Description",
-                            "Participants",
-                            "Is Archieved"
+                            "Participants"
                           ]
                         },
                         "allowHtml" : {
@@ -650,8 +572,7 @@
                             "meetingDate",
                             "meetingStatus",
                             "description",
-                            "participants",
-                            "isArchieved"
+                            "participants"
                           ]
                         },
                         "dimension" : {

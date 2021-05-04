@@ -9,6 +9,10 @@
                 <field type="STRING" length="255" name="stream" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="owner" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="initiator" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="remark" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="followupdate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="expecteddate" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "editActivity",
   "name" : "editActivity",
-  "lastUpdate" : 1619871109373,
+  "lastUpdate" : 1620115975420,
   "rows" : [
     [
       {
@@ -253,7 +253,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!processinit.name"
+                          "value" : "processinit.name"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -314,7 +314,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!processinit.owner"
+                          "value" : "processinit.owner"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -409,10 +409,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "hidden" : {
@@ -421,7 +421,7 @@
                         },
                         "dateFormat" : {
                           "type" : "constant",
-                          "value" : "MM/dd/yyyy"
+                          "value" : "yyyy-MM-dd"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -433,7 +433,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -456,7 +456,7 @@
                         },
                         "showToday" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -464,7 +464,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "value" : ""
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -479,6 +479,72 @@
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Follow Up Date"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "processinit.followupdate"
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "yyyy-MM-dd"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
+                        }
+                      },
+                      "reference" : "12752969-103e-4fbc-8086-708a9c5603de",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker"
                     }
                   ],
                   [
@@ -487,8 +553,58 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 6,
-                        "lg" : 6
+                        "md" : 4,
+                        "lg" : 4
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Stream"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{processinit.stream}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "6534024e-803e-47e8-914a-3e4baeab08d0",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 4,
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -551,8 +667,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 6,
-                        "lg" : 6
+                        "md" : 4,
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -562,6 +678,74 @@
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Expected Date"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "processinit.expecteddate"
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "yyyy-MM-dd"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a date (yyyy-MM-dd)"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
+                        }
+                      },
+                      "reference" : "536e2119-e4cd-40f7-bdc1-ef15d37870d7",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "disabled" : {
                           "type" : "constant",
@@ -609,6 +793,66 @@
                       "reference" : "a405184c-6c9d-46c2-9513-7ae39dbfc99e",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Remark"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "processinit.remark"
+                        }
+                      },
+                      "reference" : "16588170-5446-4d5b-a520-f8ccf44cf12d",
+                      "hasValidationError" : false,
+                      "id" : "pbTextarea"
                     }
                   ]
                 ]
@@ -835,7 +1079,10 @@
         "\t\tprocessinitInput: {",
         "\t\t\tstatus: $data.processinit.status !== undefined ? $data.processinit.status : null,",
         "\t\t\tplanneddate: $data.processinit.planneddate !== undefined ? $data.processinit.planneddate : null,",
-        "\t\t\tstream: $data.processinit.stream !== undefined ? $data.processinit.stream : null",
+        "\t\t\tstream: $data.processinit.stream !== undefined ? $data.processinit.stream : null,",
+        "\t\t    expecteddate: $data.processinit.expecteddate !== undefined ? $data.processinit.expecteddate : null,",
+        "\t\t    remark: $data.processinit.remark !== undefined ? $data.processinit.remark : null",
+        "\t\t    ",
         "\t\t}",
         "\t}",
         "}"

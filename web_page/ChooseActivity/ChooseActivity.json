@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "ChooseActivity",
   "name" : "ChooseActivity",
-  "lastUpdate" : 1620109216204,
+  "lastUpdate" : 1620122617159,
   "rows" : [
     [
       {
@@ -612,7 +612,10 @@
                                               "Planneddate",
                                               "Stream",
                                               "Owner",
-                                              "Initiator"
+                                              "Initiator",
+                                              "Expected Date",
+                                              "Follow Up Date",
+                                              "Remark"
                                             ]
                                           },
                                           "allowHtml" : {
@@ -647,7 +650,10 @@
                                               "planneddate",
                                               "stream",
                                               "owner",
-                                              "initiator"
+                                              "initiator",
+                                              "expecteddate",
+                                              "followupdate",
+                                              "remark"
                                             ]
                                           },
                                           "dimension" : {
@@ -700,8 +706,8 @@
                         "value" : ""
                       },
                       "hidden" : {
-                        "type" : "constant",
-                        "value" : false
+                        "type" : "expression",
+                        "value" : "!is_ceo_secretary"
                       },
                       "disabled" : {
                         "type" : "constant",
@@ -1215,9 +1221,12 @@
                                       "value" : [
                                         "Name",
                                         "Status",
-                                        "Planneddate",
+                                        "Planned Date",
                                         "Stream",
-                                        "Owner"
+                                        "Owner",
+                                        "Expected Date",
+                                        "Follow Up Date",
+                                        "Remark"
                                       ]
                                     },
                                     "allowHtml" : {
@@ -1251,7 +1260,10 @@
                                         "status",
                                         "planneddate",
                                         "stream",
-                                        "owner"
+                                        "owner",
+                                        "expecteddate",
+                                        "followupdate",
+                                        "remark"
                                       ]
                                     },
                                     "dimension" : {
