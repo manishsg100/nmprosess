@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "ChooseActivity",
   "name" : "ChooseActivity",
-  "lastUpdate" : 1620122617159,
+  "lastUpdate" : 1620135615183,
   "rows" : [
     [
       {
@@ -1641,14 +1641,14 @@
     "streams" : {
       "type" : "json",
       "value" : [
-        "[\"Energy\", \"Water\", \"Mobility\", \"Technology and Digital\", \"Media\", \"Entertainment and Culture\", \"Services\", \"Tourism\", \"Sport\", \"Health, Well-Being amd Biotech\", \"Desgin and Construction\", \"Manufacturing\", \"Education\", \"Food\"]"
+        "[\"\",\"Energy\", \"Water\", \"Mobility\", \"Technology and Digital\", \"Media\", \"Entertainment and Culture\", \"Services\", \"Tourism\", \"Sport\", \"Health, Well-Being amd Biotech\", \"Desgin and Construction\", \"Manufacturing\", \"Education\", \"Food\"]"
       ],
       "exposed" : false
     },
     "statuses" : {
       "type" : "json",
       "value" : [
-        "[\"New\", \"Not Started\", \"In Progress\", \"Overdue\", \"Completed\"]"
+        "[\"\",\"New\", \"Not Started\", \"In Progress\", \"Overdue\", \"Completed\"]"
       ],
       "exposed" : false
     },

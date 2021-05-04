@@ -563,6 +563,9 @@
     <role name="ceo_secretary">
       <displayName>CEO Secretary</displayName>
     </role>
+    <role name="nif_member">
+      <displayName>NIF Team Member</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -747,6 +750,11 @@
     <membership>
       <userName>walter.bates</userName>
       <roleName>ceo_secretary</roleName>
+      <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>nif_member</roleName>
       <groupName>acme</groupName>
     </membership>
   </memberships>

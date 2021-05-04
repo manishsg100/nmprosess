@@ -75,9 +75,21 @@
                 <field type="STRING" length="255" name="sector" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="description" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="highlights" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="searchInvestments" content="SELECT i &#10;FROM Investment i &#10;WHERE i.target LIKE :target&#10;AND i.investmentSize LIKE :investmentSize&#10;AND i.stage LIKE :stage&#10;AND i.investmentType LIKE :investmentType&#10;AND i.sector LIKE :sector&#10;ORDER BY i.persistenceId DESC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="target" className="java.lang.String"/>
+                        <queryParameter name="investmentSize" className="java.lang.String"/>
+                        <queryParameter name="stage" className="java.lang.String"/>
+                        <queryParameter name="investmentType" className="java.lang.String"/>
+                        <queryParameter name="sector" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Item">

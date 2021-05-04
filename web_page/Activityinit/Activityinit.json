@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Activityinit",
   "name" : "Activityinit",
-  "lastUpdate" : 1620121014485,
+  "lastUpdate" : 1620129336060,
   "rows" : [
     [
       {
@@ -1555,7 +1555,7 @@
         "    \"planneddate\" : null,\r",
         "    \"stream\" : \"\",\r",
         "    \"owner\" : \"\",\r",
-        "    \"initiator\": \"walter.bates\",\r",
+        "    \"initiator\": $data.currentUserName,\r",
         "    \"remark\": \"\",\r",
         "    \"expecteddate\": null,\r",
         "    \"followupdate\": null,\r",
@@ -1628,6 +1628,20 @@
       "type" : "constant",
       "value" : [
         ""
+      ],
+      "exposed" : false
+    },
+    "sessionInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/1"
+      ],
+      "exposed" : false
+    },
+    "currentUserName" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.sessionInfo && $data.sessionInfo.user_name"
       ],
       "exposed" : false
     }
