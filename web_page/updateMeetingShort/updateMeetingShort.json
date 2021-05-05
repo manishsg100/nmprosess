@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "updateMeetingShort",
   "name" : "updateMeetingShort",
-  "lastUpdate" : 1620072325611,
+  "lastUpdate" : 1620197791937,
   "rows" : [
     [
       {
@@ -769,6 +769,24 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "edb2bced-5e3a-4f74-87dc-9b20c617e09d",
@@ -827,7 +845,7 @@
                               },
                               "collectionToModify" : {
                                 "type" : "variable",
-                                "value" : "$collection"
+                                "value" : "meetingObject.topics"
                               },
                               "valueToAdd" : {
                                 "type" : "expression"
@@ -943,6 +961,30 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
                         }
                       },
                       "reference" : "6f14650e-b1db-40b2-a94e-fe5e6a60c3d3",
@@ -1172,11 +1214,11 @@
         "\t\t\tmeetingStatus: $data.meetingObject.meetingStatus !== undefined ? $data.meetingObject.meetingStatus : null,",
         "\t\t\tdescription: $data.meetingObject.description !== undefined ? $data.meetingObject.description : null,",
         "\t\t\tparticipants: $data.meetingObject.participants !== undefined ? $data.meetingObject.participants : null,",
-        "\t\t\ttopics: $data.meetingObject.topics.map( it => ({",
+        "\t\t\ttopics: ($data.meetingObject.topics || []).map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
         "\t\t\t\tid: it.id !== undefined ? it.id : null,",
         "\t\t\t\ttopicName: it.topicName !== undefined ? it.topicName : null,",
-        "\t\t\t\ttopicItems: it.topicItems.map( it => ({",
+        "\t\t\t\ttopicItems: (it.topicItems || []).map( it => ({",
         "\t\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
         "\t\t\t\t\tid: it.id !== undefined ? it.id : null,",
         "\t\t\t\t\titemType: it.itemType !== undefined ? it.itemType : null,",
