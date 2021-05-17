@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ACME" description="The ACME organization is an example of a typical hierarchy. It can be used for development.">
-  <customUserInfoDefinitions/>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="NEOM" description="The ACME organization is an example of a typical hierarchy. It can be used for development.">
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>Stream</name>
+      <description></description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
   <users>
     <user userName="william.jobs">
       <firstName>William</firstName>
@@ -27,12 +32,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="april.sanchez">
       <firstName>April</firstName>
       <lastName>Sanchez</lastName>
       <title>Mrs</title>
-      <jobTitle>Compensation specialist</jobTitle>
+      <jobTitle>Compensation specialist (Water)</jobTitle>
       <manager>helen.kelly</manager>
       <personalData/>
       <professionalData>
@@ -53,12 +64,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value>Water</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="helen.kelly">
       <firstName>Helen</firstName>
       <lastName>Kelly</lastName>
       <title>Mrs</title>
-      <jobTitle>Human resource manager</jobTitle>
+      <jobTitle>Human resource manager (Energy)</jobTitle>
       <manager>william.jobs</manager>
       <personalData/>
       <professionalData>
@@ -79,13 +96,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value>Energy</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="walter.bates">
       <firstName>Walter</firstName>
       <lastName>Bates</lastName>
       <title>Mr</title>
-      <jobTitle>Human resources benefits</jobTitle>
+      <jobTitle>Human resources benefits (Tourism)</jobTitle>
       <manager>helen.kelly</manager>
       <personalData/>
       <professionalData>
@@ -106,119 +128,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="zachary.williamson">
-      <firstName>Zachary</firstName>
-      <lastName>Williamson</lastName>
-      <title>Mr</title>
-      <jobTitle>Chief Financial Officer</jobTitle>
-      <manager>william.jobs</manager>
-      <personalData/>
-      <professionalData>
-        <email>zachary.williamson@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="patrick.gardenier">
-      <firstName>Patrick</firstName>
-      <lastName>Gardenier</lastName>
-      <title>Mr</title>
-      <jobTitle>Financial controller</jobTitle>
-      <manager>zachary.williamson</manager>
-      <personalData/>
-      <professionalData>
-        <email>patrick.gardenier@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-    </user>
-    <user userName="virginie.jomphe">
-      <firstName>Virginie</firstName>
-      <lastName>Jomphe</lastName>
-      <title>Mrs</title>
-      <jobTitle>Accountant</jobTitle>
-      <manager>zachary.williamson</manager>
-      <personalData/>
-      <professionalData>
-        <email>virginie.jomphe@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-    </user>
-    <user userName="thorsten.hartmann">
-      <firstName>Thorsten</firstName>
-      <lastName>Hartmann</lastName>
-      <title>Mr</title>
-      <jobTitle>Financial planning manager</jobTitle>
-      <manager>zachary.williamson</manager>
-      <personalData/>
-      <professionalData>
-        <email>thorsten.hartmann@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value>Water</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="jan.fisher">
       <firstName>Jan</firstName>
       <lastName>Fisher</lastName>
       <title>Mr</title>
-      <jobTitle>Infrastucture specialist</jobTitle>
+      <jobTitle>Infrastucture specialist (Energy)</jobTitle>
       <manager>favio.riviera</manager>
       <personalData/>
       <professionalData>
@@ -239,12 +160,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="isabel.bleasdale">
       <firstName>Isabel</firstName>
       <lastName>Bleasdale</lastName>
       <title>Mrs</title>
-      <jobTitle>Product marketing manager</jobTitle>
+      <jobTitle>Product marketing manager (Energy)</jobTitle>
       <manager>favio.riviera</manager>
       <personalData/>
       <professionalData>
@@ -265,12 +192,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="favio.riviera">
       <firstName>Favio</firstName>
       <lastName>Riviera</lastName>
       <title>Mr</title>
-      <jobTitle>Vice President of Marketing</jobTitle>
+      <jobTitle>Vice President of Marketing (Energy)</jobTitle>
       <manager>william.jobs</manager>
       <personalData/>
       <professionalData>
@@ -291,143 +224,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
-    </user>
-    <user userName="michael.morrison">
-      <firstName>Michael</firstName>
-      <lastName>Morrison</lastName>
-      <title>Mr</title>
-      <jobTitle>Chief Technical Officer</jobTitle>
-      <manager>william.jobs</manager>
-      <personalData/>
-      <professionalData>
-        <email>michael.morrison@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-    </user>
-    <user userName="marc.marseau">
-      <firstName>Marc</firstName>
-      <lastName>Marseau</lastName>
-      <title>Mr</title>
-      <jobTitle>Engineer</jobTitle>
-      <manager>michael.morrison</manager>
-      <personalData/>
-      <professionalData>
-        <email>marc.marseau@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-    </user>
-    <user userName="joseph.hovell">
-      <firstName>Joseph</firstName>
-      <lastName>Hovell</lastName>
-      <title>Mr</title>
-      <jobTitle>Engineer</jobTitle>
-      <manager>michael.morrison</manager>
-      <personalData/>
-      <professionalData>
-        <email>joseph.hovell@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-    </user>
-    <user userName="mauro.zetticci">
-      <firstName>Mauro</firstName>
-      <lastName>Zetticci</lastName>
-      <title>Mr</title>
-      <jobTitle>Consultant</jobTitle>
-      <manager>michael.morrison</manager>
-      <personalData/>
-      <professionalData>
-        <email>mauro.zetticci@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-    </user>
-    <user userName="thomas.wallis">
-      <firstName>Thomas</firstName>
-      <lastName>Wallis</lastName>
-      <title>Mr</title>
-      <jobTitle>Consultant</jobTitle>
-      <manager>michael.morrison</manager>
-      <personalData/>
-      <professionalData>
-        <email>thomas.wallis@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value>Energy</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="daniela.angelo">
       <firstName>Daniela</firstName>
       <lastName>Angelo</lastName>
       <title>Mrs</title>
-      <jobTitle>Vice President of Sales</jobTitle>
+      <jobTitle>Vice President of Sales (Water)</jobTitle>
       <manager>william.jobs</manager>
       <personalData/>
       <professionalData>
@@ -448,12 +256,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value>Water</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="anthony.nichols">
       <firstName>Anthony</firstName>
       <lastName>Nichols</lastName>
       <title>Mr</title>
-      <jobTitle>Account manager</jobTitle>
+      <jobTitle>Account manager (Water)</jobTitle>
       <manager>daniela.angelo</manager>
       <personalData/>
       <professionalData>
@@ -474,65 +288,18 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
-    </user>
-    <user userName="misa.kumagai">
-      <firstName>Misa</firstName>
-      <lastName>Kumagai</lastName>
-      <title>Mrs</title>
-      <jobTitle>Account manager</jobTitle>
-      <manager>daniela.angelo</manager>
-      <personalData/>
-      <professionalData>
-        <email>misa.kumagai@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="norio.yamazaki">
-      <firstName>Norio</firstName>
-      <lastName>Yamazaki</lastName>
-      <title>Mr</title>
-      <jobTitle>Account manager</jobTitle>
-      <manager>daniela.angelo</manager>
-      <personalData/>
-      <professionalData>
-        <email>norio.yamazaki@mailinator.com</email>
-        <phoneNumber>484-302-5000</phoneNumber>
-        <faxNumber>484-302-0000</faxNumber>
-        <building>70</building>
-        <address>Renwick Drive</address>
-        <zipCode>19108</zipCode>
-        <city>Philadelphia</city>
-        <state>PA</state>
-        <country>United States</country>
-      </professionalData>
-      <metaDatas>
-        <metaData name="Skype ID"/>
-        <metaData name="Twitter"/>
-        <metaData name="Facebook"/>
-      </metaDatas>
-      <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value>Water</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="giovanna.almeida">
       <firstName>Giovanna</firstName>
       <lastName>Almeida</lastName>
       <title>Mrs</title>
-      <jobTitle>Account manager</jobTitle>
+      <jobTitle>Account manager (Energy)</jobTitle>
       <manager>daniela.angelo</manager>
       <personalData/>
       <professionalData>
@@ -553,6 +320,12 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value>Energy</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
   </users>
   <roles>
@@ -566,196 +339,233 @@
     <role name="nif_member">
       <displayName>NIF Team Member</displayName>
     </role>
+    <role name="general_secretary">
+      <displayName>General Secretary</displayName>
+    </role>
+    <role name="construction_manager">
+      <displayName>Construction Projects Manager</displayName>
+    </role>
   </roles>
   <groups>
-    <group name="acme">
-      <displayName>Acme</displayName>
+    <group name="neom">
+      <displayName>NEOM</displayName>
       <description>This group represents the acme department of the ACME organization</description>
     </group>
-    <group name="hr" parentPath="/acme">
+    <group name="hr" parentPath="/neom">
       <displayName>Human Resources</displayName>
       <description>This group represents the human resources department of the ACME organization</description>
     </group>
-    <group name="finance" parentPath="/acme">
+    <group name="finance" parentPath="/neom">
       <displayName>Finance</displayName>
       <description>This group represents the finance department of the ACME organization</description>
     </group>
-    <group name="it" parentPath="/acme">
+    <group name="it" parentPath="/neom">
       <displayName>Infrastructure</displayName>
       <description>This group represents the infrastructure department of the ACME organization</description>
     </group>
-    <group name="marketing" parentPath="/acme">
+    <group name="marketing" parentPath="/neom">
       <displayName>Marketing</displayName>
       <description>This group represents the marketing department of the ACME organization</description>
     </group>
-    <group name="production" parentPath="/acme">
+    <group name="production" parentPath="/neom">
       <displayName>Production</displayName>
       <description>This group represents the production department of the ACME organization</description>
     </group>
-    <group name="sales" parentPath="/acme">
+    <group name="sales" parentPath="/neom">
       <displayName>Sales</displayName>
       <description>This group represents the sales department of the ACME organization</description>
     </group>
-    <group name="europe" parentPath="/acme/sales">
+    <group name="europe" parentPath="/neom/sales">
       <displayName>Europe</displayName>
       <description>This group represents the europe department of the ACME organization</description>
     </group>
-    <group name="asia" parentPath="/acme/sales">
+    <group name="asia" parentPath="/neom/sales">
       <displayName>Asia</displayName>
       <description>This group represents the asia department of the ACME organization</description>
     </group>
-    <group name="latin_america" parentPath="/acme/sales">
+    <group name="latin_america" parentPath="/neom/sales">
       <displayName>Latin America</displayName>
       <description>This group represents the latin america department of the ACME organization</description>
     </group>
-    <group name="north_america" parentPath="/acme/sales">
+    <group name="north_america" parentPath="/neom/sales">
       <displayName>North America</displayName>
       <description>This group represents the north america department of the ACME organization</description>
     </group>
-    <group name="rd" parentPath="/acme/production">
+    <group name="rd" parentPath="/neom/production">
       <displayName>Research &amp; Development</displayName>
       <description>This group represents the research &amp; development department of the ACME organization</description>
     </group>
-    <group name="services" parentPath="/acme/production">
+    <group name="services" parentPath="/neom/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
+    </group>
+    <group name="Streams" parentPath="/neom">
+      <displayName>Streams</displayName>
+    </group>
+    <group name="Water" parentPath="/neom/Streams">
+      <displayName>Water</displayName>
+    </group>
+    <group name="Energy" parentPath="/neom/Streams">
+      <displayName>Energy</displayName>
+    </group>
+    <group name="Mobility" parentPath="/neom/Streams">
+      <displayName>Mobility</displayName>
+    </group>
+    <group name="Technology and Digital" parentPath="/neom/Streams">
+      <displayName>Technology and Digital</displayName>
+    </group>
+    <group name="Media" parentPath="/neom/Streams">
+      <displayName>Media</displayName>
+    </group>
+    <group name="Entertainment and Culture" parentPath="/neom/Streams">
+      <displayName>Entertainment and Culture</displayName>
+    </group>
+    <group name="Services" parentPath="/neom/Streams">
+      <displayName>Services</displayName>
+    </group>
+    <group name="Tourism" parentPath="/neom/Streams">
+      <displayName>Tourism</displayName>
+    </group>
+    <group name="Sport" parentPath="/neom/Streams">
+      <displayName>Sport</displayName>
+    </group>
+    <group name="Health, Well-Being amd Biotech" parentPath="/neom/Streams">
+      <displayName>Health, Well-Being amd Biotech</displayName>
+    </group>
+    <group name="Manufacturing" parentPath="/neom/Streams">
+      <displayName>Manufacturing</displayName>
+    </group>
+    <group name="Desgin and Construction" parentPath="/neom/Streams">
+      <displayName>Desgin and Construction</displayName>
+    </group>
+    <group name="Education" parentPath="/neom/Streams">
+      <displayName>Education</displayName>
+    </group>
+    <group name="Food" parentPath="/neom/Streams">
+      <displayName>Food</displayName>
     </group>
   </groups>
   <memberships>
     <membership>
       <userName>william.jobs</userName>
       <roleName>member</roleName>
-      <groupName>acme</groupName>
+      <groupName>neom</groupName>
     </membership>
     <membership>
       <userName>april.sanchez</userName>
       <roleName>member</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/neom</groupParentPath>
     </membership>
     <membership>
       <userName>helen.kelly</userName>
       <roleName>member</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/neom</groupParentPath>
     </membership>
     <membership>
       <userName>walter.bates</userName>
       <roleName>member</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
-    </membership>
-    <membership>
-      <userName>zachary.williamson</userName>
-      <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
-    </membership>
-    <membership>
-      <userName>patrick.gardenier</userName>
-      <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
-    </membership>
-    <membership>
-      <userName>virginie.jomphe</userName>
-      <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
-    </membership>
-    <membership>
-      <userName>thorsten.hartmann</userName>
-      <roleName>member</roleName>
-      <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/neom</groupParentPath>
     </membership>
     <membership>
       <userName>jan.fisher</userName>
       <roleName>member</roleName>
       <groupName>it</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/neom</groupParentPath>
     </membership>
     <membership>
       <userName>isabel.bleasdale</userName>
       <roleName>member</roleName>
       <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/neom</groupParentPath>
     </membership>
     <membership>
       <userName>favio.riviera</userName>
       <roleName>member</roleName>
       <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
-    </membership>
-    <membership>
-      <userName>michael.morrison</userName>
-      <roleName>member</roleName>
-      <groupName>production</groupName>
-      <groupParentPath>/acme</groupParentPath>
-    </membership>
-    <membership>
-      <userName>marc.marseau</userName>
-      <roleName>member</roleName>
-      <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
-    </membership>
-    <membership>
-      <userName>joseph.hovell</userName>
-      <roleName>member</roleName>
-      <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
-    </membership>
-    <membership>
-      <userName>mauro.zetticci</userName>
-      <roleName>member</roleName>
-      <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
-    </membership>
-    <membership>
-      <userName>thomas.wallis</userName>
-      <roleName>member</roleName>
-      <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/neom</groupParentPath>
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
       <roleName>member</roleName>
       <groupName>europe</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
-    </membership>
-    <membership>
-      <userName>misa.kumagai</userName>
-      <roleName>member</roleName>
-      <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
-    </membership>
-    <membership>
-      <userName>norio.yamazaki</userName>
-      <roleName>member</roleName>
-      <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/neom/sales</groupParentPath>
     </membership>
     <membership>
       <userName>giovanna.almeida</userName>
       <roleName>member</roleName>
       <groupName>latin_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/neom/sales</groupParentPath>
     </membership>
     <membership>
       <userName>anthony.nichols</userName>
       <roleName>member</roleName>
       <groupName>north_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/neom/sales</groupParentPath>
     </membership>
     <membership>
       <userName>walter.bates</userName>
       <roleName>ceo_secretary</roleName>
-      <groupName>acme</groupName>
+      <groupName>neom</groupName>
     </membership>
     <membership>
       <userName>walter.bates</userName>
       <roleName>nif_member</roleName>
-      <groupName>acme</groupName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>anthony.nichols</userName>
+      <roleName>member</roleName>
+      <groupName>Water</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
+    <membership>
+      <userName>april.sanchez</userName>
+      <roleName>member</roleName>
+      <groupName>Energy</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
+    <membership>
+      <userName>daniela.angelo</userName>
+      <roleName>member</roleName>
+      <groupName>Mobility</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
+    <membership>
+      <userName>favio.riviera</userName>
+      <roleName>member</roleName>
+      <groupName>Water</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
+    <membership>
+      <userName>giovanna.almeida</userName>
+      <roleName>nif_member</roleName>
+      <groupName>Energy</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
+    <membership>
+      <userName>isabel.bleasdale</userName>
+      <roleName>member</roleName>
+      <groupName>Water</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jan.fisher</userName>
+      <roleName>member</roleName>
+      <groupName>Mobility</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
+    <membership>
+      <userName>helen.kelly</userName>
+      <roleName>general_secretary</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>construction_manager</roleName>
+      <groupName>neom</groupName>
     </membership>
   </memberships>
 </organization:Organization>

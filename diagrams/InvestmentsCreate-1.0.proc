@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_nbdbMKzLEeuLm4pt6qXrTA" name="InvestmentsCreate" author="n1k" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_nbdbMazLEeuLm4pt6qXrTA" name="InvestmentsCreate" displayName="Investments: Create">
       <elements xmi:type="process:Lane" xmi:id="_nbdbMqzLEeuLm4pt6qXrTA" name="Employee lane" actor="_nbdbS6zLEeuLm4pt6qXrTA">
@@ -19,6 +19,106 @@
           <referencedElements xmi:type="process:ContractInput" xmi:id="_nZy8a6zNEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX"/>
         </defaultValue>
       </data>
+      <connectors xmi:type="process:Connector" xmi:id="_Fq5ncLDAEeuLm4pt6qXrTA" name="EmailInvestmentCreated" definitionId="email" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.2.0">
+        <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Fq5ncbDAEeuLm4pt6qXrTA" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5ncrDAEeuLm4pt6qXrTA" key="smtpHost">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nc7DAEeuLm4pt6qXrTA" name="smtp.gmail.com" content="smtp.gmail.com" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5ndLDAEeuLm4pt6qXrTA" key="smtpPort">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5ndbDAEeuLm4pt6qXrTA" name="465" content="465" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5ndrDAEeuLm4pt6qXrTA" key="sslSupport">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nd7DAEeuLm4pt6qXrTA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5neLDAEeuLm4pt6qXrTA" key="starttlsSupport">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nebDAEeuLm4pt6qXrTA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nerDAEeuLm4pt6qXrTA" key="trustCertificate">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5ne7DAEeuLm4pt6qXrTA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nfLDAEeuLm4pt6qXrTA" key="userName">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nfbDAEeuLm4pt6qXrTA" name="neomudap@gmail.com" content="neomudap@gmail.com" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nfrDAEeuLm4pt6qXrTA" key="password">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nf7DAEeuLm4pt6qXrTA" name="Neom2021" content="Neom2021" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5ngLDAEeuLm4pt6qXrTA" key="from">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5ngbDAEeuLm4pt6qXrTA" name="neomudap@gmail.com" content="neomudap@gmail.com" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5ngrDAEeuLm4pt6qXrTA" key="returnPath">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5ng7DAEeuLm4pt6qXrTA" content="" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nhLDAEeuLm4pt6qXrTA" key="to">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nhbDAEeuLm4pt6qXrTA" name="to()" content="apiAccessor.getIdentityAPI().getUserContactData(apiAccessor.getProcessAPI()&#xA;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;.getStartedBy(), false).email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Fq5nhrDAEeuLm4pt6qXrTA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Fq5nh7DAEeuLm4pt6qXrTA" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+            </expression>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5niLDAEeuLm4pt6qXrTA" key="bcc">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nibDAEeuLm4pt6qXrTA" content="" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nirDAEeuLm4pt6qXrTA" key="cc">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5ni7DAEeuLm4pt6qXrTA" name="" content="" interpreter="GROOVY" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5njLDAEeuLm4pt6qXrTA" key="subject">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5njbDAEeuLm4pt6qXrTA" name="Neom UDP: Investment Created" content="Neom UDP: Investment Created" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5njrDAEeuLm4pt6qXrTA" key="html">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nj7DAEeuLm4pt6qXrTA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nkLDAEeuLm4pt6qXrTA" key="message">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nkbDAEeuLm4pt6qXrTA" name="&lt;pattern-expression>" content="Dear user,&#xA;Please check an Investment that was created:&#xA;&#xA;Target: ${investmentObj.target}&#xA;Size: ${investmentObj.getInvestmentSize()}&#xA;Stage: ${investmentObj.getStage()}&#xA;Type: ${investmentObj.getInvestmentType()}&#xA;Sector: ${investmentObj.getSector()}&#xA;Highlights: ${investmentObj.getHighlights()}&#xA;Description: ${investmentObj.description}&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXsLFWEeuK84HZhsh8MA" name="investmentObj.target" content="investmentObj.target" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXsbFWEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qGgXsrFWEeuK84HZhsh8MA" name="investmentObj" dataType="_nbdbZKzLEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                </referencedElements>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXs7FWEeuK84HZhsh8MA" name="investmentObj.getInvestmentSize()" content="investmentObj.getInvestmentSize()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXtLFWEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qGgXtbFWEeuK84HZhsh8MA" name="investmentObj" dataType="_nbdbZKzLEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                </referencedElements>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXtrFWEeuK84HZhsh8MA" name="investmentObj.getStage()" content="investmentObj.getStage()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXt7FWEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qGgXuLFWEeuK84HZhsh8MA" name="investmentObj" dataType="_nbdbZKzLEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                </referencedElements>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXubFWEeuK84HZhsh8MA" name="investmentObj.getInvestmentType()" content="investmentObj.getInvestmentType()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXurFWEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qGgXu7FWEeuK84HZhsh8MA" name="investmentObj" dataType="_nbdbZKzLEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                </referencedElements>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXvLFWEeuK84HZhsh8MA" name="investmentObj.getSector()" content="investmentObj.getSector()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXvbFWEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qGgXvrFWEeuK84HZhsh8MA" name="investmentObj" dataType="_nbdbZKzLEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                </referencedElements>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXv7FWEeuK84HZhsh8MA" name="investmentObj.getHighlights()" content="investmentObj.getHighlights()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXwLFWEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qGgXwbFWEeuK84HZhsh8MA" name="investmentObj" dataType="_nbdbZKzLEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                </referencedElements>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXwrFWEeuK84HZhsh8MA" name="investmentObj.description" content="investmentObj.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_qGgXw7FWEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qGgXxLFWEeuK84HZhsh8MA" name="investmentObj" dataType="_nbdbZKzLEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                </referencedElements>
+              </referencedElements>
+            </expression>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nm7DAEeuLm4pt6qXrTA" key="headers">
+            <expression xmi:type="expression:TableExpression" xmi:id="_Fq5nnLDAEeuLm4pt6qXrTA"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nnbDAEeuLm4pt6qXrTA" key="charset">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5nnrDAEeuLm4pt6qXrTA" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nn7DAEeuLm4pt6qXrTA" key="replyTo">
+            <expression xmi:type="expression:Expression" xmi:id="_Fq5noLDAEeuLm4pt6qXrTA" content="" returnTypeFixed="true"/>
+          </parameters>
+          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Fq5nobDAEeuLm4pt6qXrTA" key="attachments">
+            <expression xmi:type="expression:ListExpression" xmi:id="_Fq5norDAEeuLm4pt6qXrTA"/>
+          </parameters>
+        </configuration>
+      </connectors>
       <formMapping xmi:type="process:FormMapping" xmi:id="_nbdbRKzLEeuLm4pt6qXrTA">
         <targetForm xmi:type="expression:Expression" xmi:id="_nbdbRazLEeuLm4pt6qXrTA" name="createInvestment" content="e720775c-ac20-49ec-9c1e-2605144b80a3" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -41,8 +141,15 @@
             <users xmi:type="actormapping:Users" xmi:id="__ppGbKzfEeuLm4pt6qXrTA"/>
           </actorMapping>
         </actorMappings>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_8cV7QLDBEeuLm4pt6qXrTA" type="CONNECTOR" definitionId="email" definitionVersion="1.2.0" implementationId="email-impl" implementationVersion="1.3.0"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__ppGYazfEeuLm4pt6qXrTA" id="ACTOR_FILTER"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__ppGYqzfEeuLm4pt6qXrTA" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__ppGYqzfEeuLm4pt6qXrTA" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_8la-wLDBEeuLm4pt6qXrTA" id="email-impl-1.3.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_8ljhoLDBEeuLm4pt6qXrTA" key="email-impl -- 1.3.0" value="bonita-connector-email-1.3.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_8lkvwLDBEeuLm4pt6qXrTA" key="email-impl -- 1.3.0" value="javax.mail-1.6.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_8lnMALDBEeuLm4pt6qXrTA" key="email-impl -- 1.3.0" value="javax.mail-api-1.6.2.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__ppGY6zfEeuLm4pt6qXrTA" id="GROOVY_SCRIPT"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__ppGZKzfEeuLm4pt6qXrTA" id="OTHER"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="__ppGZazfEeuLm4pt6qXrTA" id="GROOVY_SCRIPT"/>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Activityinit",
   "name" : "Activityinit",
-  "lastUpdate" : 1620129336060,
+  "lastUpdate" : 1620582420594,
   "rows" : [
     [
       {
@@ -179,10 +179,10 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 4,
+                                    "md" : 6,
                                     "sm" : 12,
                                     "xs" : 12,
-                                    "lg" : 4
+                                    "lg" : 6
                                   },
                                   "propertyValues" : {
                                     "labelHidden" : {
@@ -256,6 +256,72 @@
                                   "id" : "pbInput",
                                   "description" : ""
                                 },
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 6
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "disabled" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Status"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "placeholder" : {
+                                      "type" : "interpolation",
+                                      "value" : "Select an option"
+                                    },
+                                    "availableValues" : {
+                                      "type" : "expression",
+                                      "value" : "Statuses"
+                                    },
+                                    "displayedKey" : {
+                                      "type" : "constant"
+                                    },
+                                    "returnedKey" : {
+                                      "type" : "constant"
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "formInput.processinitInput.status"
+                                    }
+                                  },
+                                  "reference" : "546e2210-5414-47a4-942b-2ce7e51c032b",
+                                  "hasValidationError" : false,
+                                  "id" : "pbSelect"
+                                }
+                              ],
+                              [
                                 {
                                   "type" : "component",
                                   "dimension" : {
@@ -337,72 +403,6 @@
                                       "type" : "constant",
                                       "value" : false
                                     },
-                                    "disabled" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "required" : {
-                                      "type" : "constant",
-                                      "value" : true
-                                    },
-                                    "labelHidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "label" : {
-                                      "type" : "interpolation",
-                                      "value" : "Status"
-                                    },
-                                    "labelPosition" : {
-                                      "type" : "constant",
-                                      "value" : "top"
-                                    },
-                                    "labelWidth" : {
-                                      "type" : "constant",
-                                      "value" : 4
-                                    },
-                                    "placeholder" : {
-                                      "type" : "interpolation",
-                                      "value" : "Select an option"
-                                    },
-                                    "availableValues" : {
-                                      "type" : "expression",
-                                      "value" : "Statuses"
-                                    },
-                                    "displayedKey" : {
-                                      "type" : "constant"
-                                    },
-                                    "returnedKey" : {
-                                      "type" : "constant"
-                                    },
-                                    "value" : {
-                                      "type" : "variable",
-                                      "value" : "formInput.processinitInput.status"
-                                    }
-                                  },
-                                  "reference" : "546e2210-5414-47a4-942b-2ce7e51c032b",
-                                  "hasValidationError" : false,
-                                  "id" : "pbSelect"
-                                }
-                              ],
-                              [
-                                {
-                                  "type" : "component",
-                                  "dimension" : {
-                                    "xs" : 12,
-                                    "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 6
-                                  },
-                                  "propertyValues" : {
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "hidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
                                     "required" : {
                                       "type" : "constant",
                                       "value" : false
@@ -467,8 +467,8 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 6
+                                    "md" : 4,
+                                    "lg" : 4
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -685,7 +685,7 @@
                                     },
                                     "hidden" : {
                                       "type" : "constant",
-                                      "value" : false
+                                      "value" : true
                                     },
                                     "readOnly" : {
                                       "type" : "constant",
@@ -1553,7 +1553,7 @@
         "    \"name\" : \"\",\r",
         "    \"status\" : \"\",\r",
         "    \"planneddate\" : null,\r",
-        "    \"stream\" : \"\",\r",
+        "    \"stream\" : $data.Streams[0],\r",
         "    \"owner\" : \"\",\r",
         "    \"initiator\": $data.currentUserName,\r",
         "    \"remark\": \"\",\r",
@@ -1620,7 +1620,7 @@
     "usersArray" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&s={{filterUsers || ''}}"
+        "../API/identity/user?p=0&c=100&s={{filterUsers || ''}}&f=group_id%3d{{groupId}}"
       ],
       "exposed" : false
     },
@@ -1642,6 +1642,20 @@
       "type" : "expression",
       "value" : [
         "return $data.sessionInfo && $data.sessionInfo.user_name"
+      ],
+      "exposed" : false
+    },
+    "streamRole" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=1&o=displayName%20ASC&f=name={{formInput.processinitInput.stream}}"
+      ],
+      "exposed" : false
+    },
+    "groupId" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.streamRole.length && `${$data.streamRole[0].id}`;"
       ],
       "exposed" : false
     }
