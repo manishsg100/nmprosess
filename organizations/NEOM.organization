@@ -345,6 +345,9 @@
     <role name="construction_manager">
       <displayName>Construction Projects Manager</displayName>
     </role>
+    <role name="CEO">
+      <displayName>CEO</displayName>
+    </role>
   </roles>
   <groups>
     <group name="neom">
@@ -565,6 +568,11 @@
     <membership>
       <userName>walter.bates</userName>
       <roleName>construction_manager</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>CEO</roleName>
       <groupName>neom</groupName>
     </membership>
   </memberships>
