@@ -821,9 +821,29 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ZHgTYLfVEeuK84HZhsh8MA" key="message">
                 <expression xmi:type="expression:Expression" xmi:id="_ZHgTYbfVEeuK84HZhsh8MA" name="&lt;pattern-expression>" content="Dear user,&#xA;Please check the following ${meetingItemObj.itemType}:&#xA;&#xA;Item: ${meetingItemObj.itemName}&#xA;Topic: ${meetingItemObj.topic}&#xA;Status: ${meetingItemObj.status}&#xA;Owner: ${meetingItemObj.owner}" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_ZHgTYrfVEeuK84HZhsh8MA" name="meetingItemObj.itemType" content="meetingItemObj.itemType" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_ZHgTY7fVEeuK84HZhsh8MA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZHgTZLfVEeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_74_-cLfkEeuK84HZhsh8MA" name="meetingItemObj.itemType" content="meetingItemObj.itemType" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_74_-cbfkEeuK84HZhsh8MA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_74_-crfkEeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_74_-c7fkEeuK84HZhsh8MA" name="meetingItemObj.itemName" content="meetingItemObj.itemName" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_74_-dLfkEeuK84HZhsh8MA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_74_-dbfkEeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_74_-drfkEeuK84HZhsh8MA" name="meetingItemObj.topic" content="meetingItemObj.topic" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_74_-d7fkEeuK84HZhsh8MA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_74_-eLfkEeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_74_-ebfkEeuK84HZhsh8MA" name="meetingItemObj.status" content="meetingItemObj.status" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_74_-erfkEeuK84HZhsh8MA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_74_-e7fkEeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_74_-fLfkEeuK84HZhsh8MA" name="meetingItemObj.owner" content="meetingItemObj.owner" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_74_-fbfkEeuK84HZhsh8MA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_74_-frfkEeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
                     </referencedElements>
                   </referencedElements>
                 </expression>
@@ -1215,7 +1235,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_IXt8gbGQEeuK84HZhsh8MA" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_IXtVcbGQEeuK84HZhsh8MA" fontName=".AppleSystemUIFont"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IXtVcrGQEeuK84HZhsh8MA" points="[0, -21, -68, 125]$[0, -168, -68, -22]$[55, -168, -13, -22]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IXtVcrGQEeuK84HZhsh8MA" points="[0, -4, -164, 125]$[0, -158, -164, -29]$[151, -158, -13, -29]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DiSzwLGSEeuK84HZhsh8MA" id="(0.4883720930232558,0.09302325581395349)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IXujkbGQEeuK84HZhsh8MA" id="(0.11,0.86)"/>
     </edges>

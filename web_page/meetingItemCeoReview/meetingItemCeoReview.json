@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingItemCeoReview",
   "name" : "meetingItemCeoReview",
-  "lastUpdate" : 1621338466862,
+  "lastUpdate" : 1621345439319,
   "rows" : [
     [
       {
@@ -628,8 +628,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -680,6 +680,44 @@
                       "reference" : "e88106b8-b9b3-4049-be64-0a08ac72534f",
                       "hasValidationError" : false,
                       "id" : "pbTextarea"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "Process document"
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "document" : {
+                          "type" : "variable",
+                          "value" : "context.evidenceDoc_ref"
+                        },
+                        "showPreview" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "cb7993c7-0080-47a4-bf7b-c425767b331b",
+                      "hasValidationError" : false,
+                      "id" : "pbFileViewer"
                     }
                   ],
                   [
