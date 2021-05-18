@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "updateConstruction",
   "name" : "updateConstruction",
-  "lastUpdate" : 1621262701528,
+  "lastUpdate" : 1621319945846,
   "rows" : [
     [
       {
@@ -522,7 +522,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "todayLabel" : {
                           "type" : "constant",

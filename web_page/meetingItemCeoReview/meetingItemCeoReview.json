@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingItemCeoReview",
   "name" : "meetingItemCeoReview",
-  "lastUpdate" : 1621160795967,
+  "lastUpdate" : 1621338466862,
   "rows" : [
     [
       {
@@ -637,16 +637,16 @@
                           "value" : ""
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!isRejectionNoteRequired"
                         },
                         "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "required" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "isRejectionNoteRequired"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1178,6 +1178,13 @@
       "type" : "expression",
       "value" : [
         "return $data.sessionInfo && $data.sessionInfo.user_name\t"
+      ],
+      "exposed" : false
+    },
+    "isRejectionNoteRequired" : {
+      "type" : "expression",
+      "value" : [
+        "return  $data.meetingItemObj ? $data.meetingItemObj.status == \"Rejected - CEO Office\" : false;"
       ],
       "exposed" : false
     }

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "createConstruction",
   "name" : "createConstruction",
-  "lastUpdate" : 1621262845190,
+  "lastUpdate" : 1621319648693,
   "rows" : [
     [
       {
@@ -151,7 +151,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -200,7 +200,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -281,7 +281,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "todayLabel" : {
                           "type" : "constant",

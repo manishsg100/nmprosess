@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingItemGenSecReview",
   "name" : "meetingItemGenSecReview",
-  "lastUpdate" : 1621160835362,
+  "lastUpdate" : 1621338166880,
   "rows" : [
     [
       {
@@ -516,22 +516,6 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
@@ -548,14 +532,22 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "meetingItemObj.description"
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{meetingItemObj.description}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
                         }
                       },
-                      "reference" : "52ba8965-3ba5-4ca1-bbc9-b41a88624743",
+                      "reference" : "67363df0-7845-479a-837d-4e3cb4aa18ef",
                       "hasValidationError" : false,
-                      "id" : "pbTextarea"
+                      "id" : "pbText"
                     }
                   ],
                   [
@@ -695,8 +687,8 @@
                       },
                       "propertyValues" : {
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!isCloseDateRequired"
                         },
                         "dateFormat" : {
                           "type" : "constant",
@@ -722,8 +714,8 @@
                           "type" : "constant"
                         },
                         "required" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "isCloseDateRequired"
                         },
                         "todayLabel" : {
                           "type" : "constant",
@@ -893,16 +885,16 @@
                           "value" : ""
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!isRejectionNoteRequired"
                         },
                         "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "required" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "isRejectionNoteRequired"
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1180,6 +1172,20 @@
       "type" : "json",
       "value" : [
         "[\"Completed\", \"Superseded\", \"Rejected - General Secretariat\", \"Under Review - General Secretariat\"]"
+      ],
+      "exposed" : false
+    },
+    "isCloseDateRequired" : {
+      "type" : "expression",
+      "value" : [
+        "return  $data.meetingItemObj ? $data.meetingItemObj.status == \"Completed\" || $data.meetingItemObj.status == \"Superseded\" : false;"
+      ],
+      "exposed" : false
+    },
+    "isRejectionNoteRequired" : {
+      "type" : "expression",
+      "value" : [
+        "return  $data.meetingItemObj ? $data.meetingItemObj.status == \"Rejected - General Secretariat\" : false;"
       ],
       "exposed" : false
     }
