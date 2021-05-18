@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "createInvestment",
   "name" : "createInvestment",
-  "lastUpdate" : 1620134524592,
+  "lastUpdate" : 1620627611388,
   "rows" : [
     [
       {
@@ -771,7 +771,7 @@
     "stages" : {
       "type" : "json",
       "value" : [
-        "[\"Source Investment\", \"Profile & Screen Investment\", \"Due Dilligence & Negotiation\", \"Preliminary Approval\", \"NEOM Board Approval\", \"Financial Closing & Integration\"]"
+        "[\"\",\"Source Investment\", \"Profile and Screen Investment\", \"Due Dilligence and Negotiation\", \"Preliminary Approval\", \"NEOM Board Approval\", \"Financial Closing and Integration\"]"
       ],
       "exposed" : false
     },

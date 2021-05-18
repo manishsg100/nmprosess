@@ -40,12 +40,21 @@
                 <field type="STRING" length="255" name="region" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="targetDate" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="percentCompletion" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="latestUpdate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="latestUpdate" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="searchConstructions" content="SELECT c &#10;FROM Construction c &#10;WHERE c.project LIKE :project&#10;AND c.region LIKE :region&#10;AND c.targetDate &gt;= :targetDateStart&#10;AND c.targetDate &lt;= :targetDateEnd&#10;ORDER BY c.persistenceId DESC" returnType="com.company.model.Construction">
+                    <queryParameters>
+                        <queryParameter name="project" className="java.lang.String"/>
+                        <queryParameter name="region" className="java.lang.String"/>
+                        <queryParameter name="targetDateStart" className="java.time.LocalDate"/>
+                        <queryParameter name="targetDateEnd" className="java.time.LocalDate"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Happening">
@@ -100,20 +109,24 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Item">
             <fields>
-                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="meetingId" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="itemType" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
-                <field type="LOCALDATE" length="255" name="baselineDate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="plannedDate" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="supersedingAction" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="supersedingItemId" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="owner" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="ownerStream" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="ownerPosition" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="revisedTargetDate" nullable="true" collection="false"/>
-                <field type="LOCALDATE" length="255" name="latestUpdatedDate" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="latestUpdate" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="actualClosedDate" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="rejectionComments" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ceoSecretary" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="topic" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="attachment" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="itemName" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries>
@@ -157,6 +170,46 @@ AND m.participants = :participants</description>
                         <queryParameter name="meetingStatus" className="java.lang.String"/>
                         <queryParameter name="participants" className="java.lang.String"/>
                         <queryParameter name="meetingStartDate" className="java.time.LocalDate"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.MeetingItem">
+            <fields>
+                <field type="STRING" length="255" name="meetingId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="meetingSubject" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="itemType" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="owner" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ownerStream" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="supersedingItemId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="supersedingItemIdString" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="plannedDate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="revisedTargetDate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="actualClosedDate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="createdAt" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="rejectionComments" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ceoSecretary" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="topic" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="itemName" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="searchMeetingItems" content="SELECT m &#10;FROM MeetingItem m &#10;WHERE m.meetingSubject LIKE :meetingSubject&#10;AND m.itemType LIKE :itemType&#10;AND m.status LIKE :status&#10;AND m.owner LIKE :owner&#10;AND m.plannedDate &gt;= :plannedDateStart&#10;AND m.plannedDate &lt;= :plannedDateEnd&#10;AND m.revisedTargetDate &gt;= :revisedTargetDateStart&#10;AND m.revisedTargetDate &lt;= :revisedTargetDateEnd&#10;AND m.topic LIKE :topic&#10;AND m.itemName LIKE :itemName&#10;ORDER BY m.persistenceId DESC" returnType="com.company.model.MeetingItem">
+                    <queryParameters>
+                        <queryParameter name="meetingSubject" className="java.lang.String"/>
+                        <queryParameter name="itemType" className="java.lang.String"/>
+                        <queryParameter name="status" className="java.lang.String"/>
+                        <queryParameter name="owner" className="java.lang.String"/>
+                        <queryParameter name="plannedDateStart" className="java.time.LocalDate"/>
+                        <queryParameter name="plannedDateEnd" className="java.time.LocalDate"/>
+                        <queryParameter name="revisedTargetDateStart" className="java.time.LocalDate"/>
+                        <queryParameter name="revisedTargetDateEnd" className="java.time.LocalDate"/>
+                        <queryParameter name="topic" className="java.lang.String"/>
+                        <queryParameter name="itemName" className="java.lang.String"/>
                     </queryParameters>
                 </query>
             </queries>
@@ -212,7 +265,6 @@ AND m.participants = :participants</description>
             <fields>
                 <field type="INTEGER" length="255" name="id" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="topicName" nullable="true" collection="false"/>
-                <relationField type="COMPOSITION" reference="com.company.model.Item" fetchType="EAGER" name="topicItems" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries>

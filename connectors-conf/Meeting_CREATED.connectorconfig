@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="email" version="1.2.0" name="Meeting_CREATED" modelVersion="7.12.0-004">
+  <parameters key="smtpHost">
+    <expression xsi:type="expression:Expression" name="smtp.gmail.com" content="smtp.gmail.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="smtpPort">
+    <expression xsi:type="expression:Expression" name="465" content="465" returnType="java.lang.Integer" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="sslSupport">
+    <expression xsi:type="expression:Expression" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="starttlsSupport">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="trustCertificate">
+    <expression xsi:type="expression:Expression" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="userName">
+    <expression xsi:type="expression:Expression" name="neomudap@gmail.com" content="neomudap@gmail.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="Neom2021" content="Neom2021" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="from">
+    <expression xsi:type="expression:Expression" name="neomudap@gmail.com" content="neomudap@gmail.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="returnPath">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="to">
+    <expression xsi:type="expression:Expression" name="to()" content="apiAccessor.getIdentityAPI().getUserContactData(apiAccessor.getProcessAPI()&#xA;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;.getStartedBy(), false).email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="expression:Expression" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+      <referencedElements xsi:type="expression:Expression" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+    </expression>
+  </parameters>
+  <parameters key="bcc">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="cc">
+    <expression xsi:type="expression:Expression" name="" content="" interpreter="GROOVY" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="subject">
+    <expression xsi:type="expression:Expression" name="Neom UDP: Meeting Created" content="Neom UDP: Meeting Created" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="html">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="message">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="Dear user,&#xA;Please check an Investment that was created:&#xA;&#xA;Subject: ${meetingObject.meetingSubject}&#xA;Status: ${meetingObject.meetingStatus}&#xA;Type: ${meetingObject.meetingType}&#xA;Date: ${meetingObject.getMeetingDate.toString()}&#xA;Participants: ${meetingObject.participants}&#xA;Description: ${meetingObject.description}&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
+      <referencedElements xsi:type="expression:Expression" name="meetingObject.meetingSubject" content="meetingObject.meetingSubject" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="meetingObject" content="meetingObject" type="TYPE_VARIABLE" returnType="com.company.model.Meeting">
+          <referencedElements xsi:type="process:BusinessObjectData" name="meetingObject" className="com.company.model.Meeting">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/MeetingsCreate-1.0.proc#_jY1cD6W0EeuxiOmIo7HRwA"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+      <referencedElements xsi:type="expression:Expression" name="meetingObject.meetingStatus" content="meetingObject.meetingStatus" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="meetingObject" content="meetingObject" type="TYPE_VARIABLE" returnType="com.company.model.Meeting">
+          <referencedElements xsi:type="process:BusinessObjectData" name="meetingObject" className="com.company.model.Meeting">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/MeetingsCreate-1.0.proc#_jY1cD6W0EeuxiOmIo7HRwA"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+      <referencedElements xsi:type="expression:Expression" name="meetingObject.meetingType" content="meetingObject.meetingType" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="meetingObject" content="meetingObject" type="TYPE_VARIABLE" returnType="com.company.model.Meeting">
+          <referencedElements xsi:type="process:BusinessObjectData" name="meetingObject" className="com.company.model.Meeting">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/MeetingsCreate-1.0.proc#_jY1cD6W0EeuxiOmIo7HRwA"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+      <referencedElements xsi:type="expression:Expression" name="meetingObject.getMeetingDate.toString()" content="meetingObject.getMeetingDate.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="meetingObject" content="meetingObject" type="TYPE_VARIABLE" returnType="com.company.model.Meeting">
+          <referencedElements xsi:type="process:BusinessObjectData" name="meetingObject" className="com.company.model.Meeting">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/MeetingsCreate-1.0.proc#_jY1cD6W0EeuxiOmIo7HRwA"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+      <referencedElements xsi:type="expression:Expression" name="meetingObject.participants" content="meetingObject.participants" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="meetingObject" content="meetingObject" type="TYPE_VARIABLE" returnType="com.company.model.Meeting">
+          <referencedElements xsi:type="process:BusinessObjectData" name="meetingObject" className="com.company.model.Meeting">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/MeetingsCreate-1.0.proc#_jY1cD6W0EeuxiOmIo7HRwA"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+      <referencedElements xsi:type="expression:Expression" name="meetingObject.description" content="meetingObject.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="meetingObject" content="meetingObject" type="TYPE_VARIABLE" returnType="com.company.model.Meeting">
+          <referencedElements xsi:type="process:BusinessObjectData" name="meetingObject" className="com.company.model.Meeting">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/NeomTest/diagrams/MeetingsCreate-1.0.proc#_jY1cD6W0EeuxiOmIo7HRwA"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="headers">
+    <expression xsi:type="expression:TableExpression"/>
+  </parameters>
+  <parameters key="charset">
+    <expression xsi:type="expression:Expression" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="replyTo">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="attachments">
+    <expression xsi:type="expression:ListExpression"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
