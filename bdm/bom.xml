@@ -21,11 +21,6 @@
                         <queryParameter name="text" className="java.lang.String"/>
                     </queryParameters>
                 </query>
-                <query name="filterMyActivities" content="SELECT a &#10;FROM Activitiy a &#10;WHERE  a.owner = :owner&#10;ORDER BY a.persistenceId DESC" returnType="com.company.model.Activitiy">
-                    <queryParameters>
-                        <queryParameter name="owner" className="java.lang.String"/>
-                    </queryParameters>
-                </query>
                 <query name="filterAllActivities" content="SELECT a &#10;FROM Activitiy a &#10;WHERE a.name LIKE :name&#10;AND a.status LIKE :status&#10;AND a.stream LIKE :stream&#10;AND a.owner LIKE :owner&#10;AND a.planneddate &gt;= :startdate&#10;AND a.planneddate &lt;= :enddate&#10;ORDER BY a.persistenceId DESC" returnType="com.company.model.Activitiy">
                     <queryParameters>
                         <queryParameter name="name" className="java.lang.String"/>
@@ -61,9 +56,20 @@
                 <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="createdBy" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="createdAt" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="isActive" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="searchhappening" content="SELECT h &#13;&#10;FROM Happening h &#13;&#10;WHERE h.happeningDate &gt;= :happeningstartDate&#13;&#10;AND h.happeningDate &lt;= :happeningenddate&#13;&#10;AND h.stream LIKE :stream&#13;&#10;AND h.happeningName LIKE :happeningName&#13;&#10;AND h.createdBy LIKE :createdBy&#13;&#10;AND h.isActive= 1&#13;&#10;ORDER BY h.persistenceId DESC" returnType="com.company.model.Happening">
+                    <queryParameters>
+                        <queryParameter name="happeningstartDate" className="java.time.LocalDate"/>
+                        <queryParameter name="stream" className="java.lang.String"/>
+                        <queryParameter name="happeningName" className="java.lang.String"/>
+                        <queryParameter name="happeningenddate" className="java.time.LocalDate"/>
+                        <queryParameter name="createdBy" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Investment">
@@ -165,7 +171,15 @@ AND m.participants = :participants</description>
                 <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="searchregion" content="SELECT r &#13;&#10;FROM RegionDevelopment r &#13;&#10;WHERE r.region LIKE :region&#13;&#10;AND r.stage LIKE :stage&#13;&#10;AND r.status LIKE :status&#13;&#10;ORDER BY r.persistenceId DESC" returnType="com.company.model.RegionDevelopment">
+                    <queryParameters>
+                        <queryParameter name="region" className="java.lang.String"/>
+                        <queryParameter name="stage" className="java.lang.String"/>
+                        <queryParameter name="status" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Resolution">
@@ -201,7 +215,15 @@ AND m.participants = :participants</description>
                 <relationField type="COMPOSITION" reference="com.company.model.Item" fetchType="EAGER" name="topicItems" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="query" content="SELECT t &#13;&#10;FROM Topic t&#13;&#10;&#10;WHERE t.id = :id&#13;&#10;&#10;AND t.topicName = :topicName&#10;&#13;&#10;ORDER BY t.persistenceId ASC" returnType="com.company.model.Topic">
+                    <queryParameters>
+                        <queryParameter name="id" className="java.lang.Integer"/>
+                        <queryParameter name="topicName" className="java.lang.String"/>
+                        <queryParameter name="param" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
     </businessObjects>

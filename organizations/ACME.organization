@@ -566,6 +566,9 @@
     <role name="nif_member">
       <displayName>NIF Team Member</displayName>
     </role>
+    <role name="CEO">
+      <displayName>CEO</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -755,6 +758,11 @@
     <membership>
       <userName>walter.bates</userName>
       <roleName>nif_member</roleName>
+      <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>CEO</roleName>
       <groupName>acme</groupName>
     </membership>
   </memberships>
