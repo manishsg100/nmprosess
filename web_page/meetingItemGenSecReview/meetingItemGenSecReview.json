@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingItemGenSecReview",
   "name" : "meetingItemGenSecReview",
-  "lastUpdate" : 1621345506302,
+  "lastUpdate" : 1621457448421,
   "rows" : [
     [
       {
@@ -568,14 +568,6 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
@@ -592,29 +584,22 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "statuses"
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "meetingItemObj.status"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{meetingItemObj.status}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
                         }
                       },
-                      "reference" : "881adfe6-6d2d-4b8a-bcc4-1a2f3880b0f2",
+                      "reference" : "76c8b7cc-62d0-48b3-ac1e-9dae30be65d7",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbText"
                     },
                     {
                       "type" : "component",
@@ -689,8 +674,8 @@
                           "value" : ""
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "meetingItemObj.supersedingItemIdString"
                         },
                         "type" : {
                           "type" : "constant",
@@ -715,80 +700,6 @@
                     }
                   ],
                   [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 4,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 4
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!isCloseDateRequired"
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Actual Closed Date"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "expression",
-                          "value" : "isCloseDateRequired"
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "meetingItemObj.actualClosedDate"
-                        }
-                      },
-                      "reference" : "4f63574d-f36c-45c3-8ba6-992b9aa308a6",
-                      "hasValidationError" : false,
-                      "id" : "pbDatePicker",
-                      "description" : ""
-                    },
                     {
                       "type" : "component",
                       "dimension" : {
@@ -907,66 +818,6 @@
                       "id" : "pbText",
                       "description" : ""
                     }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!isRejectionNoteRequired"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "expression",
-                          "value" : "isRejectionNoteRequired"
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Rejection Note"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "meetingItemObj.rejectionComments"
-                        }
-                      },
-                      "reference" : "b8c34ce0-acd6-49af-820f-a5a7de3ba358",
-                      "hasValidationError" : false,
-                      "id" : "pbTextarea"
-                    }
                   ]
                 ]
               }
@@ -975,10 +826,10 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -998,7 +849,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Approve"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1021,7 +872,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Open modal"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -1030,12 +881,12 @@
                     "type" : "expression"
                   },
                   "disabled" : {
-                    "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "type" : "constant",
+                    "value" : false
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "right"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -1062,13 +913,101 @@
                   },
                   "modalId" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : "approvalModal"
                   }
                 },
                 "reference" : "81bf4609-473c-4bed-9a9d-38e4c7d91568",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Reject"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "default"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Open modal"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "constant"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : "rejectionModal"
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "b48877ae-b19f-4abd-9f10-0870db920258",
+                "hasValidationError" : false,
+                "id" : "pbButton"
               }
             ],
             [
@@ -1126,6 +1065,486 @@
           ]
         }
       }
+    ],
+    [
+      {
+        "type" : "modalContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : "rejectionModal"
+          },
+          "size" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "animation" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "c0489091-33c8-4ac0-acff-b4a1455c3dd1",
+        "hasValidationError" : false,
+        "id" : "pbModalContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "f4d6ed09-4438-4ba0-90cb-2f53cbf3a317",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Rejection"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "8b0ad8c8-e0dd-4cbc-9e6a-97691d14c80b",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Rejection Note"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "meetingItemObj.rejectionComments"
+                  }
+                },
+                "reference" : "b8c34ce0-acd6-49af-820f-a5a7de3ba358",
+                "hasValidationError" : false,
+                "id" : "pbTextarea"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "!meetingItemObj.rejectionComments"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutputRejected"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutputRejected._submitError"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "cb20a0ca-94c1-4715-ae2d-47bad872081d",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type" : "modalContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : "approvalModal"
+          },
+          "size" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "animation" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "b7250146-cca8-4b36-9958-ac5860eeba49",
+        "hasValidationError" : false,
+        "id" : "pbModalContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "07f4d2e8-49e2-47c5-a033-693e694d8270",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Approval"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "d978d857-1908-4ceb-9124-a0afddd5dcd8",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dateFormat" : {
+                    "type" : "constant",
+                    "value" : "MM/dd/yyyy"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Actual Closed Date"
+                  },
+                  "type" : {
+                    "type" : "constant"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "todayLabel" : {
+                    "type" : "constant",
+                    "value" : "Today"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "showToday" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant",
+                    "value" : "Enter a date (mm/dd/yyyy)"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "meetingItemObj.actualClosedDate"
+                  }
+                },
+                "reference" : "4f63574d-f36c-45c3-8ba6-992b9aa308a6",
+                "hasValidationError" : false,
+                "id" : "pbDatePicker",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "!meetingItemObj.actualClosedDate"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "a8e77791-1b83-41a0-9a2a-f2026165de37",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              }
+            ]
+          ]
+        }
+      }
     ]
   ],
   "assets" : [
@@ -1176,9 +1595,9 @@
         "\t\t//map meetingItemObj variable to expected task contract input",
         "\t\tmeetingItemObjInput: {",
         "\t\t\tdescription: $data.meetingItemObj.description !== undefined ? $data.meetingItemObj.description : null,",
-        "\t\t\tstatus: $data.meetingItemObj.status !== undefined ? $data.meetingItemObj.status : null,",
+        "\t\t\tstatus: \"Completed\",",
         "\t\t\tactualClosedDate: $data.meetingItemObj.actualClosedDate !== undefined ? $data.meetingItemObj.actualClosedDate : null,",
-        "\t\t\trejectionComments: $data.meetingItemObj.rejectionComments !== undefined ? $data.meetingItemObj.rejectionComments : null",
+        "\t\t\trejectionComments: null",
         "\t\t}",
         "\t}",
         "}"
@@ -1224,6 +1643,23 @@
       "type" : "expression",
       "value" : [
         "return  $data.meetingItemObj ? $data.meetingItemObj.status == \"Rejected - General Secretariat\" : false;"
+      ],
+      "exposed" : false
+    },
+    "formOutputRejected" : {
+      "type" : "expression",
+      "value" : [
+        "if( $data.meetingItemObj ){",
+        "\treturn {",
+        "\t\t//map meetingItemObj variable to expected task contract input",
+        "\t\tmeetingItemObjInput: {",
+        "\t\t\tdescription: $data.meetingItemObj.description !== undefined ? $data.meetingItemObj.description : null,",
+        "\t\t\tstatus: \"Rejected - General Secretariat\",",
+        "\t\t\tactualClosedDate: null,",
+        "\t\t\trejectionComments: $data.meetingItemObj.rejectionComments !== undefined ? $data.meetingItemObj.rejectionComments : null",
+        "\t\t}",
+        "\t}",
+        "}"
       ],
       "exposed" : false
     }

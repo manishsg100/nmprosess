@@ -60,40 +60,45 @@
                 <expression xmi:type="expression:Expression" xmi:id="_INTdb7DBEeuLm4pt6qXrTA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_INTdcLDBEeuLm4pt6qXrTA" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_INTdcbDBEeuLm4pt6qXrTA" name="&lt;pattern-expression>" content="Dear user,&#xA;Please check an Investment that was updated:&#xA;&#xA;Target: ${investmentObj.getTarget()}&#xA;Size: ${investmentObj.getInvestmentSize()}&#xA;Stage: ${investmentObj.getStage()}&#xA;Type: ${investmentObj.getInvestmentType()}&#xA;Sector: ${investmentObj.getSector()}&#xA;Highlights: ${investmentObj.getHighlights()}&#xA;Description: ${investmentObj.description}&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPsLDCEeuLm4pt6qXrTA" name="investmentObj.getTarget()" content="investmentObj.getTarget()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPsbDCEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MSDPsrDCEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                <expression xmi:type="expression:Expression" xmi:id="_INTdcbDBEeuLm4pt6qXrTA" name="&lt;pattern-expression>" content="Dear user,&#xA;Please check an Investment that was updated:&#xA;&#xA;Target: ${investmentObj.getTarget()}&#xA;Size: ${investmentObj.investmentSize.toString()}&#xA;Currency: ${investmentObj.currency}&#xA;Stage: ${investmentObj.getStage()}&#xA;Type: ${investmentObj.getInvestmentType()}&#xA;Sector: ${investmentObj.getSector()}&#xA;Highlights: ${investmentObj.getHighlights()}&#xA;Description: ${investmentObj.description}&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJALjpEeuK84HZhsh8MA" name="investmentObj.getTarget()" content="investmentObj.getTarget()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJAbjpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJArjpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPs7DCEeuLm4pt6qXrTA" name="investmentObj.getInvestmentSize()" content="investmentObj.getInvestmentSize()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPtLDCEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MSDPtbDCEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJA7jpEeuK84HZhsh8MA" name="investmentObj.investmentSize.toString()" content="investmentObj.investmentSize.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJBLjpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJBbjpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPtrDCEeuLm4pt6qXrTA" name="investmentObj.getStage()" content="investmentObj.getStage()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPt7DCEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MSDPuLDCEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJBrjpEeuK84HZhsh8MA" name="investmentObj.currency" content="investmentObj.currency" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJB7jpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJCLjpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPubDCEeuLm4pt6qXrTA" name="investmentObj.getInvestmentType()" content="investmentObj.getInvestmentType()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPurDCEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MSDPu7DCEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJCbjpEeuK84HZhsh8MA" name="investmentObj.getStage()" content="investmentObj.getStage()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJCrjpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJC7jpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPvLDCEeuLm4pt6qXrTA" name="investmentObj.getSector()" content="investmentObj.getSector()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPvbDCEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MSDPvrDCEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJDLjpEeuK84HZhsh8MA" name="investmentObj.getInvestmentType()" content="investmentObj.getInvestmentType()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJDbjpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJDrjpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPv7DCEeuLm4pt6qXrTA" name="investmentObj.getHighlights()" content="investmentObj.getHighlights()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPwLDCEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MSDPwbDCEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJD7jpEeuK84HZhsh8MA" name="investmentObj.getSector()" content="investmentObj.getSector()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJELjpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJEbjpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPwrDCEeuLm4pt6qXrTA" name="investmentObj.description" content="investmentObj.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_MSDPw7DCEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MSDPxLDCEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJErjpEeuK84HZhsh8MA" name="investmentObj.getHighlights()" content="investmentObj.getHighlights()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJE7jpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJFLjpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJFbjpEeuK84HZhsh8MA" name="investmentObj.description" content="investmentObj.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_dPDJFrjpEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dPDJF7jpEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
                     </referencedElements>
                   </referencedElements>
                 </expression>
@@ -112,102 +117,113 @@
               </parameters>
             </configuration>
           </connectors>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8EKzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8EazaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8EqzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y046-7jnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y046_LjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y046_bjnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8E6zaEeuLm4pt6qXrTA" name="investmentObjInput.target" content="investmentObjInput?.target" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8FKzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y046_rjnEeuK84HZhsh8MA" name="investmentObjInput.target" content="investmentObjInput?.target" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y046_7jnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8FazaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setTarget">
+            <operator xmi:type="expression:Operator" xmi:id="_y047ALjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setTarget">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8FqzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8F6zaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8GKzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y047AbjnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047ArjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047A7jnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8GazaEeuLm4pt6qXrTA" name="investmentObjInput.investmentSize" content="investmentObjInput?.investmentSize" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8GqzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047BLjnEeuK84HZhsh8MA" name="investmentObjInput.investmentSize" content="investmentObjInput?.investmentSize?.toFloat()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Float">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047BbjnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8G6zaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setInvestmentSize">
+            <operator xmi:type="expression:Operator" xmi:id="_y047BrjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setInvestmentSize">
+              <inputTypes>java.lang.Float</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_y047B7jnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047CLjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047CbjnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047CrjnEeuK84HZhsh8MA" name="investmentObjInput.stage" content="investmentObjInput?.stage" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047C7jnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_y047DLjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setStage">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8HKzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8HazaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8HqzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y047DbjnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047DrjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047D7jnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8H6zaEeuLm4pt6qXrTA" name="investmentObjInput.stage" content="investmentObjInput?.stage" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8IKzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047ELjnEeuK84HZhsh8MA" name="investmentObjInput.investmentType" content="investmentObjInput?.investmentType" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047EbjnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8IazaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setStage">
+            <operator xmi:type="expression:Operator" xmi:id="_y047ErjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setInvestmentType">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8IqzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8I6zaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8JKzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y047E7jnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047FLjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047FbjnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8JazaEeuLm4pt6qXrTA" name="investmentObjInput.investmentType" content="investmentObjInput?.investmentType" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8JqzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047FrjnEeuK84HZhsh8MA" name="investmentObjInput.sector" content="investmentObjInput?.sector" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047F7jnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8J6zaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setInvestmentType">
+            <operator xmi:type="expression:Operator" xmi:id="_y047GLjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setSector">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8KKzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8KazaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8KqzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y047GbjnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047GrjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047G7jnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8K6zaEeuLm4pt6qXrTA" name="investmentObjInput.sector" content="investmentObjInput?.sector" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8LKzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047HLjnEeuK84HZhsh8MA" name="investmentObjInput.createdBy" content="investmentObjInput?.createdBy" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047HbjnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8LazaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setSector">
+            <operator xmi:type="expression:Operator" xmi:id="_y047HrjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setCreatedBy">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8LqzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8L6zaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8MKzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y047H7jnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047ILjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047IbjnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8MazaEeuLm4pt6qXrTA" name="investmentObjInput.createdBy" content="investmentObjInput?.createdBy" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8MqzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047IrjnEeuK84HZhsh8MA" name="investmentObjInput.createdAt" content="investmentObjInput?.createdAt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047I7jnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8M6zaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setCreatedBy">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8NKzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8NazaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8NqzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8N6zaEeuLm4pt6qXrTA" name="investmentObjInput.createdAt" content="investmentObjInput?.createdAt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8OKzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8OazaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setCreatedAt">
+            <operator xmi:type="expression:Operator" xmi:id="_y047JLjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setCreatedAt">
               <inputTypes>java.time.OffsetDateTime</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8OqzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8O6zaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8PKzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y047JbjnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047JrjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047J7jnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8PazaEeuLm4pt6qXrTA" name="investmentObjInput.description" content="investmentObjInput?.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8PqzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047KLjnEeuK84HZhsh8MA" name="investmentObjInput.description" content="investmentObjInput?.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047KbjnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8P6zaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setDescription">
+            <operator xmi:type="expression:Operator" xmi:id="_y047KrjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setDescription">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_B5X8QKzaEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_B5X8QazaEeuLm4pt6qXrTA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B5X8QqzaEeuLm4pt6qXrTA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+          <operations xmi:type="expression:Operation" xmi:id="_y047K7jnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047LLjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047LbjnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_B5X8Q6zaEeuLm4pt6qXrTA" name="investmentObjInput.highlights" content="investmentObjInput?.highlights" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_B5X8RKzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047LrjnEeuK84HZhsh8MA" name="investmentObjInput.highlights" content="investmentObjInput?.highlights" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047L7jnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_B5X8RazaEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setHighlights">
+            <operator xmi:type="expression:Operator" xmi:id="_y047MLjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setHighlights">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_y047MbjnEeuK84HZhsh8MA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_y047MrjnEeuK84HZhsh8MA" name="investmentObj" content="investmentObj" type="TYPE_VARIABLE" returnType="com.company.model.Investment">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y047M7jnEeuK84HZhsh8MA" name="investmentObj" dataType="_DH10JKzSEeuLm4pt6qXrTA" className="com.company.model.Investment"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_y047NLjnEeuK84HZhsh8MA" name="investmentObjInput.currency" content="investmentObjInput?.currency" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_y047NbjnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_y047NrjnEeuK84HZhsh8MA" type="JAVA_METHOD" expression="setCurrency">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -220,16 +236,17 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_DH10AazSEeuLm4pt6qXrTA" name="updateInvestment" content="c803ccfc-8d41-42d9-838e-bcc11959f33f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_DH10AqzSEeuLm4pt6qXrTA">
-            <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt8KzaEeuLm4pt6qXrTA" name="investmentObjInput" type="COMPLEX" dataReference="investmentObj" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt8azaEeuLm4pt6qXrTA" name="target" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt8qzaEeuLm4pt6qXrTA" name="investmentSize" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt86zaEeuLm4pt6qXrTA" name="stage" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt9KzaEeuLm4pt6qXrTA" name="investmentType" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt9azaEeuLm4pt6qXrTA" name="sector" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt9qzaEeuLm4pt6qXrTA" name="createdBy" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt96zaEeuLm4pt6qXrTA" name="createdAt" type="OFFSETDATETIME" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt-KzaEeuLm4pt6qXrTA" name="description" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_B5Wt-azaEeuLm4pt6qXrTA" name="highlights" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_y0468LjnEeuK84HZhsh8MA" name="investmentObjInput" type="COMPLEX" dataReference="investmentObj" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_y0468bjnEeuK84HZhsh8MA" name="target" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y0468rjnEeuK84HZhsh8MA" name="investmentSize" type="DECIMAL" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y04687jnEeuK84HZhsh8MA" name="stage" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y0469LjnEeuK84HZhsh8MA" name="investmentType" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y0469bjnEeuK84HZhsh8MA" name="sector" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y0469rjnEeuK84HZhsh8MA" name="createdBy" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y04697jnEeuK84HZhsh8MA" name="createdAt" type="OFFSETDATETIME" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y046-LjnEeuK84HZhsh8MA" name="description" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y046-bjnEeuK84HZhsh8MA" name="highlights" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_y046-rjnEeuK84HZhsh8MA" name="currency" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_DH10A6zSEeuLm4pt6qXrTA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>

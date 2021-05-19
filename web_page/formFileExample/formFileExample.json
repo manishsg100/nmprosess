@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "formFileExample",
   "name" : "formFileExample",
-  "lastUpdate" : 1621343348564,
+  "lastUpdate" : 1621455386831,
   "rows" : [
     [
       {
@@ -1557,7 +1557,7 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.meetingItemObj && $data.context ){",
+        "if( $data.meetingItemObj){",
         "\treturn {",
         "\t\t//map meetingItemObj variable to expected task contract input",
         "\t\tmeetingItemObjInput: {",

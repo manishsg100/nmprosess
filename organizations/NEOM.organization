@@ -575,5 +575,11 @@
       <roleName>CEO</roleName>
       <groupName>neom</groupName>
     </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>member</roleName>
+      <groupName>Energy</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
+    </membership>
   </memberships>
 </organization:Organization>
