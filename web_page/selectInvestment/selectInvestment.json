@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "selectInvestment",
   "name" : "selectInvestment",
-  "lastUpdate" : 1620627641132,
+  "lastUpdate" : 1621459052754,
   "rows" : [
     [
       {
@@ -416,11 +416,10 @@
                                   "ID",
                                   "Target",
                                   "Investment Size",
+                                  "Currency",
                                   "Stage",
                                   "Investment Type",
                                   "Sector",
-                                  "Created By",
-                                  "Created At",
                                   "Description",
                                   "Highlights"
                                 ]
@@ -455,11 +454,10 @@
                                   "persistenceId",
                                   "target",
                                   "investmentSize",
+                                  "currency",
                                   "stage",
                                   "investmentType",
                                   "sector",
-                                  "createdBy",
-                                  "createdAt",
                                   "description",
                                   "highlights"
                                 ]

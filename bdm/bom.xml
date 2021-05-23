@@ -84,7 +84,7 @@
         <businessObject qualifiedName="com.company.model.Investment">
             <fields>
                 <field type="STRING" length="255" name="target" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="investmentSize" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="investmentSize" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="stage" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="investmentType" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="sector" nullable="true" collection="false"/>
@@ -92,10 +92,11 @@
                 <field type="OFFSETDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="description" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="highlights" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="currency" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries>
-                <query name="searchInvestments" content="SELECT i &#10;FROM Investment i &#10;WHERE i.target LIKE :target&#10;AND i.investmentSize LIKE :investmentSize&#10;AND i.stage LIKE :stage&#10;AND i.investmentType LIKE :investmentType&#10;AND i.sector LIKE :sector&#10;ORDER BY i.persistenceId DESC" returnType="java.util.List">
+                <query name="searchInvestments" content="SELECT i &#10;FROM Investment i &#10;WHERE i.target LIKE :target&#10;AND i.currency LIKE :investmentSize&#10;AND i.stage LIKE :stage&#10;AND i.investmentType LIKE :investmentType&#10;AND i.sector LIKE :sector&#10;ORDER BY i.persistenceId DESC" returnType="java.util.List">
                     <queryParameters>
                         <queryParameter name="target" className="java.lang.String"/>
                         <queryParameter name="investmentSize" className="java.lang.String"/>
@@ -198,7 +199,8 @@ AND m.participants = :participants</description>
             </fields>
             <uniqueConstraints/>
             <queries>
-                <query name="searchMeetingItems" content="SELECT m &#10;FROM MeetingItem m &#10;WHERE m.meetingSubject LIKE :meetingSubject&#10;AND m.itemType LIKE :itemType&#10;AND m.status LIKE :status&#10;AND m.owner LIKE :owner&#10;AND m.plannedDate &gt;= :plannedDateStart&#10;AND m.plannedDate &lt;= :plannedDateEnd&#10;AND m.revisedTargetDate &gt;= :revisedTargetDateStart&#10;AND m.revisedTargetDate &lt;= :revisedTargetDateEnd&#10;AND m.topic LIKE :topic&#10;AND m.itemName LIKE :itemName&#10;ORDER BY m.persistenceId DESC" returnType="com.company.model.MeetingItem">
+                <query name="searchMeetingItems" content="SELECT m &#10;FROM MeetingItem m &#10;WHERE m.meetingSubject LIKE :meetingSubject&#10;AND m.itemType LIKE :itemType&#10;AND m.status LIKE :status&#10;AND m.owner LIKE :owner&#10;AND m.topic LIKE :topic&#10;AND m.itemName LIKE :itemName&#10;AND (m.plannedDate &gt;= :plannedDateStart&#10;AND m.plannedDate &lt;= :plannedDateEnd OR m.plannedDate IS NULL)&#10;AND (m.revisedTargetDate &gt;= :revisedTargetDateStart&#10;AND m.revisedTargetDate &lt;= :revisedTargetDateEnd OR m.revisedTargetDate IS NULL)&#10;ORDER BY m.persistenceId DESC" returnType="com.company.model.MeetingItem">
+                    <description></description>
                     <queryParameters>
                         <queryParameter name="meetingSubject" className="java.lang.String"/>
                         <queryParameter name="itemType" className="java.lang.String"/>

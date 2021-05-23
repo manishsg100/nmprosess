@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingItemOwnerAssignment",
   "name" : "meetingItemOwnerAssignment",
-  "lastUpdate" : 1620652684584,
+  "lastUpdate" : 1621412902170,
   "rows" : [
     [
       {
@@ -660,7 +660,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",

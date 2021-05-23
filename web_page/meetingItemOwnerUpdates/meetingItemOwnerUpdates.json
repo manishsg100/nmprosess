@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingItemOwnerUpdates",
   "name" : "meetingItemOwnerUpdates",
-  "lastUpdate" : 1621343578111,
+  "lastUpdate" : 1621457876599,
   "rows" : [
     [
       {
@@ -525,14 +525,6 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
@@ -549,29 +541,22 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "statuses"
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "meetingItemObj.status"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{meetingItemObj.status}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
                         }
                       },
-                      "reference" : "04ba9d16-82ad-4c86-9f7d-bc4d8ec2e97b",
+                      "reference" : "75e689eb-4841-470b-88c3-1f6bb604409c",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbText"
                     },
                     {
                       "type" : "component",
@@ -630,196 +615,6 @@
                       "reference" : "187e246b-288e-4df2-99ad-386f67c1ecec",
                       "hasValidationError" : false,
                       "id" : "pbTextarea"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 4,
-                        "lg" : 4
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "meetingItemObj.status!==\"Superseded - Owner\""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Select Superseding Item"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "buttonStyle" : {
-                          "type" : "constant",
-                          "value" : "default"
-                        },
-                        "action" : {
-                          "type" : "constant",
-                          "value" : "Open modal"
-                        },
-                        "assign" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "url" : {
-                          "type" : "interpolation"
-                        },
-                        "responseStatusCode" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "dataToSend" : {
-                          "type" : "constant"
-                        },
-                        "dataFromSuccess" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "closeOnSuccess" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dataFromError" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "targetUrlOnSuccess" : {
-                          "type" : "interpolation"
-                        },
-                        "collectionToModify" : {
-                          "type" : "variable"
-                        },
-                        "modalId" : {
-                          "type" : "constant",
-                          "value" : "selectSupItem"
-                        },
-                        "collectionPosition" : {
-                          "type" : "constant",
-                          "value" : "Last"
-                        },
-                        "valueToAdd" : {
-                          "type" : "constant"
-                        },
-                        "removeItem" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "ca1412bb-9187-4773-84c8-1c92719f559c",
-                      "hasValidationError" : false,
-                      "id" : "pbButton"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 4,
-                        "lg" : 4
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "isNewSupersededItemHidden"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Superseding Item"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{meetingItem_selected.itemName}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "db3e3081-71c6-42b5-99c3-204f2438d050",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 4,
-                        "lg" : 4
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "isOldSupersededItemHidden"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Superseding Item"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{meetingItemObj.supersedingItemIdString}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "f6cf35db-45da-4951-8290-7dadfe0ae418",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
                     }
                   ],
                   [
@@ -1035,10 +830,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 4,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "allowHtml" : {
@@ -1090,64 +885,6 @@
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 6,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!isEvidenceRequired"
-                        },
-                        "required" : {
-                          "type" : "expression",
-                          "value" : "isEvidenceRequired"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Evidence Attachment"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Browse to upload the file..."
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "context.evidenceDoc_ref.newValue"
-                        },
-                        "errorContent" : {
-                          "type" : "variable",
-                          "value" : ""
-                        }
-                      },
-                      "reference" : "b38b109c-d268-483c-abdc-88f2f211c7db",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload"
                     }
                   ]
                 ]
@@ -1157,10 +894,100 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Keep In Progress"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "right"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "default"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "56d8cf56-4b5f-46ee-96d0-bbd3695c3267",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 4,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 4
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -1180,7 +1007,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Update"
+                    "value" : "Complete"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1203,7 +1030,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Open modal"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -1212,8 +1039,8 @@
                     "type" : "expression"
                   },
                   "disabled" : {
-                    "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "type" : "constant",
+                    "value" : false
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1244,13 +1071,101 @@
                   },
                   "modalId" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : "attachEvidenceModal"
                   }
                 },
                 "reference" : "3ae45a04-6e19-4e43-a241-5d7d6e3aadf3",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Supersede"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Open modal"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "constant"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : "selectSupItem"
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "54e2af38-1a66-486e-ac87-7228ce39a8be",
+                "hasValidationError" : false,
+                "id" : "pbButton"
               }
             ],
             [
@@ -1297,12 +1212,290 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "81de453b-a928-4658-b1fc-aed33c94fdfc",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type" : "modalContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : "attachEvidenceModal"
+          },
+          "size" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "animation" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "4f053472-9512-4d95-9ed7-c37ef8e30ae8",
+        "hasValidationError" : false,
+        "id" : "pbModalContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "ec946b76-9b59-47bf-b457-8a69010760c6",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Evidence Attachment"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "ef3f4d99-5ba4-4a42-ab9f-d7cf7ea3b998",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Evidence Attachment"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Browse to upload the file..."
+                  },
+                  "url" : {
+                    "type" : "constant",
+                    "value" : "../API/formFileUpload"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "context.evidenceDoc_ref.newValue"
+                  },
+                  "errorContent" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "b38b109c-d268-483c-abdc-88f2f211c7db",
+                "hasValidationError" : false,
+                "id" : "pbUpload"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!context.evidenceDoc_ref"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Process document"
+                  },
+                  "url" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "document" : {
+                    "type" : "variable",
+                    "value" : "context.evidenceDoc_ref"
+                  },
+                  "showPreview" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "8e1c384b-9dc7-47df-9862-b00628ab07e5",
+                "hasValidationError" : false,
+                "id" : "pbFileViewer"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "!context.evidenceDoc_ref.newValue"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutputCompleted"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutputCompleted._submitError"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "23c2e8b0-0ca8-44e2-bb94-a3c633988020",
+                "hasValidationError" : false,
+                "id" : "pbButton"
               }
             ]
           ]
@@ -1976,12 +2169,12 @@
                                 "value" : false
                               },
                               "disabled" : {
-                                "type" : "constant",
-                                "value" : false
+                                "type" : "expression",
+                                "value" : "! meetingItem_selected"
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Select"
+                                "value" : "Submit"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -1993,7 +2186,7 @@
                               },
                               "action" : {
                                 "type" : "constant",
-                                "value" : "Close modal"
+                                "value" : "Submit task"
                               },
                               "assign" : {
                                 "type" : "constant",
@@ -2007,7 +2200,8 @@
                                 "value" : ""
                               },
                               "dataToSend" : {
-                                "type" : "constant"
+                                "type" : "expression",
+                                "value" : "formOutputSuperseded"
                               },
                               "dataFromSuccess" : {
                                 "type" : "variable",
@@ -2019,10 +2213,11 @@
                               },
                               "dataFromError" : {
                                 "type" : "variable",
-                                "value" : ""
+                                "value" : "formOutputSuperseded._submitError"
                               },
                               "targetUrlOnSuccess" : {
-                                "type" : "interpolation"
+                                "type" : "interpolation",
+                                "value" : "/bonita"
                               },
                               "collectionToModify" : {
                                 "type" : "variable"
@@ -2101,22 +2296,22 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.meetingItemObj && $data.context ){",
+        "if( $data.meetingItemObj ){",
         "\treturn {",
         "\t\t//map meetingItemObj variable to expected task contract input",
         "\t\tmeetingItemObjInput: {",
         "\t\t\tdescription: $data.meetingItemObj.description !== undefined ? $data.meetingItemObj.description : null,",
-        "\t\t\tstatus: $data.meetingItemObj.status !== undefined ? $data.meetingItemObj.status : null,",
+        "\t\t\tstatus: \"In Progress\",",
         "\t\t\tsupersedingItemId: $data.meetingItem_selected && $data.meetingItem_selected.persistenceId ? +$data.meetingItem_selected.persistenceId : +$data.meetingItemObj.supersedingItemId || null,",
         "\t\t\tsupersedingItemIdString: $data.meetingItem_selected && $data.meetingItem_selected.itemName !== undefined ? $data.meetingItem_selected.itemName : $data.meetingItemObj.supersedingItemIdString || null,",
         "\t\t\tplannedDate: $data.meetingItemObj.plannedDate !== undefined ? $data.meetingItemObj.plannedDate : null,",
         "\t\t\trevisedTargetDate: $data.meetingItemObj.revisedTargetDate !== undefined ? $data.meetingItemObj.revisedTargetDate : null",
         "\t\t},",
         "\t\tevidenceDocDocumentInput: {",
-        "\t\t\tid: $data.context.evidenceDoc_ref && $data.context.evidenceDoc_ref.id ? $data.context.evidenceDoc_ref.id.toString() : null,",
-        "\t\t\tfilename: $data.context.evidenceDoc_ref.newValue && $data.context.evidenceDoc_ref.newValue.filename ? $data.context.evidenceDoc_ref.newValue.filename : null,",
-        "\t\t\ttempPath: $data.context.evidenceDoc_ref.newValue && $data.context.evidenceDoc_ref.newValue.tempPath ? $data.context.evidenceDoc_ref.newValue.tempPath : null,",
-        "\t\t\tcontentType: $data.context.evidenceDoc_ref.newValue && $data.context.evidenceDoc_ref.newValue.contentType ? $data.context.evidenceDoc_ref.newValue.contentType : null",
+        "\t\t\tid:  null,",
+        "\t\t\tfilename: \"sample\",",
+        "\t\t\ttempPath: null,",
+        "\t\t\tcontentType: null",
         "\t\t}",
         "\t}",
         "}"
@@ -2277,6 +2472,56 @@
       "type" : "expression",
       "value" : [
         "return  $data.meetingItemObj ? $data.meetingItemObj.status == \"Completed - Owner\" : false;"
+      ],
+      "exposed" : false
+    },
+    "formOutputSuperseded" : {
+      "type" : "expression",
+      "value" : [
+        "if( $data.meetingItemObj){",
+        "\treturn {",
+        "\t\t//map meetingItemObj variable to expected task contract input",
+        "\t\tmeetingItemObjInput: {",
+        "\t\t\tdescription: $data.meetingItemObj.description !== undefined ? $data.meetingItemObj.description : null,",
+        "\t\t\tstatus: \"Superseded - Owner\",",
+        "\t\t\tsupersedingItemId: $data.meetingItem_selected && $data.meetingItem_selected.persistenceId ? +$data.meetingItem_selected.persistenceId : +$data.meetingItemObj.supersedingItemId || null,",
+        "\t\t\tsupersedingItemIdString: $data.meetingItem_selected && $data.meetingItem_selected.itemName !== undefined ? $data.meetingItem_selected.itemName : $data.meetingItemObj.supersedingItemIdString || null,",
+        "\t\t\tplannedDate: $data.meetingItemObj.plannedDate !== undefined ? $data.meetingItemObj.plannedDate : null,",
+        "\t\t\trevisedTargetDate: $data.meetingItemObj.revisedTargetDate !== undefined ? $data.meetingItemObj.revisedTargetDate : null",
+        "\t\t},",
+        "\t\tevidenceDocDocumentInput: {",
+        "\t\t\tid:  null,",
+        "\t\t\tfilename: \"sample\",",
+        "\t\t\ttempPath: null,",
+        "\t\t\tcontentType: null",
+        "\t\t}",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutputCompleted" : {
+      "type" : "expression",
+      "value" : [
+        "if( $data.meetingItemObj && $data.context ){",
+        "\treturn {",
+        "\t\t//map meetingItemObj variable to expected task contract input",
+        "\t\tmeetingItemObjInput: {",
+        "\t\t\tdescription: $data.meetingItemObj.description !== undefined ? $data.meetingItemObj.description : null,",
+        "\t\t\tstatus: \"Completed - Owner\",",
+        "\t\t\tsupersedingItemId: null,",
+        "\t\t\tsupersedingItemIdString: null,",
+        "\t\t\tplannedDate: $data.meetingItemObj.plannedDate !== undefined ? $data.meetingItemObj.plannedDate : null,",
+        "\t\t\trevisedTargetDate: $data.meetingItemObj.revisedTargetDate !== undefined ? $data.meetingItemObj.revisedTargetDate : null",
+        "\t\t},",
+        "\t\tevidenceDocDocumentInput: {",
+        "\t\t\tid: $data.context.evidenceDoc_ref && $data.context.evidenceDoc_ref.id ? $data.context.evidenceDoc_ref.id.toString() : null,",
+        "\t\t\tfilename: $data.context.evidenceDoc_ref.newValue && $data.context.evidenceDoc_ref.newValue.filename ? $data.context.evidenceDoc_ref.newValue.filename : null,",
+        "\t\t\ttempPath: $data.context.evidenceDoc_ref.newValue && $data.context.evidenceDoc_ref.newValue.tempPath ? $data.context.evidenceDoc_ref.newValue.tempPath : null,",
+        "\t\t\tcontentType: $data.context.evidenceDoc_ref.newValue && $data.context.evidenceDoc_ref.newValue.contentType ? $data.context.evidenceDoc_ref.newValue.contentType : null",
+        "\t\t}",
+        "\t}",
+        "}"
       ],
       "exposed" : false
     }
