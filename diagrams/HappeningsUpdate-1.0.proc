@@ -195,7 +195,7 @@
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_-sI0ILbWEeuhWf25_RfJ-g">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_-sI0IbbWEeuhWf25_RfJ-g" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_-sI0IrbWEeuhWf25_RfJ-g">
-              <group>/acme</group>
+              <group>/neom</group>
             </groups>
             <memberships xmi:type="actormapping:Membership" xmi:id="_-sI0I7bWEeuhWf25_RfJ-g"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_-sI0JLbWEeuhWf25_RfJ-g">

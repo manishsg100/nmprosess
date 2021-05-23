@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "chooseHappening",
   "name" : "chooseHappening",
-  "lastUpdate" : 1621340667782,
+  "lastUpdate" : 1621420667485,
   "rows" : [
     [
       {
@@ -211,10 +211,10 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 6,
+                                    "md" : 3,
                                     "sm" : 12,
                                     "xs" : 12,
-                                    "lg" : 4
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "labelHidden" : {
@@ -294,8 +294,8 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 4
+                                    "md" : 3,
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -352,16 +352,14 @@
                                   "reference" : "b669f64e-3fd0-41a5-a7e5-8624838e3d40",
                                   "hasValidationError" : false,
                                   "id" : "pbSelect"
-                                }
-                              ],
-                              [
+                                },
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 6,
+                                    "md" : 3,
                                     "sm" : 12,
                                     "xs" : 12,
-                                    "lg" : 4
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "hidden" : {
@@ -432,10 +430,10 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "md" : 6,
+                                    "md" : 3,
                                     "sm" : 12,
                                     "xs" : 12,
-                                    "lg" : 4
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "hidden" : {
@@ -665,8 +663,8 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 4
+                                    "md" : 3,
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -741,8 +739,8 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 4
+                                    "md" : 3,
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -799,16 +797,14 @@
                                   "reference" : "87c327bc-6d5e-4dbc-b7f2-ca55f3975656",
                                   "hasValidationError" : false,
                                   "id" : "pbSelect"
-                                }
-                              ],
-                              [
+                                },
                                 {
                                   "type" : "component",
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 6
+                                    "md" : 3,
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -873,8 +869,8 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 6
+                                    "md" : 3,
+                                    "lg" : 3
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -933,75 +929,6 @@
                                   "reference" : "58a3a50b-a5ae-4000-8f27-0bba04cb7706",
                                   "hasValidationError" : false,
                                   "id" : "pbDatePicker"
-                                }
-                              ],
-                              [
-                                {
-                                  "type" : "component",
-                                  "dimension" : {
-                                    "xs" : 12,
-                                    "sm" : 12,
-                                    "md" : 6,
-                                    "lg" : 6
-                                  },
-                                  "propertyValues" : {
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "hidden" : {
-                                      "type" : "constant",
-                                      "value" : true
-                                    },
-                                    "readOnly" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "required" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "labelHidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "label" : {
-                                      "type" : "interpolation",
-                                      "value" : "Filter by Created by"
-                                    },
-                                    "labelPosition" : {
-                                      "type" : "constant",
-                                      "value" : "top"
-                                    },
-                                    "labelWidth" : {
-                                      "type" : "constant",
-                                      "value" : 4
-                                    },
-                                    "placeholder" : {
-                                      "type" : "interpolation"
-                                    },
-                                    "availableValues" : {
-                                      "type" : "constant",
-                                      "value" : [
-                                        "usersSuggestions"
-                                      ]
-                                    },
-                                    "displayedKey" : {
-                                      "type" : "constant",
-                                      "value" : "userName"
-                                    },
-                                    "returnedKey" : {
-                                      "type" : "constant",
-                                      "value" : "userName"
-                                    },
-                                    "value" : {
-                                      "type" : "variable",
-                                      "value" : "fAllcreatedby"
-                                    }
-                                  },
-                                  "reference" : "2a8acff0-0a07-473e-abea-cab51030a415",
-                                  "hasValidationError" : false,
-                                  "id" : "pbAutocomplete"
                                 }
                               ],
                               [
@@ -1098,12 +1025,41 @@
             ],
             [
               {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "3a7b3ce4-8e0a-4a14-b67e-d7410286966b",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
+              },
+              {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 4
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -1160,7 +1116,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "right"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -1194,14 +1150,16 @@
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
-              },
+              }
+            ],
+            [
               {
                 "type" : "component",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 4
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "allowHTML" : {

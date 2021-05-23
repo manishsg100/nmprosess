@@ -348,6 +348,9 @@
     <role name="CEO">
       <displayName>CEO</displayName>
     </role>
+    <role name="sector_head">
+      <displayName>Sector Head</displayName>
+    </role>
   </roles>
   <groups>
     <group name="neom">
@@ -573,6 +576,11 @@
     <membership>
       <userName>walter.bates</userName>
       <roleName>CEO</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>william.jobs</userName>
+      <roleName>sector_head</roleName>
       <groupName>neom</groupName>
     </membership>
   </memberships>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "updateHappeningShort",
   "name" : "updateHappeningShort",
-  "lastUpdate" : 1621254545953,
+  "lastUpdate" : 1621420914065,
   "rows" : [
     [
       {
@@ -212,10 +212,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 4,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -292,10 +292,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 4,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "hidden" : {
@@ -362,15 +362,13 @@
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
-                    }
-                  ],
-                  [
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 6,
+                        "md" : 4,
                         "lg" : 4
                       },
                       "propertyValues" : {
@@ -439,8 +437,8 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 6,
-                  "lg" : 6
+                  "md" : 12,
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -525,14 +523,16 @@
                 "reference" : "4e83b680-6ca4-4787-bcfa-a722e300612f",
                 "hasValidationError" : false,
                 "id" : "pbButton"
-              },
+              }
+            ],
+            [
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 6,
+                  "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 6
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "removeItem" : {
