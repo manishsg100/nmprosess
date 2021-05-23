@@ -2,13 +2,15 @@
   "modelVersion" : "2.0",
   "id" : "allRegionDevelopment",
   "name" : "allRegionDevelopment",
-  "lastUpdate" : 1621747460219,
+  "lastUpdate" : 1621776473616,
   "rows" : [
     [
       {
         "type" : "formContainer",
         "dimension" : {
-          "xs" : 12
+          "xs" : 12,
+          "md" : 12,
+          "lg" : 12
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -40,7 +42,7 @@
                   "xs" : 12,
                   "sm" : 12,
                   "md" : 12,
-                  "lg" : 6
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -379,7 +381,7 @@
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 6
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -436,7 +438,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "right"
+                    "value" : "center"
                   },
                   "dimension" : {
                     "type" : "constant",
