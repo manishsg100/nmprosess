@@ -116,7 +116,7 @@
             <groups xmi:type="actormapping:Groups" xmi:id="_ic29CbhtEeu4oYIC_LTGOQ"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_ic29CrhtEeu4oYIC_LTGOQ"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_ic29C7htEeu4oYIC_LTGOQ">
-              <role>CEO</role>
+              <role>CEO Office</role>
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_ic29DLhtEeu4oYIC_LTGOQ"/>
           </actorMapping>

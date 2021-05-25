@@ -327,6 +327,53 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="neil.pollard">
+      <firstName>Neil</firstName>
+      <lastName>Pollard</lastName>
+      <title>Mr.</title>
+      <jobTitle>NIF Team Member</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="andrew.steward">
+      <firstName>Andrew</firstName>
+      <lastName>Steward</lastName>
+      <title>Mr.</title>
+      <jobTitle>Construction Manager</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="abdulrahim.alghamdi">
+      <firstName>Abdulrahim </firstName>
+      <lastName>Alghamdi</lastName>
+      <title>Mr.</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -347,6 +394,9 @@
     </role>
     <role name="CEO">
       <displayName>CEO</displayName>
+    </role>
+    <role name="CEO Office">
+      <displayName>CEO Office</displayName>
     </role>
   </roles>
   <groups>
@@ -461,18 +511,6 @@
       <groupParentPath>/neom</groupParentPath>
     </membership>
     <membership>
-      <userName>helen.kelly</userName>
-      <roleName>member</roleName>
-      <groupName>hr</groupName>
-      <groupParentPath>/neom</groupParentPath>
-    </membership>
-    <membership>
-      <userName>walter.bates</userName>
-      <roleName>member</roleName>
-      <groupName>hr</groupName>
-      <groupParentPath>/neom</groupParentPath>
-    </membership>
-    <membership>
       <userName>jan.fisher</userName>
       <roleName>member</roleName>
       <groupName>it</groupName>
@@ -507,16 +545,6 @@
       <roleName>member</roleName>
       <groupName>north_america</groupName>
       <groupParentPath>/neom/sales</groupParentPath>
-    </membership>
-    <membership>
-      <userName>walter.bates</userName>
-      <roleName>ceo_secretary</roleName>
-      <groupName>neom</groupName>
-    </membership>
-    <membership>
-      <userName>walter.bates</userName>
-      <roleName>nif_member</roleName>
-      <groupName>neom</groupName>
     </membership>
     <membership>
       <userName>anthony.nichols</userName>
@@ -566,20 +594,24 @@
       <groupName>neom</groupName>
     </membership>
     <membership>
-      <userName>walter.bates</userName>
+      <userName>neil.pollard</userName>
+      <roleName>nif_member</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>andrew.steward</userName>
       <roleName>construction_manager</roleName>
       <groupName>neom</groupName>
     </membership>
     <membership>
       <userName>walter.bates</userName>
-      <roleName>CEO</roleName>
+      <roleName>ceo_secretary</roleName>
       <groupName>neom</groupName>
     </membership>
     <membership>
-      <userName>walter.bates</userName>
-      <roleName>member</roleName>
-      <groupName>Energy</groupName>
-      <groupParentPath>/neom/Streams</groupParentPath>
+      <userName>abdulrahim.alghamdi</userName>
+      <roleName>CEO Office</roleName>
+      <groupName>neom</groupName>
     </membership>
   </memberships>
 </organization:Organization>

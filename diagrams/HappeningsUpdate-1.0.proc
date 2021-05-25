@@ -194,12 +194,12 @@
       <configurations xmi:type="configuration:Configuration" xmi:id="_-r4VcLbWEeuhWf25_RfJ-g" name="Production" version="7.12.0-004" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_-sI0ILbWEeuhWf25_RfJ-g">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_-sI0IbbWEeuhWf25_RfJ-g" name="Employee actor">
-            <groups xmi:type="actormapping:Groups" xmi:id="_-sI0IrbWEeuhWf25_RfJ-g">
-              <group>/neom</group>
-            </groups>
+            <groups xmi:type="actormapping:Groups" xmi:id="_-sI0IrbWEeuhWf25_RfJ-g"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_-sI0I7bWEeuhWf25_RfJ-g"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_-sI0JLbWEeuhWf25_RfJ-g">
-              <role>CEO</role>
+              <role>CEO Office</role>
+              <role>ceo_secretary</role>
+              <role>member</role>
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_-sI0JbbWEeuhWf25_RfJ-g"/>
           </actorMapping>

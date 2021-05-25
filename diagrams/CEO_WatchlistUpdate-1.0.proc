@@ -248,9 +248,7 @@
       <configurations xmi:type="configuration:Configuration" xmi:id="_ZgGHAKzgEeuLm4pt6qXrTA" name="Production" version="7.12.0-004" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_ZgGHDKzgEeuLm4pt6qXrTA">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_ZgGHDazgEeuLm4pt6qXrTA" name="Employee actor">
-            <groups xmi:type="actormapping:Groups" xmi:id="_ZgGHDqzgEeuLm4pt6qXrTA">
-              <group>/neom</group>
-            </groups>
+            <groups xmi:type="actormapping:Groups" xmi:id="_ZgGHDqzgEeuLm4pt6qXrTA"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_ZgGHD6zgEeuLm4pt6qXrTA"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_ZgGHEKzgEeuLm4pt6qXrTA">
               <role>ceo_secretary</role>
