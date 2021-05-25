@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "chooseMeeting",
   "name" : "chooseMeeting",
-  "lastUpdate" : 1620124906135,
+  "lastUpdate" : 1621845381253,
   "rows" : [
     [
       {
@@ -909,14 +909,14 @@
     "statuses" : {
       "type" : "json",
       "value" : [
-        "[\"Upcoming\", \"Delayed\",\"Conducted\",\"Cancelled\"]\t"
+        "[\"\",\"Upcoming\", \"Delayed\",\"Conducted\",\"Cancelled\"]\t"
       ],
       "exposed" : false
     },
     "types" : {
       "type" : "json",
       "value" : [
-        " [\"Board\", \"Founding Board\",\"NRC\",\"GRC\",\"Audit Commitee\",\"Investment and Funding Committee\"]"
+        " [\"\",\"Board\", \"Founding Board\",\"NRC\",\"GRC\",\"Audit Commitee\",\"Investment and Funding Committee\"]"
       ],
       "exposed" : false
     }
