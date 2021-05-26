@@ -197,69 +197,69 @@
               </parameters>
             </configuration>
           </connectors>
-          <operations xmi:type="expression:Operation" xmi:id="_cVvYx7ChEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_cVvYyLChEeuLm4pt6qXrTA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cVvYybChEeuLm4pt6qXrTA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+          <operations xmi:type="expression:Operation" xmi:id="_E0WvZ74FEeuDb755CuNxAA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_E0WvaL4FEeuDb755CuNxAA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0Wvab4FEeuDb755CuNxAA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_cVvYyrChEeuLm4pt6qXrTA" name="meetingItemObjInput.description" content="meetingItemObjInput?.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_cVvYy7ChEeuLm4pt6qXrTA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_E0Wvar4FEeuDb755CuNxAA" name="meetingItemObjInput.description" content="meetingItemObjInput?.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0Wva74FEeuDb755CuNxAA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_cVvYzLChEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setDescription">
+            <operator xmi:type="expression:Operator" xmi:id="_E0WvbL4FEeuDb755CuNxAA" type="JAVA_METHOD" expression="setDescription">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_cVvYzbChEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_cVvYzrChEeuLm4pt6qXrTA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cVvYz7ChEeuLm4pt6qXrTA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+          <operations xmi:type="expression:Operation" xmi:id="_E0Wvbb4FEeuDb755CuNxAA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_E0Wvbr4FEeuDb755CuNxAA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0Wvb74FEeuDb755CuNxAA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_cVvY0LChEeuLm4pt6qXrTA" name="meetingItemObjInput.status" content="meetingItemObjInput?.status" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_cVvY0bChEeuLm4pt6qXrTA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_E0WvcL4FEeuDb755CuNxAA" name="meetingItemObjInput.status" content="meetingItemObjInput?.status" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0Wvcb4FEeuDb755CuNxAA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_cVvY0rChEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setStatus">
+            <operator xmi:type="expression:Operator" xmi:id="_E0Wvcr4FEeuDb755CuNxAA" type="JAVA_METHOD" expression="setStatus">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_cVvY07ChEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_cVvY1LChEeuLm4pt6qXrTA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cVvY1bChEeuLm4pt6qXrTA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+          <operations xmi:type="expression:Operation" xmi:id="_E0Wvc74FEeuDb755CuNxAA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_E0WvdL4FEeuDb755CuNxAA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0Wvdb4FEeuDb755CuNxAA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_cVvY1rChEeuLm4pt6qXrTA" name="meetingItemObjInput.owner" content="meetingItemObjInput?.owner" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_cVvY17ChEeuLm4pt6qXrTA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_E0Wvdr4FEeuDb755CuNxAA" name="meetingItemObjInput.owner" content="meetingItemObjInput?.owner" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0Wvd74FEeuDb755CuNxAA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_cVvY2LChEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setOwner">
+            <operator xmi:type="expression:Operator" xmi:id="_E0WveL4FEeuDb755CuNxAA" type="JAVA_METHOD" expression="setOwner">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_cVvY2bChEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_cVvY2rChEeuLm4pt6qXrTA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cVvY27ChEeuLm4pt6qXrTA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+          <operations xmi:type="expression:Operation" xmi:id="_E0Wveb4FEeuDb755CuNxAA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_E0Wver4FEeuDb755CuNxAA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0Wve74FEeuDb755CuNxAA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_cVvY3LChEeuLm4pt6qXrTA" name="meetingItemObjInput.ownerStream" content="meetingItemObjInput?.ownerStream" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_cVvY3bChEeuLm4pt6qXrTA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_E0WvfL4FEeuDb755CuNxAA" name="meetingItemObjInput.ownerStream" content="meetingItemObjInput?.ownerStream" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0Wvfb4FEeuDb755CuNxAA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_cVvY3rChEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setOwnerStream">
+            <operator xmi:type="expression:Operator" xmi:id="_E0Wvfr4FEeuDb755CuNxAA" type="JAVA_METHOD" expression="setOwnerStream">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_cVvY37ChEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_cVvY4LChEeuLm4pt6qXrTA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hL3WILGREeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+          <operations xmi:type="expression:Operation" xmi:id="_E0Wvf74FEeuDb755CuNxAA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_E0WvgL4FEeuDb755CuNxAA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0Wvgb4FEeuDb755CuNxAA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_cVvY4rChEeuLm4pt6qXrTA" name="meetingItemObjInput.plannedDate" content="meetingItemObj?.plannedDate" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_l_67ALGREeuK84HZhsh8MA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_E0Wvgr4FEeuDb755CuNxAA" name="meetingItemObjInput.plannedDate" content="meetingItemObjInput?.plannedDate" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0Wvg74FEeuDb755CuNxAA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_cVvY5LChEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setPlannedDate">
+            <operator xmi:type="expression:Operator" xmi:id="_E0WvhL4FEeuDb755CuNxAA" type="JAVA_METHOD" expression="setPlannedDate">
               <inputTypes>java.time.LocalDate</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_cVvY5bChEeuLm4pt6qXrTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_cVvY5rChEeuLm4pt6qXrTA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cVvY57ChEeuLm4pt6qXrTA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
+          <operations xmi:type="expression:Operation" xmi:id="_E0Wvhb4FEeuDb755CuNxAA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_E0Wvhr4FEeuDb755CuNxAA" name="meetingItemObj" content="meetingItemObj" type="TYPE_VARIABLE" returnType="com.company.model.MeetingItem">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0Wvh74FEeuDb755CuNxAA" name="meetingItemObj" dataType="_SXAw5LCfEeuLm4pt6qXrTA" className="com.company.model.MeetingItem"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_cVvY6LChEeuLm4pt6qXrTA" name="meetingItemObjInput.ceoSecretary" content="meetingItemObjInput?.ceoSecretary" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_cVvY6bChEeuLm4pt6qXrTA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_E0WviL4FEeuDb755CuNxAA" name="meetingItemObjInput.ceoSecretary" content="meetingItemObjInput?.ceoSecretary" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0Wvib4FEeuDb755CuNxAA" name="meetingItemObjInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_cVvY6rChEeuLm4pt6qXrTA" type="JAVA_METHOD" expression="setCeoSecretary">
+            <operator xmi:type="expression:Operator" xmi:id="_E0Wvir4FEeuDb755CuNxAA" type="JAVA_METHOD" expression="setCeoSecretary">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -272,13 +272,13 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_SXAwwbCfEeuLm4pt6qXrTA" name="meetingItemOwnerAssignment" content="93415846-bfc9-4e11-b5e3-ad958e435b27" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_SXAwwrCfEeuLm4pt6qXrTA">
-            <inputs xmi:type="process:ContractInput" xmi:id="_cVvYwLChEeuLm4pt6qXrTA" name="meetingItemObjInput" type="COMPLEX" dataReference="meetingItemObj" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_cVvYwbChEeuLm4pt6qXrTA" name="description" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_cVvYwrChEeuLm4pt6qXrTA" name="status" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_cVvYw7ChEeuLm4pt6qXrTA" name="owner" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_cVvYxLChEeuLm4pt6qXrTA" name="ownerStream" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_cVvYxbChEeuLm4pt6qXrTA" name="plannedDate" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_cVvYxrChEeuLm4pt6qXrTA" name="ceoSecretary" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_E0WvYL4FEeuDb755CuNxAA" name="meetingItemObjInput" type="COMPLEX" dataReference="meetingItemObj" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_E0WvYb4FEeuDb755CuNxAA" name="description" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_E0WvYr4FEeuDb755CuNxAA" name="status" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_E0WvY74FEeuDb755CuNxAA" name="owner" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_E0WvZL4FEeuDb755CuNxAA" name="ownerStream" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_E0WvZb4FEeuDb755CuNxAA" name="plannedDate" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_E0WvZr4FEeuDb755CuNxAA" name="ceoSecretary" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_SXAww7CfEeuLm4pt6qXrTA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>

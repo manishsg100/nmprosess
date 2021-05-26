@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingItemOwnerUpdates",
   "name" : "meetingItemOwnerUpdates",
-  "lastUpdate" : 1621457876599,
+  "lastUpdate" : 1622020134768,
   "rows" : [
     [
       {
@@ -633,7 +633,7 @@
                         },
                         "dateFormat" : {
                           "type" : "constant",
-                          "value" : "MM/dd/yyyy"
+                          "value" : "yyyy-MM-dd"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -676,7 +676,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "value" : "Enter a date (yyyy-MM-dd)"
                         },
                         "dimension" : {
                           "type" : "constant",
