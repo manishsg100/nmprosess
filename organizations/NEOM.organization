@@ -374,6 +374,21 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="role.role">
+      <firstName>Role</firstName>
+      <lastName>Role</lastName>
+      <title>Mr.</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -397,6 +412,9 @@
     </role>
     <role name="CEO Office">
       <displayName>CEO Office</displayName>
+    </role>
+    <role name="Role1">
+      <displayName>Role1</displayName>
     </role>
   </roles>
   <groups>
@@ -611,6 +629,11 @@
     <membership>
       <userName>abdulrahim.alghamdi</userName>
       <roleName>CEO Office</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>role.role</userName>
+      <roleName>Role1</roleName>
       <groupName>neom</groupName>
     </membership>
   </memberships>

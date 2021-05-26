@@ -1019,7 +1019,7 @@
             <groups xmi:type="actormapping:Groups" xmi:id="_29myyLCiEeuLm4pt6qXrTA"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_29myybCiEeuLm4pt6qXrTA"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_29myyrCiEeuLm4pt6qXrTA">
-              <role>general_secretary</role>
+              <role>Role1</role>
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_29myy7CiEeuLm4pt6qXrTA"/>
           </actorMapping>
