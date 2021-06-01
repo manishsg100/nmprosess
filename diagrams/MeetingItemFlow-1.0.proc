@@ -1027,7 +1027,7 @@
             <groups xmi:type="actormapping:Groups" xmi:id="_pyZjIbbsEeuK84HZhsh8MA"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_pyZjIrbsEeuK84HZhsh8MA"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_pyZjI7bsEeuK84HZhsh8MA">
-              <role>ceo_secretary</role>
+              <role>CEO Office</role>
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_pyZjJLbsEeuK84HZhsh8MA"/>
           </actorMapping>
@@ -1035,7 +1035,7 @@
             <groups xmi:type="actormapping:Groups" xmi:id="_RPbuMbbtEeuK84HZhsh8MA"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_RPbuMrbtEeuK84HZhsh8MA"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_RPbuM7btEeuK84HZhsh8MA">
-              <role>member</role>
+              <role>NEOM.Owner</role>
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_RPbuNLbtEeuK84HZhsh8MA"/>
           </actorMapping>

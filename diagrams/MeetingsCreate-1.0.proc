@@ -131,7 +131,7 @@
             <groups xmi:type="actormapping:Groups" xmi:id="_dLFyGazgEeuLm4pt6qXrTA"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_dLFyGqzgEeuLm4pt6qXrTA"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_dLFyG6zgEeuLm4pt6qXrTA">
-              <role>ceo_secretary</role>
+              <role>GS.Office</role>
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_dLFyHKzgEeuLm4pt6qXrTA"/>
           </actorMapping>

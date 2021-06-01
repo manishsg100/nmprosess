@@ -57,7 +57,7 @@
             <groups xmi:type="actormapping:Groups" xmi:id="_YkSdMrCdEeuLm4pt6qXrTA"/>
             <memberships xmi:type="actormapping:Membership" xmi:id="_YkSdM7CdEeuLm4pt6qXrTA"/>
             <roles xmi:type="actormapping:Roles" xmi:id="_YkSdNLCdEeuLm4pt6qXrTA">
-              <role>general_secretary</role>
+              <role>GS.Office</role>
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_YkSdNbCdEeuLm4pt6qXrTA"/>
           </actorMapping>

@@ -389,6 +389,21 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="tope.osu">
+      <firstName>Tope</firstName>
+      <lastName>Osu</lastName>
+      <title>mr.</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -415,6 +430,12 @@
     </role>
     <role name="Role1">
       <displayName>Role1</displayName>
+    </role>
+    <role name="GS.Office">
+      <displayName>GS.Office</displayName>
+    </role>
+    <role name="NEOM.Owner">
+      <displayName>NEOM.Owner</displayName>
     </role>
   </roles>
   <groups>
@@ -634,6 +655,16 @@
     <membership>
       <userName>role.role</userName>
       <roleName>Role1</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>tope.osu</userName>
+      <roleName>GS.Office</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>jan.fisher</userName>
+      <roleName>NEOM.Owner</roleName>
       <groupName>neom</groupName>
     </membership>
   </memberships>
