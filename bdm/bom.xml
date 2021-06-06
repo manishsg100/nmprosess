@@ -57,6 +57,36 @@
             </queries>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Employee">
+            <fields>
+                <field type="STRING" length="255" name="employee_no" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="employee_name" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="iqama_no" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="contact_no" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="community_Id_access_status" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="location" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="segment" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="department" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nationality" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="filterAllEmployees" content="SELECT e &#10;FROM Employee e &#10;WHERE e.employee_no = :employee_no&#10;AND e.employee_name = :employee_name&#10;AND e.iqama_no = :iqama_no&#10;AND e.contact_no = :contact_no&#10;AND e.community_Id_access_status = :community_Id_access_status&#10;AND e.location = :location&#10;AND e.segment = :segment&#10;AND e.department = :department&#10;AND e.nationality = :nationality&#10;ORDER BY e.persistenceId ASC" returnType="com.company.model.Employee">
+                    <queryParameters>
+                        <queryParameter name="employee_no" className="java.lang.String"/>
+                        <queryParameter name="employee_name" className="java.lang.String"/>
+                        <queryParameter name="iqama_no" className="java.lang.String"/>
+                        <queryParameter name="contact_no" className="java.lang.String"/>
+                        <queryParameter name="community_Id_access_status" className="java.lang.String"/>
+                        <queryParameter name="location" className="java.lang.String"/>
+                        <queryParameter name="segment" className="java.lang.String"/>
+                        <queryParameter name="department" className="java.lang.String"/>
+                        <queryParameter name="nationality" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Happening">
             <fields>
                 <field type="LOCALDATE" length="255" name="happeningDate" nullable="true" collection="false"/>

@@ -404,6 +404,21 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="angel.narciso">
+      <firstName>Angel </firstName>
+      <lastName>Narciso</lastName>
+      <title>Ms.</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Stream</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -436,6 +451,9 @@
     </role>
     <role name="NEOM.Owner">
       <displayName>NEOM.Owner</displayName>
+    </role>
+    <role name="communitydepartment">
+      <displayName>communitydepartment</displayName>
     </role>
   </roles>
   <groups>
@@ -666,6 +684,17 @@
       <userName>jan.fisher</userName>
       <roleName>NEOM.Owner</roleName>
       <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>angel.narciso</userName>
+      <roleName>communitydepartment</roleName>
+      <groupName>neom</groupName>
+    </membership>
+    <membership>
+      <userName>daniela.angelo</userName>
+      <roleName>NEOM.Owner</roleName>
+      <groupName>Mobility</groupName>
+      <groupParentPath>/neom/Streams</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
