@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "createMeetingItems",
   "name" : "createMeetingItems",
-  "lastUpdate" : 1621154018932,
+  "lastUpdate" : 1623221527317,
   "rows" : [
     [
       {
@@ -236,7 +236,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Meeting #{{meeting_selected.persistenceId}} {{meeting_selected.meetingSubject}}"
+                    "value" : "Meeting {{meeting_selected.meetingSubject}}"
                   },
                   "level" : {
                     "type" : "constant",
@@ -725,6 +725,158 @@
                       "reference" : "4b51fe6c-2c44-48ca-aa65-42f1183957f6",
                       "hasValidationError" : false,
                       "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Direction or Resoultions number"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "$item.drnumber"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "d05c994a-ad8e-4a3d-a68c-9268ba2b9a03",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Direction or Resoultions Deceiption"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "$item.drdeceiption"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "50a23e86-b3f9-4adc-bad3-0d8cde7a4a6d",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
                     }
                   ],
                   [
@@ -1504,7 +1656,7 @@
     "meeting" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"searchMeetings [com.company.model.Meeting]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"searchMeetings\",\"displayName\":\"searchMeetings\"},\"id\":\"com.company.model.Meeting\",\"filters\":[{\"name\":\"meetingType\",\"type\":\"STRING\",\"collection\":false,\"value\":\"%25%25\"},{\"name\":\"meetingSubject\",\"type\":\"STRING\",\"collection\":false,\"value\":\"%25%25\"},{\"name\":\"meetingEndDate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"2023-01-01\"},{\"name\":\"meetingStatus\",\"type\":\"STRING\",\"collection\":false,\"value\":\"%25%25\"},{\"name\":\"participants\",\"type\":\"STRING\",\"collection\":false,\"value\":\"%25%25\"},{\"name\":\"meetingStartDate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"2021-01-01\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"searchMeetings [com.company.model.Meeting]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"searchMeetings\",\"displayName\":\"searchMeetings\"},\"id\":\"com.company.model.Meeting\",\"filters\":[{\"name\":\"meetingType\",\"type\":\"STRING\",\"collection\":false,\"value\":\"Board\"},{\"name\":\"meetingSubject\",\"type\":\"STRING\",\"collection\":false,\"value\":\"%25%25\"},{\"name\":\"meetingEndDate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"2023-01-01\"},{\"name\":\"meetingStatus\",\"type\":\"STRING\",\"collection\":false,\"value\":\"Conducted\"},{\"name\":\"participants\",\"type\":\"STRING\",\"collection\":false,\"value\":\"%25%25\"},{\"name\":\"meetingStartDate\",\"type\":\"LOCALDATE\",\"collection\":false,\"value\":\"2021-01-01\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     },
@@ -1554,6 +1706,13 @@
       "type" : "expression",
       "value" : [
         "return $data.meetingId && $data.meetingItem && $data.meetingItem.length;"
+      ],
+      "exposed" : false
+    },
+    "meeting_1_topics_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
       ],
       "exposed" : false
     }

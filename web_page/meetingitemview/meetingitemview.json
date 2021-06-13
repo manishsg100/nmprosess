@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingitemview",
   "name" : "meetingitemview",
-  "lastUpdate" : 1622977198400,
+  "lastUpdate" : 1623242849597,
   "rows" : [
     [
       {
@@ -1087,7 +1087,8 @@
                                       "Item Type",
                                       "Status",
                                       "Owner",
-                                      "Stream"
+                                      "Stream",
+                                      "Progress Description"
                                     ]
                                   },
                                   "allowHtml" : {
@@ -1123,7 +1124,8 @@
                                       "itemType",
                                       "status",
                                       "owner",
-                                      "ownerStream"
+                                      "ownerStream",
+                                      "progressdescription"
                                     ]
                                   },
                                   "dimension" : {

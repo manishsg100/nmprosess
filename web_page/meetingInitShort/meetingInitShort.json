@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "meetingInitShort",
   "name" : "meetingInitShort",
-  "lastUpdate" : 1620125112967,
+  "lastUpdate" : 1623157456772,
   "rows" : [
     [
       {
@@ -512,7 +512,7 @@
                                     },
                                     "required" : {
                                       "type" : "constant",
-                                      "value" : true
+                                      "value" : false
                                     },
                                     "minLength" : {
                                       "type" : "constant",
@@ -1459,6 +1459,13 @@
       "type" : "json",
       "value" : [
         " [\"Board\", \"Founding Board\",\"NRC\",\"GRC\",\"Audit Commitee\",\"Investment and Funding Committee\"]"
+      ],
+      "exposed" : false
+    },
+    "typestatus" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=1&o=displayName%20ASC&f=name={{meetingObjectInput.status}}"
       ],
       "exposed" : false
     }

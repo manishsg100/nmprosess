@@ -59,29 +59,33 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Employee">
             <fields>
-                <field type="STRING" length="255" name="employee_no" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="employee_name" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="iqama_no" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="contact_no" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="community_Id_access_status" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="location" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="segment" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="positionemp" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="department" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="employeeno" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="employeename" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="contactno" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="location" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="segement" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="nationality" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="iqamano" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="communityid" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vaccination" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries>
-                <query name="filterAllEmployees" content="SELECT e &#10;FROM Employee e &#10;WHERE e.employee_no = :employee_no&#10;AND e.employee_name = :employee_name&#10;AND e.iqama_no = :iqama_no&#10;AND e.contact_no = :contact_no&#10;AND e.community_Id_access_status = :community_Id_access_status&#10;AND e.location = :location&#10;AND e.segment = :segment&#10;AND e.department = :department&#10;AND e.nationality = :nationality&#10;ORDER BY e.persistenceId ASC" returnType="com.company.model.Employee">
+                <query name="filterquerry" content="SELECT e &#13;&#10;FROM Employee e &#13;&#10;WHERE e.positionemp LIKE :positionemp&#13;&#10;AND e.department LIKE  :department&#13;&#10;AND e.employeeno LIKE  :employeeno&#13;&#10;AND e.employeename LIKE  :employeename&#13;&#10;AND e.contactno LIKE  :contactno&#13;&#10;AND e.location LIKE  :location&#13;&#10;AND e.segement LIKE  :segement&#13;&#10;AND e.nationality LIKE  :nationality&#13;&#10;AND e.iqamano LIKE  :iqamano&#13;&#10;AND e.communityid LIKE  :communityid&#13;&#10;AND e.vaccination LIKE  :vaccination&#13;&#10;ORDER BY e.persistenceId DESC" returnType="com.company.model.Employee">
                     <queryParameters>
-                        <queryParameter name="employee_no" className="java.lang.String"/>
-                        <queryParameter name="employee_name" className="java.lang.String"/>
-                        <queryParameter name="iqama_no" className="java.lang.String"/>
-                        <queryParameter name="contact_no" className="java.lang.String"/>
-                        <queryParameter name="community_Id_access_status" className="java.lang.String"/>
-                        <queryParameter name="location" className="java.lang.String"/>
-                        <queryParameter name="segment" className="java.lang.String"/>
+                        <queryParameter name="positionemp" className="java.lang.String"/>
                         <queryParameter name="department" className="java.lang.String"/>
+                        <queryParameter name="employeeno" className="java.lang.String"/>
+                        <queryParameter name="employeename" className="java.lang.String"/>
+                        <queryParameter name="contactno" className="java.lang.String"/>
+                        <queryParameter name="location" className="java.lang.String"/>
+                        <queryParameter name="segement" className="java.lang.String"/>
                         <queryParameter name="nationality" className="java.lang.String"/>
+                        <queryParameter name="iqamano" className="java.lang.String"/>
+                        <queryParameter name="communityid" className="java.lang.String"/>
+                        <queryParameter name="vaccination" className="java.lang.String"/>
                     </queryParameters>
                 </query>
             </queries>
@@ -193,7 +197,17 @@ AND m.participants = :participants</description>
                         <queryParameter name="text" className="java.lang.String"/>
                     </queryParameters>
                 </query>
-                <query name="searchMeetings" content="SELECT m &#10;FROM Meeting m &#10;WHERE m.meetingType LIKE :meetingType&#10;AND m.meetingSubject LIKE :meetingSubject&#10;AND m.meetingDate &gt;= :meetingStartDate&#10;AND m.meetingDate &lt;= :meetingEndDate&#10;AND m.meetingStatus LIKE :meetingStatus&#10;AND m.participants LIKE :participants&#10;ORDER BY m.persistenceId DESC" returnType="java.util.List">
+                <query name="searchMeetings" content="SELECT m &#13;&#10;FROM Meeting m &#13;&#10;WHERE m.meetingType LIKE :meetingType&#13;&#10;AND m.meetingSubject LIKE :meetingSubject&#13;&#10;AND m.meetingDate &gt;= :meetingStartDate&#13;&#10;AND m.meetingDate &lt;= :meetingEndDate&#13;&#10;AND m.meetingStatus LIKE :meetingStatus&#13;&#10;AND m.participants LIKE :participants&#13;&#10;ORDER BY m.persistenceId DESC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="meetingType" className="java.lang.String"/>
+                        <queryParameter name="meetingSubject" className="java.lang.String"/>
+                        <queryParameter name="meetingEndDate" className="java.time.LocalDate"/>
+                        <queryParameter name="meetingStatus" className="java.lang.String"/>
+                        <queryParameter name="participants" className="java.lang.String"/>
+                        <queryParameter name="meetingStartDate" className="java.time.LocalDate"/>
+                    </queryParameters>
+                </query>
+                <query name="fetchmeetingsnot" content="SELECT m &#13;&#10;FROM Meeting m &#13;&#10;WHERE (m.meetingType NOT LIKE :meetingType&#13;&#10;OR m.meetingStatus NOT LIKE :meetingStatus)&#13;&#10;AND m.meetingSubject LIKE :meetingSubject&#13;&#10;AND m.meetingDate &gt;= :meetingStartDate&#13;&#10;AND m.meetingDate &lt;= :meetingEndDate&#13;&#10;AND m.participants LIKE :participants&#13;&#10;ORDER BY m.persistenceId DESC" returnType="java.util.List">
                     <queryParameters>
                         <queryParameter name="meetingType" className="java.lang.String"/>
                         <queryParameter name="meetingSubject" className="java.lang.String"/>
@@ -226,6 +240,9 @@ AND m.participants = :participants</description>
                 <field type="STRING" length="255" name="ceoSecretary" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="topic" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="itemName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="drnumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="drdeceiption" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="progressdescription" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries>

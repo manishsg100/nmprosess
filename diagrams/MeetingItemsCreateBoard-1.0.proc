@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_0wNsIK5HEeuLm4pt6qXrTA" name="MeetingItemsCreate" author="n1k" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_0wNsIa5HEeuLm4pt6qXrTA" name="MeetingItemsCreate" displayName="Resolutions/Directions: Create Meeting Items">
+  <process:MainProcess xmi:id="_0wNsIK5HEeuLm4pt6qXrTA" name="MeetingItemsCreateBoard" author="n1k" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_0wNsIa5HEeuLm4pt6qXrTA" name="MeetingItemsCreateBoard" displayName="Create BOARD meeting items">
       <elements xmi:type="process:Lane" xmi:id="_0wNsIq5HEeuLm4pt6qXrTA" name="Employee lane" actor="_0wNsO65HEeuLm4pt6qXrTA">
         <elements xmi:type="process:StartEvent" xmi:id="_0wNsI65HEeuLm4pt6qXrTA" name="Start1" outgoing="_JhC4wLCjEeuLm4pt6qXrTA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_0wNsJK5HEeuLm4pt6qXrTA" name="" content="" returnTypeFixed="true"/>
@@ -32,8 +32,8 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_72U_ALAPEeuLm4pt6qXrTA" name="meetingItemsArray" multiple="true" dataType="_0wNsVK5HEeuLm4pt6qXrTA" className="com.company.model.MeetingItem">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_wzjjMLAREeuLm4pt6qXrTA" name="initMeetingItemsArray()" content="def meetingItemList = []&#xA;//For each item collected in multiple input&#xA;meetingItemsArrayInput.each{&#xA;&#x9;//Add a new composed MeetingItem instance&#xA;&#x9;meetingItemList.add({ currentMeetingItemInput ->&#xA;&#x9;&#x9;def meetingItemVar = new com.company.model.MeetingItem()&#xA;&#x9;&#x9;meetingItemVar.meetingId = currentMeetingItemInput.meetingId&#xA;&#x9;&#x9;meetingItemVar.meetingSubject = currentMeetingItemInput.meetingSubject&#xA;&#x9;&#x9;meetingItemVar.itemType = currentMeetingItemInput.itemType&#xA;&#x9;&#x9;meetingItemVar.status = currentMeetingItemInput.status&#xA;&#x9;&#x9;meetingItemVar.createdAt = currentMeetingItemInput.createdAt&#xA;&#x9;&#x9;meetingItemVar.createdBy = currentMeetingItemInput.createdBy&#xA;&#x9;&#x9;meetingItemVar.topic = currentMeetingItemInput.topic&#xA;&#x9;&#x9;meetingItemVar.itemName = currentMeetingItemInput.itemName&#xA;&#x9;&#x9;return meetingItemVar&#xA;&#x9;}(it))&#xA;}&#xA;return meetingItemList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_wzjjMbAREeuLm4pt6qXrTA" name="meetingItemsArrayInput" type="COMPLEX" multiple="true"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_OldKu8hFEeuLCp8mWvzgxQ" name="initMeetingItemsArray()" content="def meetingItemList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;meetingItemsArrayInput.each{&#xD;&#xA;&#x9;//Add a new composed MeetingItem instance&#xD;&#xA;&#x9;meetingItemList.add({ currentMeetingItemInput ->&#xD;&#xA;&#x9;&#x9;def meetingItemVar = new com.company.model.MeetingItem()&#xD;&#xA;&#x9;&#x9;meetingItemVar.meetingId = currentMeetingItemInput.meetingId&#xD;&#xA;&#x9;&#x9;meetingItemVar.meetingSubject = currentMeetingItemInput.meetingSubject&#xD;&#xA;&#x9;&#x9;meetingItemVar.itemType = currentMeetingItemInput.itemType&#xD;&#xA;&#x9;&#x9;meetingItemVar.status = currentMeetingItemInput.status&#xD;&#xA;&#x9;&#x9;meetingItemVar.createdAt = currentMeetingItemInput.createdAt&#xD;&#xA;&#x9;&#x9;meetingItemVar.createdBy = currentMeetingItemInput.createdBy&#xD;&#xA;&#x9;&#x9;meetingItemVar.topic = currentMeetingItemInput.topic&#xD;&#xA;&#x9;&#x9;meetingItemVar.itemName = currentMeetingItemInput.itemName&#xD;&#xA;&#x9;&#x9;meetingItemVar.drnumber = currentMeetingItemInput.drnumber&#xD;&#xA;&#x9;&#x9;meetingItemVar.drdeceiption = currentMeetingItemInput.drdeceiption&#xD;&#xA;&#x9;&#x9;return meetingItemVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return meetingItemList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_OldKvMhFEeuLCp8mWvzgxQ" name="meetingItemsArrayInput" type="COMPLEX" multiple="true"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_0wNsNK5HEeuLm4pt6qXrTA">
@@ -70,15 +70,17 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_YkR2JrCdEeuLm4pt6qXrTA" id="OTHER"/>
       </configurations>
       <contract xmi:type="process:Contract" xmi:id="_0wNsPK5HEeuLm4pt6qXrTA">
-        <inputs xmi:type="process:ContractInput" xmi:id="_wziVELAREeuLm4pt6qXrTA" name="meetingItemsArrayInput" type="COMPLEX" multiple="true" dataReference="meetingItemsArray">
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVEbAREeuLm4pt6qXrTA" name="meetingId"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVErAREeuLm4pt6qXrTA" name="meetingSubject"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVE7AREeuLm4pt6qXrTA" name="itemType"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVFLAREeuLm4pt6qXrTA" name="status"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVFbAREeuLm4pt6qXrTA" name="createdAt" type="LOCALDATE"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVFrAREeuLm4pt6qXrTA" name="createdBy"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVF7AREeuLm4pt6qXrTA" name="topic"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_wziVGLAREeuLm4pt6qXrTA" name="itemName"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_OldKsMhFEeuLCp8mWvzgxQ" name="meetingItemsArrayInput" type="COMPLEX" multiple="true" dataReference="meetingItemsArray">
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKschFEeuLCp8mWvzgxQ" name="meetingId"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKsshFEeuLCp8mWvzgxQ" name="meetingSubject"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKs8hFEeuLCp8mWvzgxQ" name="itemType"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKtMhFEeuLCp8mWvzgxQ" name="status"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKtchFEeuLCp8mWvzgxQ" name="createdAt" type="LOCALDATE"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKtshFEeuLCp8mWvzgxQ" name="createdBy"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKt8hFEeuLCp8mWvzgxQ" name="topic"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKuMhFEeuLCp8mWvzgxQ" name="itemName"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKuchFEeuLCp8mWvzgxQ" name="drnumber"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_OldKushFEeuLCp8mWvzgxQ" name="drdeceiption"/>
         </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_0wNsPa5HEeuLm4pt6qXrTA">
